@@ -1,0 +1,21 @@
+
+*** Running vivado
+    with args -log demo_1.vds -m64 -mode batch -messageDb vivado.pb -notrace -source demo_1.tcl
+
+
+****** Vivado v2015.1 (64-bit)
+  **** SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+  **** IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source demo_1.tcl -notrace
+Command: synth_design -top demo_1 -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+WARNING: [Common 17-348] Failed to get the license for feature 'Synthesis' and/or device 'xc7z020'
+0 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-345] A valid license was not found for feature 'Synthesis' and/or device 'xc7z020'. Please run the Vivado License Manager for assistance in determining
+which features and devices are licensed for your system.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  3 00:49:54 2015...
