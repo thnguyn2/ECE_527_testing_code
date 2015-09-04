@@ -23,7 +23,9 @@
 module demo_1(
     input clk,
     input rst,
-    output led
+    output led,
+    input button
+    
     );
     wire led;
     
@@ -42,14 +44,19 @@ module demo_1(
         else
         begin
             counter <=counter +1;
-            if (counter <32'h07FFFFFF)
+            if (counter <32'd5000000)
             begin
                 led_output <=1;
             end
             else
             begin
+                if (counter ==32'h9999999)
+                begin
+                    counter <=0;
+                end
                 led_output <=0;
             end            
         end
-    end  
+    end
+  
 endmodule

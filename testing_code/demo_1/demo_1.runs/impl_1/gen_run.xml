@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1441376215">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="demo_1.vdi"/>
+  <File Type="BG-DRC" Name="demo_1.drc"/>
+  <File Type="BG-BGN" Name="demo_1.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="demo_1.sysdef"/>
+  <File Type="BITSTR-MMI" Name="demo_1.mmi"/>
+  <File Type="BITSTR-BMM" Name="demo_1_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="demo_1.nky"/>
+  <File Type="BITSTR-RBT" Name="demo_1.rbt"/>
+  <File Type="BITSTR-MSK" Name="demo_1.msk"/>
+  <File Type="BG-BIN" Name="demo_1.bin"/>
+  <File Type="BG-BIT" Name="demo_1.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="demo_1_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="demo_1_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="demo_1_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="demo_1_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="demo_1_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="demo_1_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="demo_1_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="demo_1_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="demo_1_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="demo_1_route_status.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="demo_1_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="demo_1_power_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="demo_1_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="demo_1_drc_routed.rpt"/>
+  <File Type="ROUTE-DCP" Name="demo_1_routed.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="demo_1_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="demo_1_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="demo_1_postplace_pwropt.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="demo_1_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="demo_1_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="demo_1_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="demo_1_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="demo_1_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="demo_1_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="demo_1_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="demo_1_placed.dcp"/>
+  <File Type="PWROPT-DRC" Name="demo_1_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="demo_1_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="demo_1.hwdef"/>
+  <File Type="OPT-DRC" Name="demo_1_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="demo_1_opt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="demo_1_timing_summary_postroute_physopted.pb"/>
+  <File Type="PA-TCL" Name="demo_1.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/demo_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="demo_1"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/pin_assign.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/pin_assign.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

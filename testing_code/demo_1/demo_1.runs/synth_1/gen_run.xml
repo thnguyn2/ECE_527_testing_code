@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1441259387">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1441376215">
   <File Type="VDS-TIMING-PB" Name="demo_1_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="demo_1_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="demo_1.dcp"/>
   <File Type="RDS-UTIL-PB" Name="demo_1_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="demo_1_utilization_synth.rpt"/>
-  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
-  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
-  <File Type="RDS-RDS" Name="demo_1.vds"/>
-  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
-  <File Type="PA-TCL" Name="demo_1.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="demo_1_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="demo_1.vds"/>
+  <File Type="PA-TCL" Name="demo_1.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/demo_1.v">
@@ -40,9 +40,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
