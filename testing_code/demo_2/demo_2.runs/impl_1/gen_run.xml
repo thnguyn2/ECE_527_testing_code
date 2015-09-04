@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1441381811">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="hw_platform_wrapper.vdi"/>
+  <File Type="BG-DRC" Name="hw_platform_wrapper.drc"/>
+  <File Type="BG-BGN" Name="hw_platform_wrapper.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="hw_platform_wrapper.sysdef"/>
+  <File Type="BITSTR-MMI" Name="hw_platform_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="hw_platform_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="hw_platform_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="hw_platform_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="hw_platform_wrapper.msk"/>
+  <File Type="BG-BIN" Name="hw_platform_wrapper.bin"/>
+  <File Type="BG-BIT" Name="hw_platform_wrapper.bit"/>
+  <File Type="PLACE-SIMILARITY" Name="hw_platform_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="hw_platform_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="hw_platform_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-DCP" Name="hw_platform_wrapper_placed.dcp"/>
+  <File Type="PWROPT-DRC" Name="hw_platform_wrapper_drc_pwropted.rpt"/>
+  <File Type="PLACE-CTRL" Name="hw_platform_wrapper_control_sets_placed.rpt"/>
+  <File Type="PWROPT-DCP" Name="hw_platform_wrapper_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="hw_platform_wrapper.hwdef"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="PLACE-IO" Name="hw_platform_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="hw_platform_wrapper_utilization_placed.rpt"/>
+  <File Type="OPT-DCP" Name="hw_platform_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="hw_platform_wrapper_drc_opted.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="hw_platform_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="hw_platform_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="hw_platform_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="hw_platform_wrapper_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="hw_platform_wrapper_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="hw_platform_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="hw_platform_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="hw_platform_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="hw_platform_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="hw_platform_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="hw_platform_wrapper_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="hw_platform_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="hw_platform_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="hw_platform_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="hw_platform_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="hw_platform_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="hw_platform_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="hw_platform_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="PA-TCL" Name="hw_platform_wrapper.tcl"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="hw_platform_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="hw_platform_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/hw_platform/hw_platform.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/hw_platform_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/hw_platform/hdl/hw_platform_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1441381591"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="hw_platform_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
+      <Desc>Vivado Implementation Defaults</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
