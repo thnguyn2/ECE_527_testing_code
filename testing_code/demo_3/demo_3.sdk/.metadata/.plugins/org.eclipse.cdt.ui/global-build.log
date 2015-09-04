@@ -1,0 +1,397 @@
+12:00:26 **** Build of project standalone_bsp_0 ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_0/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_0/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling coresightps_dcc
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_0/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpio
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_0/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling xadcps
+Finished building libraries
+12:05:54 **** Build of configuration Debug for project led_blink ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: led_blink.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "led_blink.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: led_blink.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size led_blink.elf  |tee "led_blink.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22812	   1152	  22564	  46528	   b5c0	led_blink.elf
+Finished building: led_blink.elf.size
+ 
+12:08:35 **** Auto Build of configuration Debug for project led_blink ****
+make all 
+Building file: ../src/led_blink.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_blink.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/led_blink.d" -MT"src/led_blink.d" -o "src/led_blink.o" "../src/led_blink.c"
+Finished building: ../src/led_blink.c
+ 
+Building target: led_blink.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "led_blink.elf"  ./src/helloworld.o ./src/led_blink.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: led_blink.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size led_blink.elf  |tee "led_blink.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22812	   1152	  22564	  46528	   b5c0	led_blink.elf
+Finished building: led_blink.elf.size
+ 
+12:08:54 **** Auto Build of configuration Debug for project led_blink ****
+make all 
+Building file: ../src/led_blink.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_blink.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/led_blink.d" -MT"src/led_blink.d" -o "src/led_blink.o" "../src/led_blink.c"
+../src/led_blink.c: In function 'main':
+../src/led_blink.c:76:33: error: 'XPAR_LEDS_POSITIONS_DEVICE_ID' undeclared (first use in this function)
+ #define GPIO_EXAMPLE_DEVICE_ID  XPAR_LEDS_POSITIONS_DEVICE_ID
+                                 ^
+../src/led_blink.c:151:35: note: in expansion of macro 'GPIO_EXAMPLE_DEVICE_ID'
+  Status = XGpio_Initialize(&Gpio, GPIO_EXAMPLE_DEVICE_ID);
+                                   ^
+../src/led_blink.c:76:33: note: each undeclared identifier is reported only once for each function it appears in
+ #define GPIO_EXAMPLE_DEVICE_ID  XPAR_LEDS_POSITIONS_DEVICE_ID
+                                 ^
+../src/led_blink.c:151:35: note: in expansion of macro 'GPIO_EXAMPLE_DEVICE_ID'
+  Status = XGpio_Initialize(&Gpio, GPIO_EXAMPLE_DEVICE_ID);
+                                   ^
+make: *** [src/led_blink.o] Error 1
+12:11:23 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_0/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_0/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling coresightps_dcc
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_0/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpio
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_0/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling xadcps
+Finished building libraries
+12:11:31 **** Auto Build of configuration Debug for project led_blink ****
+make all 
+Building file: ../src/led_blink.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_blink.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/led_blink.d" -MT"src/led_blink.d" -o "src/led_blink.o" "../src/led_blink.c"
+../src/led_blink.c: In function 'main':
+../src/led_blink.c:76:33: error: 'XPAR_LEDS_POSITIONS_DEVICE_ID' undeclared (first use in this function)
+ #define GPIO_EXAMPLE_DEVICE_ID  XPAR_LEDS_POSITIONS_DEVICE_ID
+                                 ^
+../src/led_blink.c:151:35: note: in expansion of macro 'GPIO_EXAMPLE_DEVICE_ID'
+  Status = XGpio_Initialize(&Gpio, GPIO_EXAMPLE_DEVICE_ID);
+                                   ^
+../src/led_blink.c:76:33: note: each undeclared identifier is reported only once for each function it appears in
+ #define GPIO_EXAMPLE_DEVICE_ID  XPAR_LEDS_POSITIONS_DEVICE_ID
+                                 ^
+../src/led_blink.c:151:35: note: in expansion of macro 'GPIO_EXAMPLE_DEVICE_ID'
+  Status = XGpio_Initialize(&Gpio, GPIO_EXAMPLE_DEVICE_ID);
+                                   ^
+make: *** [src/led_blink.o] Error 1
+12:11:42 **** Auto Build of configuration Debug for project led_blink ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/led_blink.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_blink.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/led_blink.d" -MT"src/led_blink.d" -o "src/led_blink.o" "../src/led_blink.c"
+../src/led_blink.c: In function 'main':
+../src/led_blink.c:76:33: error: 'XPAR_LEDS_POSITIONS_DEVICE_ID' undeclared (first use in this function)
+ #define GPIO_EXAMPLE_DEVICE_ID  XPAR_LEDS_POSITIONS_DEVICE_ID
+                                 ^
+../src/led_blink.c:151:35: note: in expansion of macro 'GPIO_EXAMPLE_DEVICE_ID'
+  Status = XGpio_Initialize(&Gpio, GPIO_EXAMPLE_DEVICE_ID);
+                                   ^
+../src/led_blink.c:76:33: note: each undeclared identifier is reported only once for each function it appears in
+ #define GPIO_EXAMPLE_DEVICE_ID  XPAR_LEDS_POSITIONS_DEVICE_ID
+                                 ^
+../src/led_blink.c:151:35: note: in expansion of macro 'GPIO_EXAMPLE_DEVICE_ID'
+  Status = XGpio_Initialize(&Gpio, GPIO_EXAMPLE_DEVICE_ID);
+                                   ^
+make: *** [src/led_blink.o] Error 1
+12:13:53 **** Auto Build of configuration Debug for project led_blink ****
+make all 
+Building file: ../src/led_blink.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_blink.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/led_blink.d" -MT"src/led_blink.d" -o "src/led_blink.o" "../src/led_blink.c"
+Finished building: ../src/led_blink.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: led_blink.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "led_blink.elf"  ./src/helloworld.o ./src/led_blink.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: led_blink.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size led_blink.elf  |tee "led_blink.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24748	   1168	  22580	  48496	   bd70	led_blink.elf
+Finished building: led_blink.elf.size
+ 
+12:21:22 **** Auto Build of configuration Debug for project led_blink ****
+make all 
+Building file: ../src/led_blink.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_blink.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/led_blink.d" -MT"src/led_blink.d" -o "src/led_blink.o" "../src/led_blink.c"
+Finished building: ../src/led_blink.c
+ 
+Building target: led_blink.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "led_blink.elf"  ./src/helloworld.o ./src/led_blink.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: led_blink.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size led_blink.elf  |tee "led_blink.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24072	   1168	  22580	  47820	   bacc	led_blink.elf
+Finished building: led_blink.elf.size
+ 
+12:21:23 **** Incremental Build of configuration Debug for project led_blink ****
+make all 
+make: Nothing to be done for `all'.
+12:21:52 **** Incremental Build of configuration Debug for project led_blink ****
+make all 
+make: Nothing to be done for `all'.
+12:22:22 **** Auto Build of configuration Debug for project led_blink ****
+make all 
+Building file: ../src/led_blink.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_blink.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/led_blink.d" -MT"src/led_blink.d" -o "src/led_blink.o" "../src/led_blink.c"
+Finished building: ../src/led_blink.c
+ 
+Building target: led_blink.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "led_blink.elf"  ./src/helloworld.o ./src/led_blink.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: led_blink.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size led_blink.elf  |tee "led_blink.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24072	   1168	  22580	  47820	   bacc	led_blink.elf
+Finished building: led_blink.elf.size
+ 
+12:22:28 **** Incremental Build of configuration Debug for project led_blink ****
+make all 
+make: Nothing to be done for `all'.
+12:23:09 **** Auto Build of configuration Debug for project led_blink ****
+make all 
+Building file: ../src/led_blink.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_blink.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/led_blink.d" -MT"src/led_blink.d" -o "src/led_blink.o" "../src/led_blink.c"
+Finished building: ../src/led_blink.c
+ 
+Building target: led_blink.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "led_blink.elf"  ./src/helloworld.o ./src/led_blink.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: led_blink.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size led_blink.elf  |tee "led_blink.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24068	   1168	  22580	  47816	   bac8	led_blink.elf
+Finished building: led_blink.elf.size
+ 
+12:23:17 **** Incremental Build of configuration Debug for project led_blink ****
+make all 
+make: Nothing to be done for `all'.
+12:23:36 **** Incremental Build of configuration Debug for project led_blink ****
+make all 
+make: Nothing to be done for `all'.
+12:23:46 **** Incremental Build of configuration Debug for project led_blink ****
+make all 
+make: Nothing to be done for `all'.
+12:24:21 **** Auto Build of configuration Debug for project led_blink ****
+make all 
+Building file: ../src/led_blink.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_blink.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/led_blink.d" -MT"src/led_blink.d" -o "src/led_blink.o" "../src/led_blink.c"
+Finished building: ../src/led_blink.c
+ 
+Building target: led_blink.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "led_blink.elf"  ./src/helloworld.o ./src/led_blink.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: led_blink.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size led_blink.elf  |tee "led_blink.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24068	   1168	  22580	  47816	   bac8	led_blink.elf
+Finished building: led_blink.elf.size
+ 
+12:24:26 **** Incremental Build of configuration Debug for project led_blink ****
+make all 
+make: Nothing to be done for `all'.

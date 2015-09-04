@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:19:00 MDT 2015
+# 
+# Start of session at: Fri Sep  4 12:25:57 2015
+# Process ID: 1291
+# Log file: /media/huutan86/Data/source_code/ECE527/testing_code/demo_3/demo_3.sdk/webtalk/webtalk.log
+# Journal file: /media/huutan86/Data/source_code/ECE527/testing_code/demo_3/demo_3.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
