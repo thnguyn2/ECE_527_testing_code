@@ -1,0 +1,16 @@
+Vivado Simulator 2015.1
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2015.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_adder_top_top -prj adder_top.prj --lib ieee_proposed=./ieee_proposed -s adder_top 
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/parallels/source_code/ECE_527_testing_code/hls_demo/solution1/sim/verilog/adder_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/parallels/source_code/ECE_527_testing_code/hls_demo/solution1/sim/verilog/adder_top.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_adder_top_top
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.adder_top
+Compiling module xil_defaultlib.apatb_adder_top_top
+Built simulation snapshot adder_top

@@ -1,0 +1,3 @@
+verilog xil_defaultlib "adder_top.v"
+verilog xil_defaultlib "adder_top.autotb.v"
+

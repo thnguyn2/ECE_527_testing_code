@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="adder.c" path="/home/parallels/source_code/ECE_527_testing_code/hls_demo/.settings/adder.c"/>
+    <originFiles name="adder.h" path="/home/parallels/source_code/ECE_527_testing_code/hls_demo/.settings/adder.h"/>
+  </source>
+  <testbench>
+    <originFiles name="test_adder.c" path="/home/parallels/source_code/ECE_527_testing_code/hls_demo/.settings/test_adder.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,17 @@
+   Build using "/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/gcc/bin/g++"
+   Compiling apatb_adder_top.cpp
+   Compiling(apcc) adder.c_pre.c.tb.c
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.1/bin/unwrapped/lnx64.o/apcc'
+            for user 'root' on host 'ubuntu' (Linux_x86_64 version 3.13.0-63-generic) on Sun Sep 27 15:10:02 CDT 2015
+            in directory '/home/parallels/source_code/ECE_527_testing_code/hls_demo/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-1] APCC is done.
+   Compiling(apcc) test_adder.c_pre.c.tb.c
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.1/bin/unwrapped/lnx64.o/apcc'
+            for user 'root' on host 'ubuntu' (Linux_x86_64 version 3.13.0-63-generic) on Sun Sep 27 15:10:03 CDT 2015
+            in directory '/home/parallels/source_code/ECE_527_testing_code/hls_demo/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-1] APCC is done.
+   Generating cosim.tv.exe

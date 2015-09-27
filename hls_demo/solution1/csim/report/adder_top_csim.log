@@ -1,0 +1,17 @@
+   Compiling(apcc) ../../../.settings/test_adder.c in debug mode
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.1/bin/unwrapped/lnx64.o/apcc'
+            for user 'root' on host 'ubuntu' (Linux_x86_64 version 3.13.0-63-generic) on Sun Sep 27 15:57:02 CDT 2015
+            in directory '/home/parallels/source_code/ECE_527_testing_code/hls_demo/solution1/csim/build'
+../../../.settings/test_adder.c:9:19: error: too few arguments to function call, expected 4, have 2
+        c = adder_top(a,b);
+            ~~~~~~~~~    ^
+../../../.settings/adder.h:3:1: note: 'adder_top' declared here
+void adder_top(int a[1000], int b[1000], int c[1000], int n);
+^
+1 error generated.
+@E [APCC-1-1] clang compile failed: child process exited abnormally
+@E [APCC-1] ProcessSources failed
+@I [APCC-3] Tmp directory is /tmp/apcc_db_root/31481443387422751700
+@E [APCC-1] APCC failed.
+make: *** [obj/test_adder.o] Error 1
+@E [SIM-1] 'csim_design' failed: compilation error(s).
