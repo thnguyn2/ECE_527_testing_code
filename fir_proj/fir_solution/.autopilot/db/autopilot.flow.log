@@ -1,477 +1,308 @@
-@I [HLS-0] Workspace /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution opened at Sun Sep 27 14:31:51 CDT 2015
+@I [HLS-0] Workspace /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution opened at Sun Sep 27 18:42:19 CDT 2015
 @I [HLS-100] Command "config_clock -quiet -name default -period 10 -default=false "
 @I [SYN-201] Setting up clock 'default' with a period of 10ns.
-@I [HLS-100] Command 'config_clock' returned 0; elapsed 0.000112Total elapsed time: 0.369 sec.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 8.9e-05Total elapsed time: 0.203 sec.
 @I [HLS-100] Command "open_platform DefaultPlatform "
-@I [HLS-100] Command 'open_platform' returned 0; elapsed 0.000274Total elapsed time: 0.374 sec.
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 4.5e-05Total elapsed time: 0.203 sec.
 @I [HLS-100] Command "import_lib /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/zynq/zynq "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx.lib "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/xilinx_interface.lib "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/plb46.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00051Total elapsed time: 0.378 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000217Total elapsed time: 0.204 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/fsl.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00018Total elapsed time: 0.379 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000102Total elapsed time: 0.204 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/axi4.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00025Total elapsed time: 0.379 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000138Total elapsed time: 0.204 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/maxi.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000221Total elapsed time: 0.380 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000125Total elapsed time: 0.205 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/saxilite.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000165Total elapsed time: 0.380 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001699Total elapsed time: 0.380 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.7e-05Total elapsed time: 0.205 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000893Total elapsed time: 0.205 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/dsp48.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000168Total elapsed time: 0.381 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00021Total elapsed time: 0.205 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/xfir.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000159Total elapsed time: 0.381 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000113Total elapsed time: 0.206 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/dds_compiler.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000162Total elapsed time: 0.382 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.3e-05Total elapsed time: 0.206 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/xfft.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00014Total elapsed time: 0.382 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00439Total elapsed time: 0.385 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.8e-05Total elapsed time: 0.206 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002929Total elapsed time: 0.207 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx_old.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000518Total elapsed time: 0.386 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000545Total elapsed time: 0.208 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx_vivado.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000387Total elapsed time: 0.387 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000298Total elapsed time: 0.209 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx.hlp "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/target_info.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000231Total elapsed time: 0.392 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.1e-05Total elapsed time: 0.212 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/xilinx_interface.hlp "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/maxi.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000133Total elapsed time: 0.392 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.4e-05Total elapsed time: 0.212 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/saxilite.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000133Total elapsed time: 0.393 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00044Total elapsed time: 0.393 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.1e-05Total elapsed time: 0.212 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000215Total elapsed time: 0.212 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/dsp48.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000518Total elapsed time: 0.394 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002172Total elapsed time: 0.395 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000321Total elapsed time: 0.213 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001312Total elapsed time: 0.213 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/zynq/dsp48e1.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000234Total elapsed time: 0.395 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6e-05Total elapsed time: 0.213 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 7e-06Total elapsed time: 0.395 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 5e-06Total elapsed time: 0.213 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1.5e-05Total elapsed time: 0.395 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1.2e-05Total elapsed time: 0.214 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed medium "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 3e-06Total elapsed time: 0.395 sec.
-@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.011847Total elapsed time: 0.396 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 3e-06Total elapsed time: 0.214 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.008784Total elapsed time: 0.215 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/zynq/zynq.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000985Total elapsed time: 0.400 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001044Total elapsed time: 0.218 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000401Total elapsed time: 0.401 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000421Total elapsed time: 0.219 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001827Total elapsed time: 0.404 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001714Total elapsed time: 0.222 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/nativeAXI4.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002297Total elapsed time: 0.409 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002263Total elapsed time: 0.226 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004656Total elapsed time: 0.416 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007254Total elapsed time: 0.416 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005139Total elapsed time: 0.246 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007585Total elapsed time: 0.246 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007145Total elapsed time: 0.425 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006355Total elapsed time: 0.255 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005826Total elapsed time: 0.433 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006055Total elapsed time: 0.265 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.070827Total elapsed time: 0.509 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.066698Total elapsed time: 0.333 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/xfir.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/tps/tcl/tcllib1.11.1/struct/list.tcl "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00091Total elapsed time: 0.527 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001957Total elapsed time: 0.528 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000717Total elapsed time: 0.352 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001447Total elapsed time: 0.353 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/tps/tcl/tcllib1.11.1/math/bignum.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000636Total elapsed time: 0.537 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.028436Total elapsed time: 0.542 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000576Total elapsed time: 0.360 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.024521Total elapsed time: 0.366 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/dds_compiler.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002268Total elapsed time: 0.545 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003159Total elapsed time: 0.371 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000151Total elapsed time: 0.545 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.125809Total elapsed time: 0.545 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000156Total elapsed time: 0.371 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.118438Total elapsed time: 0.371 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00014Total elapsed time: 0.546 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.127301Total elapsed time: 0.546 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.127487Total elapsed time: 0.546 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000147Total elapsed time: 0.372 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.120083Total elapsed time: 0.372 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.120178Total elapsed time: 0.372 sec.
 @I [HLS-100] Command "open_platform DefaultPlatform "
-@I [HLS-100] Command 'open_platform' returned 0; elapsed 7e-06Total elapsed time: 0.547 sec.
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 6e-06Total elapsed time: 0.372 sec.
 @I [HLS-100] Command "import_lib /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/zynq/zynq_fpv6 "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx_fpv7.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001902Total elapsed time: 0.550 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002069Total elapsed time: 0.375 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx_fpv.hlp "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx.hlp "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/target_info.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000135Total elapsed time: 0.555 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000159Total elapsed time: 0.382 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/xilinx_interface.hlp "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/maxi.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 7.2e-05Total elapsed time: 0.556 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 7.7e-05Total elapsed time: 0.382 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/saxilite.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.6e-05Total elapsed time: 0.556 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000235Total elapsed time: 0.556 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 7.2e-05Total elapsed time: 0.382 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000258Total elapsed time: 0.382 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/dsp48.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000315Total elapsed time: 0.556 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001385Total elapsed time: 0.556 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001911Total elapsed time: 0.557 sec.
-@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.010682Total elapsed time: 0.559 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00043Total elapsed time: 0.383 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001763Total elapsed time: 0.383 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002391Total elapsed time: 0.383 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.012043Total elapsed time: 0.387 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/zynq/zynq_fpv6.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001428Total elapsed time: 0.562 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001667Total elapsed time: 0.562 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00129Total elapsed time: 0.389 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001405Total elapsed time: 0.389 sec.
 @I [HLS-100] Command "set_part xc7z020clg484-1 "
 @I [HLS-100] Command "add_library xilinx/zynq/zynq:xc7z020:clg484:-1 "
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 7e-06Total elapsed time: 0.567 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 5e-06Total elapsed time: 0.391 sec.
 @I [HLS-100] Command "license_exists VIVADO_HLS "
-@I [HLS-100] Command 'license_exists' returned 0; elapsed 6e-06Total elapsed time: 0.567 sec.
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 5e-06Total elapsed time: 0.391 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 4e-06Total elapsed time: 0.568 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 3e-06Total elapsed time: 0.392 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1.3e-05Total elapsed time: 0.568 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1.3e-05Total elapsed time: 0.392 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed slow "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 3e-06Total elapsed time: 0.568 sec.
-@I [HLS-100] Command 'add_library' returned 0; elapsed 0.002045Total elapsed time: 0.568 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 3e-06Total elapsed time: 0.392 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.001722Total elapsed time: 0.392 sec.
 @I [HLS-100] Command "add_library xilinx/zynq/zynq_fpv6 "
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 3e-06Total elapsed time: 0.569 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 2e-06Total elapsed time: 0.393 sec.
 @I [HLS-100] Command "license_exists VIVADO_HLS "
-@I [HLS-100] Command 'license_exists' returned 0; elapsed 5e-06Total elapsed time: 0.569 sec.
-@I [HLS-100] Command 'add_library' returned 0; elapsed 0.001021Total elapsed time: 0.569 sec.
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 4e-06Total elapsed time: 0.393 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.000877Total elapsed time: 0.393 sec.
 @I [HLS-10] Setting target device to 'xc7z020clg484-1'
-@I [HLS-100] Command 'set_part' returned 0; elapsed 0.00544Total elapsed time: 0.570 sec.
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.004482Total elapsed time: 0.394 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 3e-06Total elapsed time: 0.570 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 2e-06Total elapsed time: 0.394 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 7e-06Total elapsed time: 0.570 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 5e-06Total elapsed time: 0.394 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed slow "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 3e-06Total elapsed time: 0.570 sec.
-@I [HLS-100] Command 'open_solution' returned 0; elapsed 0.16384Total elapsed time: 0.571 sec.
-@I [HLS-100] Command "set_part xc7z020clg484-1 "
-@I [HLS-100] Command "add_library xilinx/zynq/zynq:xc7z020:clg484:-1 "
-@I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 5e-06Total elapsed time: 0.572 sec.
-@I [HLS-100] Command "license_exists VIVADO_HLS "
-@I [HLS-100] Command 'license_exists' returned 0; elapsed 5e-06Total elapsed time: 0.572 sec.
-@I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 3e-06Total elapsed time: 0.572 sec.
-@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 3.3e-05Total elapsed time: 0.573 sec.
-@I [HLS-100] Command "config_chip_info -quiet -speed slow "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 4e-06Total elapsed time: 0.573 sec.
-@I [HLS-100] Command 'add_library' returned 0; elapsed 0.001517Total elapsed time: 0.573 sec.
-@I [HLS-100] Command "add_library xilinx/zynq/zynq_fpv6 "
-@I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 3e-06Total elapsed time: 0.573 sec.
-@I [HLS-100] Command "license_exists VIVADO_HLS "
-@I [HLS-100] Command 'license_exists' returned 0; elapsed 4e-06Total elapsed time: 0.574 sec.
-@I [HLS-100] Command 'add_library' returned 0; elapsed 0.000817Total elapsed time: 0.574 sec.
-@I [HLS-100] Command 'set_part' returned 0; elapsed 0.00305Total elapsed time: 0.574 sec.
-@I [HLS-100] Command "create_clock -period 10 -name default "
-@I [HLS-100] Command "config_clock -quiet -name default -period 10 -default=false "
-@I [SYN-201] Setting up clock 'default' with a period of 10ns.
-@I [HLS-100] Command 'config_clock' returned 0; elapsed 5.3e-05Total elapsed time: 0.575 sec.
-@I [HLS-100] Command 'create_clock' returned 0; elapsed 0.000768Total elapsed time: 0.575 sec.
-@I [HLS-100] Command "source ./fir_proj/fir_solution/directives.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000135Total elapsed time: 0.575 sec.
-@I [HLS-100] Command "csynth_design "
-@I [HLS-100] Command "elaborate -effort=medium -skip_syncheck=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 "
-@I [HLS-10] Analyzing design file 'testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Introduction/lab1/fir.c' ... 
-@0 [HLS-0] Analyzing design file 'testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Introduction/lab1/fir.c' ... 
-@I [HLS-0] Compiling one TU...
-@I [HLS-0] 
-Checking before pre-process: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h  "testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Introduction/lab1/fir.c"  -o "/home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.pp.00.o"
-
-@I [HLS-100] Command "is_encrypted /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.pp.00.o "
-@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0.000163Total elapsed time: 0.759 sec.
-@I [HLS-0] Syntax Checker time: 0 seconds per iteration
-@I [HLS-0] 
-Source preprocessing: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/gcc" -hls -fno-exceptions  -D__llvm__  -CC -E "testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Introduction/lab1/fir.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h  -o "/home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.pp.0.c"
-
-@I [HLS-0] GCC PP time: 0 seconds per iteration
-@I [HLS-100] Command "list_core -type functional_unit "
-@I [HLS-100] Command 'list_core' returned 0; elapsed 0.000199Total elapsed time: 0.801 sec.
-@I [HLS-0] Marker-Pragma convertor: /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.pp.0.c /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.pp.0.c.ap-line.c /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.pp.0.c.ap-line.c.CXX 1
-@I [HLS-0] 
-Source processor: exec /opt/Xilinx/Vivado_HLS/2015.1/tps/lnx64/jre/bin/java -Xmx512m -classpath   "/opt/Xilinx/Vivado_HLS/2015.1/lib/classes/autopilot.sourceprocessor.jar:/opt/Xilinx/Vivado_HLS/2015.1/lib/classes/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar:/opt/Xilinx/Vivado_HLS/2015.1/lib/classes/org.eclipse.core.runtime_3.7.0.v20110110.jar:/opt/Xilinx/Vivado_HLS/2015.1/lib/classes/org.eclipse.equinox.common_3.6.0.v20110523.jar:/opt/Xilinx/Vivado_HLS/2015.1/lib/classes/com.ibm.icu_4.4.2.v20110208.jar:/opt/Xilinx/Vivado_HLS/2015.1/lib/classes/jargs.jar:/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/eclipse/plugins/org.eclipse.emf.common_2.10.0.v20140514-1158.jar:/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/eclipse/plugins/org.eclipse.emf.ecore_2.10.0.v20140514-1158.jar:/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.10.0.v20140514-1158.jar:/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar:/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "/home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.pp.0.c.ap-line.c"  -m "fir" -o "/home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.pp.0.c.ap-cdt.c" -c --pp --directive /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/fir_solution.directive --source /home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Introduction/lab1/fir.c --error /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db --funcunit "AddSub AddSub_DSP AddSubnS DAddSub_fulldsp DAddSub_nodsp DDiv DExp_fulldsp DExp_meddsp DExp_nodsp DLog_fulldsp DLog_meddsp DLog_nodsp DMul_fulldsp DMul_maxdsp DMul_meddsp DMul_nodsp DRSqrt DRecip DSqrt DivnS FAddSub_fulldsp FAddSub_nodsp FDiv FExp_fulldsp FExp_meddsp FExp_nodsp FLog_fulldsp FLog_meddsp FLog_nodsp FMul_fulldsp FMul_maxdsp FMul_meddsp FMul_nodsp FRSqrt_fulldsp FRSqrt_nodsp FRecip_fulldsp FRecip_nodsp FSqrt Mul Mul2S Mul3S Mul4S Mul5S Mul6S MulnS MuxnS" --ca --gf --df --pd --p2d /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db --sd --scff /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/.systemc_flag --ad
-
-@I [HLS-0] Marker-Pragma convertor: /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.pp.0.c.ap-cdt.c /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.pragma.0.c /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.pragma.0.c.ap-line.CXX 0
-@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/pragma.status.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.1e-05Total elapsed time: 1.908 sec.
-@I [HLS-0] CDT processor time: 1 seconds per iteration
-@I [HLS-0] Pragma handling time: 0 seconds per iteration
-@I [HLS-0] 
-Source preprocessing: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/gcc" -hls -fno-exceptions  -D__llvm__  -CC -E "/home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.pragma.1.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h  -o "/home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.pragma.2.c"
-
-@I [HLS-0] exec clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "/home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.g.bc"
-@I [HLS-10] Validating synthesis directives ...
-@0 [HLS-0] Validating synthesis directives ...
-@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/pragma.status.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.9e-05Total elapsed time: 2.151 sec.
-@I [HLS-0] Linking all ...
-@I [HLS-0] exec llvm-ld  "/home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.bc"  -disable-opt  -L/opt/Xilinx/Vivado_HLS/2015.1/lnx64/lib -lm_basic -o "/home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.o.pre"
-@I [HLS-0] Link time: 0 seconds per iteration
-@I [HLS-0] Linking all ...
-@I [HLS-0] exec llvm-ld  "/home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.g.bc"  -disable-opt  -L/opt/Xilinx/Vivado_HLS/2015.1/lnx64/lib -lm_basic -o "/home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.g.pre"
-@I [HLS-0] Link time: 0 seconds per iteration
-@I [HLS-100] Command "opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 "
-@I [HLS-100] Command "cleanup_all_models "
-@I [HLS-100] Command 'cleanup_all_models' returned 0; elapsed 1.7e-05Total elapsed time: 2.261 sec.
-@I [HLS-10] Starting code transformations ...
-@0 [HLS-0] Starting code transformations ...
-@I [HLS-0] std xform: transform -hls -share-std-xform -always-inline -promote-dbg-pointer  -interface-preproc  -scalarrepl -mem2reg -keep-read-access -instcombine -dce  -promote-dbg-pointer  -bitop-raise  -indvars -loop-simplify -xunroll  -constprop -instcombine -simplifycfg -indvars  -simplifycfg -dce -globaldce  -basicaa  -simplifycfg -mem2reg -globalopt  -global-constprop -deadargelim -instcombine -simplifycfg  -prune-eh -simplifycfg  -scalarrepl -instcombine -reassociate -licm  -simplifycfg -loop-simplify -indvars -instcombine  -simplifycfg -mem2reg -loop-simplify -indvars -instcombine  -gvn -gvn -instcombine -adce  -break-crit-edges  -simplifycfg -loop-delete  -global-array-opt -dce -dse -adce  -find-syn-modules -top fir  -deadargelim  -mem2reg -instcombine -dce  -presyn-prepare -auto-rom-infer  -interface-preproc  -syn-check -check-rec-only  -find-region -simplifycfg -func-extr -function-inline  -globaldce -mem2reg -instcombine -dce   -gvn -globaldce -adce -adse  -constprop -instcombine -bit-constprop  -instcombine -dce -simplifycfg -bitop-raise  -simplifycfg -dce -loop-delete -reassociate  -globalopt -global-privatize -mem2reg -dce  -global-constprop -pointer-simplify -constprop -dce  -func-inst -deadargelim  -promote-dbg-pointer  -norm-name   /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.g.0.bc -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.g.1.bc -f  -phase std-opt
-@I [HLS-0] Std xform time: 0 seconds per iteration
-@I [HLS-100] Command "is_encrypted /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.g.1.bc "
-@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 6.5e-05Total elapsed time: 2.340 sec.
-@I [HLS-10] Checking synthesizability ...
-@0 [HLS-0] Checking synthesizability ...
-@I [HLS-0] syn check 1/2: transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce  -mem2reg -instcombine -function-uniquify  -directive-preproc -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce  -array-normalize -instcombine -dce  -array-seg-normalize -instcombine -dce  -array-flatten -instcombine -dce  -array-burst -dce  -deadargelim -promote-global-argument  -function-inline -globaldce -dce  -doublePtrSimplify -doublePtrElim -dce  -doublePtrSimplify -promote-dbg-pointer  -dce -scalarrepl -dse -adse -instcombine  -ptrLegalization  -simplifycfg -dce -instcombine  -pointer-simplify -ptrArgReplace -dce -instcombine   -disaggr -scalarrepl -norm-name -dce  -mem2reg -instcombine -ptrLegalization   -simplifycfg -deadargelim  -instcombine -dce -inst-simplify -function-uniquify  -directive-preproc -function-uniquify -directive-preproc -mem2reg -dse -dce  -globaldce    /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.g.1.bc -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.g.2.prechk.bc -f
-@I [HLS-0] Syn check 1/2 time: 0 seconds per iteration
-@I [HLS-0] syn check 2/2: transform -syn-check   /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.g.2.prechk.bc -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.g.2.bc -f  -phase syn-check
-@I [HLS-0] Syn check 2/2 time: 0 seconds per iteration
-@I [HLS-0] Compiler optimizing ...
-@I [HLS-0] Share syncheck's 1.bc for syn flow: copy /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.g.1.bc to /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.o.1.bc
-@I [HLS-0] presyn 1: transform -hls -tmp /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db -type-info -function-uniquify  -directive-preproc -function-uniquify -directive-preproc -mem2reg -dse -dce  -disaggr -scalarrepl -norm-name -deadargelim  -mem2reg -instcombine -dce -auto-rom-infer -dce -function-uniquify  -directive-preproc -function-uniquify -directive-preproc -mem2reg -dse -dce  -func-buffer -dce -array-normalize  -func-legal -instcombine -gvn -constprop -dce   -ptrArgReplace -mem2reg -instcombine -dce  -array-seg-normalize -deadargelim  -instcombine -dce  -pointer-simplify -dce  -port-alignment -dce  -interface-preproc  -data-pack -instcombine -dce   -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -loop-simplify -indvars -instcombine  -gvn -loop-simplify -mem2reg -dce -simplifycfg  -find-region -instcombine  -auto-loop-pipeline  -inst-simplify  -interface-preproc  -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll  -constprop -instcombine -simplifycfg -indvars  -simplifycfg -dce -globaldce  -attach-range  -gvn -disable-agg-range -inst-simplify  -constprop -simplifycfg -dce  -pointer-simplify -dce  -globalopt -constprop -dce  -array-promote -constprop -instcombine -dce  -ptrArgReplace -mem2reg  -instcombine -simplifycfg -dce  -auto-par -instcombine -dce  -array-transform-check  -array-reshape -instcombine -simplifycfg -dce  -ptrArgReplace -deadargelim -mem2reg  -instcombine -simplifycfg -dce   -array-partition -instcombine -simplifycfg -dce  -ptrArgReplace -global-constprop -deadargelim -mem2reg  -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg  -instcombine -simplifycfg -dce   -globalopt -constprop -dce  -array-promote -constprop -instcombine -dce  -ptrArgReplace -mem2reg  -instcombine -simplifycfg -dce   -mem-intrinsic-preproc -dce  -global-privatize  -mem2reg -globaldce  -promote-global-argument  -ptrArgReplace -mem2reg -instcombine -dce  -globalopt -mergereturn -simplify-global-access -mem2reg -dce  -pointer-simplify -dce  -functionattrs  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -inst-simplify -dce -norm-name  -function-inline -globaldce  -func-inst -constprop -instcombine -simplifycfg -dce  -func-legal -dce   -directive-preproc -function-uniquify -directive-preproc -mem2reg -dse -dce  -loop-bound  -arraycheck -bitwidthmin -on-by-dataflow  -loop-delete -instcombine -simplifycfg -dce -loop-simplify -simplifycfg -loop-stream -instcombine -simplifycfg -dce -globaldce  -fs-prep-check-ap-stream -fs-prep-legalize-global -fs-prep-legalize-stream-variable  -function-stream -dce -globaldce  -array-streaming -instcombine -simplifycfg -dce    -group-axi-access    -simplifycfg -dce -loop-delete  -norm-name  /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.o.1.bc -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.o.1.tmp.bc -f
-@I [HLS-0] Presyn 1 time: 0 seconds per iteration
-@I [HLS-0] presyn 2: transform -hls -keep-callgraph -scalarrepl -mem2reg  -port-alignment -attach-range -dce  -pipe-mux-gen  -indvars -loop-bound  -inst-simplify -instcombine -dce  -merge-array-access -mem2reg -dce  -clean-region -mergereturn -if-conv  -instcombine -dce -constprop  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -scalarrepl -mem2reg  -global-constprop -deadargelim -deadargelim  -instcombine -dce -simplifycfg    -ptrArgReplace -mem2reg -function-inline  -globaldce -mem2reg -instcombine -dce -expr-balance  -instcombine -dce  -bitwidthmin  -directive-preproc  -inst-rectify -instcombine -dce  -functionattrs  -constprop -instcombine -bit-constprop  -simplify-global-access  -globalopt -globaldce  -inst-simplify -instcombine -elimdeaddata -dce  -loop-delete -simplifycfg   -norm-name /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.o.1.tmp.bc -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.o.2.bc -f  -phase presyn
-@I [HLS-0] Presyn 2 time: 0 seconds per iteration
-@I [HLS-100] Command "is_encrypted /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.o.2.bc "
-@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 5.6e-05Total elapsed time: 2.475 sec.
-@I [HLS-0] build ssdm: transform -hls -function-uniquify -auto-function-inline -globaldce  -ptrArgReplace -mem2reg -instcombine -dce  -loop-simplify -indvars -licm -loop-dep  -loop-bound -licm -loop-simplify -flattenloopnest  -array-flatten -gvn -instcombine -dce  -array-map -dce -func-legal  -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify   -array-burst -promote-global-argument -dce  -axi4-lower -array-seg-normalize  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm  -inst-simplify -dce  -globaldce -array-streaming -instcombine  -dce   -deadargelim -doublePtrSimplify  -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer  -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg  -instcombine  -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine  -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound  -loop-simplify -loop-preproc  -constprop -global-constprop -gvn -mem2reg -instcombine -dce  -loop-merge -dce  -bitwidthmin  -scalar-propagation  -interface-preproc -interface-gen  -deadargelim -directive-preproc -inst-simplify -dce  -gvn -mem2reg -instcombine -dce -adse  -loop-bound  -instcombine -cfgopt -simplifycfg -loop-simplify  -clean-region -io-protocol  -find-region -mem2reg  -loop-simplify -phi-opt -bitop-raise  -inst-simplify -inst-rectify -instcombine -adce -deadargelim  -cfgopt -simplifycfg -strip-dead-prototypes  -interface-lower -bitop-lower -intrinsic-lower  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa  -inst-simplify -simplifycfg   -mergereturn -inst-simplify -inst-rectify  -dce -bitop-lower  -loop-rewind -pointer-simplify -dce -cfgopt  -norm-name -legalize -read-loop-dep -dce -bitwidth   -cdfg-build  /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.o.2.bc -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.o.3.bc -f  -phase build-ssdm
-@I [HLS-0] Build ssdm time: 0 seconds per iteration
-@I [HLS-100] Command "is_encrypted /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.o.3.bc "
-@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 5.7e-05Total elapsed time: 2.553 sec.
-@I [HLS-0] Finish building internal data model.
-@I [HLS-100] Command 'opt_and_import_c' returned 0; elapsed 0.161493Total elapsed time: 2.570 sec.
-@I [HLS-111] Elapsed time: 0.553713 seconds; current memory usage: 53 MB.
-@I [HLS-100] Command 'elaborate' returned 0; elapsed 0.195697Total elapsed time: 2.571 sec.
-@I [HLS-100] Command "autosyn "
-@I [HLS-10] Starting hardware synthesis ...
-@0 [HLS-0] Starting hardware synthesis ...
-@I [HLS-0] Synthesizing C/C++ design ...
-@I [HLS-10] Synthesizing 'fir' ...
-@0 [HLS-0] Synthesizing 'fir' ...
-@I [HLS-100] Command "ap_set_top_model fir "
-@I [HLS-100] Command 'ap_set_top_model' returned 0; elapsed 3.4e-05Total elapsed time: 2.572 sec.
-@I [HLS-100] Command "get_model_list fir -filter all-wo-channel -topdown "
-@I [HLS-100] Command 'get_model_list' returned 0; elapsed 2.2e-05Total elapsed time: 2.572 sec.
-@I [HLS-100] Command "preproc_iomode -model fir "
-@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0.000225Total elapsed time: 2.574 sec.
-@I [HLS-100] Command "get_model_list fir -filter all-wo-channel "
-@I [HLS-100] Command 'get_model_list' returned 0; elapsed 2.8e-05Total elapsed time: 2.575 sec.
-@I [HLS-0] Model list for configure: fir
-@I [HLS-0] Configuring Module : fir ...
-@I [HLS-100] Command "set_default_model fir "
-@I [HLS-100] Command 'set_default_model' returned 0; elapsed 1.9e-05Total elapsed time: 2.575 sec.
-@I [HLS-100] Command "apply_spec_resource_limit fir "
-@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 9e-06Total elapsed time: 2.575 sec.
-@I [HLS-0] Model list for preprocess: fir
-@I [HLS-0] Preprocessing Module: fir ...
-@I [HLS-100] Command "set_default_model fir "
-@I [HLS-100] Command 'set_default_model' returned 0; elapsed 6e-06Total elapsed time: 2.575 sec.
-@I [HLS-100] Command "cdfg_preprocess -model fir "
-@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0.000866Total elapsed time: 2.579 sec.
-@I [HLS-100] Command "rtl_gen_preprocess fir "
-@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.000661Total elapsed time: 2.580 sec.
-@I [HLS-0] Model list for synthesis: fir
-@I [HLS-10] ----------------------------------------------------------------
-@0 [HLS-0] ----------------------------------------------------------------
-@I [HLS-10] -- Scheduling module 'fir' 
-@0 [HLS-0] -- Scheduling module 'fir' 
-@I [HLS-10] ----------------------------------------------------------------
-@0 [HLS-0] ----------------------------------------------------------------
-@I [HLS-100] Command "set_default_model fir "
-@I [HLS-100] Command 'set_default_model' returned 0; elapsed 1.5e-05Total elapsed time: 2.580 sec.
-@I [HLS-100] Command "schedule -model fir "
-@I [SCHED-11] Starting scheduling ...
-@I [SCHED-11] Finished scheduling.
-@I [HLS-100] Command 'schedule' returned 0; elapsed 0.039132Total elapsed time: 2.650 sec.
-@I [HLS-111] Elapsed time: 0.043102 seconds; current memory usage: 53.4 MB.
-@I [HLS-100] Command "report -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.verbose.sched.rpt -verbose -f "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.003061Total elapsed time: 2.661 sec.
-@I [HLS-100] Command "db_write -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.sched.adb -f "
-@I [HLS-100] Command 'db_write' returned 0; elapsed 0.002847Total elapsed time: 2.668 sec.
-@I [HLS-0] Finish scheduling fir.
-@I [HLS-10] ----------------------------------------------------------------
-@0 [HLS-0] ----------------------------------------------------------------
-@I [HLS-10] -- Exploring micro-architecture for module 'fir' 
-@0 [HLS-0] -- Exploring micro-architecture for module 'fir' 
-@I [HLS-10] ----------------------------------------------------------------
-@0 [HLS-0] ----------------------------------------------------------------
-@I [HLS-100] Command "set_default_model fir "
-@I [HLS-100] Command 'set_default_model' returned 0; elapsed 1.5e-05Total elapsed time: 2.669 sec.
-@I [HLS-100] Command "bind -model fir "
-@I [BIND-110] clear=
-@I [BIND-110] debug=
-@I [BIND-110] drf=
-@I [BIND-110] effort=
-@I [BIND-110] fast_refine=
-@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
-@I [BIND-110] global_opt=
-@I [BIND-110] gsearch=
-@I [BIND-110] help=
-@I [BIND-110] help-hidden=
-@I [BIND-110] min_mem_port=
-@I [BIND-110] min_op=
-@I [BIND-110] minreg=
-@I [BIND-110] ml=
-@I [BIND-110] model=fir
-@I [BIND-110] no_false_path=
-@I [BIND-110] no_min_op=
-@I [BIND-110] normalize=
-@I [BIND-110] quiet=
-@I [BIND-110] refine=
-@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
-@I [BIND-110] search=
-@I [BIND-110] tight_delay=
-@I [BIND-110] verbose=
-@I [BIND-110] wFF=
-@I [BIND-110] wFU=
-@I [BIND-110] wMUX=
-@I [BIND-110] wNET=
-@I [BIND-100] Starting micro-architecture generation ...
-@I [BIND-101] Performing variable lifetime analysis.
-@I [BIND-101] Exploring resource sharing.
-@I [BIND-101] Binding ...
-@I [BIND-100] Finished micro-architecture generation.
-@I [HLS-100] Command 'bind' returned 0; elapsed 0.005627Total elapsed time: 2.681 sec.
-@I [HLS-111] Elapsed time: 0.012529 seconds; current memory usage: 53.6 MB.
-@I [HLS-100] Command "report -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.verbose.bind.rpt -verbose -f "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.00821Total elapsed time: 2.691 sec.
-@I [HLS-100] Command "db_write -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.bind.adb -f "
-@I [HLS-100] Command 'db_write' returned 0; elapsed 0.002176Total elapsed time: 2.693 sec.
-@I [HLS-0] Finish binding fir.
-@I [HLS-100] Command "get_model_list fir -filter all-wo-channel "
-@I [HLS-100] Command 'get_model_list' returned 0; elapsed 1.1e-05Total elapsed time: 2.694 sec.
-@I [HLS-0] Preprocessing for RTLGen ...
-@I [HLS-100] Command "rtl_gen_preprocess fir "
-@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.000366Total elapsed time: 2.694 sec.
-@I [HLS-0] Model list for RTL generation: fir
-@I [HLS-10] ----------------------------------------------------------------
-@0 [HLS-0] ----------------------------------------------------------------
-@I [HLS-10] -- Generating RTL for module 'fir' 
-@0 [HLS-0] -- Generating RTL for module 'fir' 
-@I [HLS-10] ----------------------------------------------------------------
-@0 [HLS-0] ----------------------------------------------------------------
-@I [HLS-100] Command "create_rtl_model fir -vendor xilinx -mg_file /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.compgen.tcl "
-@I [RTGEN-500] Setting interface mode on port 'fir/y' to 'ap_vld'.
-@I [RTGEN-500] Setting interface mode on port 'fir/c' to 'ap_memory'.
-@I [RTGEN-500] Setting interface mode on port 'fir/x' to 'ap_none'.
-@I [RTGEN-500] Setting interface mode on function 'fir' to 'ap_ctrl_hs'.
-@I [RTGEN-100] Generating core module 'fir_mul_32s_32s_32_6': 1 instance(s).
-@I [RTGEN-100] Finished creating RTL model for 'fir'.
-@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.009122Total elapsed time: 2.712 sec.
-@I [HLS-111] Elapsed time: 0.020754 seconds; current memory usage: 53.9 MB.
-@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000246Total elapsed time: 2.713 sec.
-@I [HLS-100] Command "gen_rtl fir -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/syn/systemc/fir -synmodules fir "
-@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.001109Total elapsed time: 2.717 sec.
-@I [HLS-100] Command "gen_rtl fir -istop -style xilinx -f -lang vhdl -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/syn/vhdl/fir "
-@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.00438Total elapsed time: 2.725 sec.
-@I [HLS-100] Command "gen_rtl fir -istop -style xilinx -f -lang vlog -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/syn/verilog/fir "
-@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.004203Total elapsed time: 2.730 sec.
-@I [HLS-100] Command "export_constraint_db -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.constraint.tcl -f -tool general "
-@I [HLS-100] Command 'export_constraint_db' returned 0; elapsed 8e-05Total elapsed time: 2.730 sec.
-@I [HLS-100] Command "report -model fir -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.design.xml -verbose -f -dv "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.005359Total elapsed time: 2.736 sec.
-@I [HLS-100] Command "gen_tb_info fir -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir -p /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db "
-@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0.000262Total elapsed time: 2.736 sec.
-@I [HLS-100] Command "report -model fir -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/syn/report/fir_csynth.rpt -f "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.003578Total elapsed time: 2.740 sec.
-@I [HLS-100] Command "report -model fir -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/syn/report/fir_csynth.xml -f -x "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.002406Total elapsed time: 2.742 sec.
-@I [HLS-100] Command "report -model fir -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.verbose.rpt -verbose -f "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.010981Total elapsed time: 2.753 sec.
-@I [HLS-100] Command "db_write -model fir -o /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.adb -f "
-@I [HLS-100] Command 'db_write' returned 0; elapsed 0.006008Total elapsed time: 2.759 sec.
-@I [HLS-100] Command "sc_get_clocks fir "
-@I [HLS-100] Command 'sc_get_clocks' returned 0; elapsed 1e-05Total elapsed time: 2.767 sec.
-@I [HLS-100] Command "sc_get_portdomain fir "
-@I [HLS-100] Command 'sc_get_portdomain' returned 0; elapsed 2e-06Total elapsed time: 2.768 sec.
-@I [HLS-0] Model list for RTL component generation: fir
-@I [HLS-0] Handling components in module [fir] ... 
-@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.compgen.tcl "
-@I [HLS-0] Found component fir_mul_32s_32s_32_6.
-@I [HLS-0] Append model fir_mul_32s_32s_32_6
-@I [HLS-0] Found component fir_shift_reg.
-@I [HLS-0] Append model fir_shift_reg
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000315Total elapsed time: 2.769 sec.
-@I [HLS-0] Append model fir
-@I [HLS-0] Generating RTL model list ...
-@I [HLS-0] All models in this session: fir_mul_32s_32s_32_6 fir_shift_reg fir
-@I [HLS-0] To file: write model fir_mul_32s_32s_32_6
-@I [HLS-0] To file: write model fir_shift_reg
-@I [HLS-0] To file: write model fir
-@I [HLS-0] Finished generating RTL model list.
-
-
-@I [HLS-0] RTL Generation done.
-@I [HLS-0] CAS Generation done.
-@I [HLS-0] CBC Generation done.
-@I [HLS-100] Command "export_ssdm /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/a.export.ll "
-@I [HLS-100] Command 'export_ssdm' returned 0; elapsed 0.000134Total elapsed time: 2.769 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 2e-06Total elapsed time: 0.394 sec.
+@I [HLS-100] Command 'open_solution' returned 0; elapsed 0.152283Total elapsed time: 0.394 sec.
+@I [HLS-100] Command "cosim_design "
 @I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000124Total elapsed time: 2.772 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000111Total elapsed time: 0.395 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00012Total elapsed time: 0.399 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000185Total elapsed time: 0.409 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/generic/autopilot/common.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000522Total elapsed time: 2.778 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00102Total elapsed time: 2.778 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000609Total elapsed time: 0.412 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001205Total elapsed time: 0.412 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000303Total elapsed time: 2.779 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00032Total elapsed time: 0.412 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000673Total elapsed time: 2.780 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000708Total elapsed time: 0.413 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000109Total elapsed time: 2.780 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6e-05Total elapsed time: 0.413 sec.
 @I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000116Total elapsed time: 2.781 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000108Total elapsed time: 0.413 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/zynq/zynq.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001121Total elapsed time: 2.784 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000812Total elapsed time: 0.415 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000645Total elapsed time: 2.785 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000299Total elapsed time: 0.415 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001756Total elapsed time: 2.788 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001342Total elapsed time: 0.416 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/nativeAXI4.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002318Total elapsed time: 2.791 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001887Total elapsed time: 0.418 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004986Total elapsed time: 2.798 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007563Total elapsed time: 2.798 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004058Total elapsed time: 0.422 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006069Total elapsed time: 0.423 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00655Total elapsed time: 2.808 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006139Total elapsed time: 0.429 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00571Total elapsed time: 2.816 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.0051Total elapsed time: 0.434 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.071352Total elapsed time: 2.892 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.062451Total elapsed time: 0.497 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.023015Total elapsed time: 2.917 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.020707Total elapsed time: 0.518 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/dds_compiler.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00276Total elapsed time: 2.921 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002239Total elapsed time: 0.520 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000198Total elapsed time: 2.922 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.121535Total elapsed time: 2.922 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.0001Total elapsed time: 0.520 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.105752Total elapsed time: 0.520 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000159Total elapsed time: 2.923 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.123057Total elapsed time: 2.923 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.123195Total elapsed time: 2.923 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 7.9e-05Total elapsed time: 0.521 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.106912Total elapsed time: 0.521 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.106994Total elapsed time: 0.521 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/zynq/zynq_fpv6.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001457Total elapsed time: 2.926 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001635Total elapsed time: 2.926 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000981Total elapsed time: 0.522 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001065Total elapsed time: 0.522 sec.
 @I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000157Total elapsed time: 2.927 sec.
-@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000116Total elapsed time: 2.927 sec.
-@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000109Total elapsed time: 2.928 sec.
-@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.compgen.tcl "
-@I [RTMG-282] Generating pipelined core: 'fir_mul_32s_32s_32_6_MulnS_0'
-@I [RTMG-278] Implementing memory 'fir_shift_reg_ram' using distributed RAMs with power-on initialization.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.020229Total elapsed time: 2.953 sec.
-@I [HLS-10] Finished generating all RTL models.
-@0 [HLS-0] Finished generating all RTL models.
-@I [WSYSC-301] Generating RTL SystemC for 'fir'.
-@I [WVHDL-304] Generating RTL VHDL for 'fir'.
-@I [WVLOG-307] Generating RTL Verilog for 'fir'.
-@I [HLS-100] Command 'autosyn' returned 0; elapsed 0.27916Total elapsed time: 2.956 sec.
-@I [HLS-100] Command 'csynth_design' returned 0; elapsed 0.47501Total elapsed time: 2.956 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.647754Total elapsed time: 2.956 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000108Total elapsed time: 0.523 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000115Total elapsed time: 0.523 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000165Total elapsed time: 0.523 sec.
+@I [HLS-100] Command "is_encrypted /home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Introduction/lab1/fir_test.c "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 7.4e-05Total elapsed time: 0.527 sec.
+@I [HLS-100] Command "is_encrypted /home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Introduction/lab1/out.gold.dat "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 7.1e-05Total elapsed time: 0.528 sec.
+@I [HLS-100] Command "is_encrypted /home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Introduction/lab1/fir.c "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 2.4e-05Total elapsed time: 0.528 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.8e-05Total elapsed time: 0.528 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.6e-05Total elapsed time: 0.528 sec.
+@I [SIM-47] Using XSIM for RTL simulation.
+@I [SIM-14] Instrumenting C test bench ...
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000189Total elapsed time: 0.534 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000122Total elapsed time: 0.535 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000141Total elapsed time: 0.537 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 7.8e-05Total elapsed time: 0.537 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.1e-05Total elapsed time: 0.537 sec.
+@I [HLS-0] Marker-Pragma convertor: /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/./sim/autowrap/testbench/fir_test.c_pre.c /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/./sim/autowrap/testbench/fir_test.c_pre.c.line.c ./sim/autowrap/testbench/line.tmp 1
+@I [HLS-0] Marker-Pragma convertor: ./sim/autowrap/testbench/fir_test.c_pre.c.tb.c.line ./sim/autowrap/testbench/fir_test.c_pre.c.tb.c ./sim/autowrap/testbench/line.tmp 0
+@I [HLS-0] Marker-Pragma convertor: /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/./sim/autowrap/testbench/fir.c_pre.c /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/./sim/autowrap/testbench/fir.c_pre.c.line.c ./sim/autowrap/testbench/line.tmp 1
+@I [HLS-0] Marker-Pragma convertor: ./sim/autowrap/testbench/fir.c_pre.c.tb.c.line ./sim/autowrap/testbench/fir.c_pre.c.tb.c ./sim/autowrap/testbench/line.tmp 0
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000186Total elapsed time: 1.502 sec.
+@I [HLS-100] Command "source .run_sim.tcl "
+@I [SIM-302] Starting C TB testing ... 
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005864Total elapsed time: 4.509 sec.
+@I [SIM-333] Generating C post check test bench ...
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000148Total elapsed time: 4.514 sec.
+@I [SIM-12] Generating RTL test bench ...
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.4e-05Total elapsed time: 4.519 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 8e-05Total elapsed time: 4.520 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 7.5e-05Total elapsed time: 4.520 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.8e-05Total elapsed time: 4.520 sec.
+@I [HLS-100] Command "source ../tv/cdatafile/ref.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.7e-05Total elapsed time: 4.520 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 7.7e-05Total elapsed time: 4.520 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.4e-05Total elapsed time: 4.520 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.1e-05Total elapsed time: 4.521 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 7.7e-05Total elapsed time: 4.521 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.6e-05Total elapsed time: 4.523 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.7e-05Total elapsed time: 4.526 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 7.4e-05Total elapsed time: 4.526 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.9e-05Total elapsed time: 4.526 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000134Total elapsed time: 4.535 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.3e-05Total elapsed time: 4.536 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 7.7e-05Total elapsed time: 4.536 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 7.1e-05Total elapsed time: 4.536 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.8e-05Total elapsed time: 4.536 sec.
+@I [HLS-100] Command "source ../tv/cdatafile/ref.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.4e-05Total elapsed time: 4.536 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.1e-05Total elapsed time: 4.537 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.5e-05Total elapsed time: 4.537 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.7e-05Total elapsed time: 4.537 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.7e-05Total elapsed time: 4.537 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.2e-05Total elapsed time: 4.538 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 7.8e-05Total elapsed time: 4.541 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.9e-05Total elapsed time: 4.541 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/fir_proj/fir_solution/.autopilot/db/fir.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.7e-05Total elapsed time: 4.541 sec.
+@I [HLS-100] Command "source .run_sim.tcl "
+@I [HLS-100] Command "source check_sim.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.1e-05Total elapsed time: 4.559 sec.
+@I [HLS-100] Command "source .sim.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.2e-05Total elapsed time: 4.559 sec.
+@I [SIM-323] Starting verilog simulation. 
+@I [SIM-15] Starting XSIM ...
+@I [SIM-316] Starting C post checking ...
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016372Total elapsed time: 11.566 sec.
+@I [SIM-1000] *** C/RTL co-simulation finished: PASS ***
+@I [HLS-100] Command 'cosim_design' returned 0; elapsed 0.28964Total elapsed time: 11.576 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.443447Total elapsed time: 11.576 sec.
 @I [HLS-100] Command "cleanup_all "
-@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0.001243Total elapsed time: 2.962 sec.
+@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0.001673Total elapsed time: 11.611 sec.

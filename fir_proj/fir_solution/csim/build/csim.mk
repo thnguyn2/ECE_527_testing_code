@@ -74,7 +74,7 @@ AUTOCC := apcc
 
 $(ObjDir)/fir_test.o: ../../../../testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Introduction/lab1/fir_test.c $(ObjDir)/.dir
 	$(Echo) "   Compiling(apcc) ../../../../testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Introduction/lab1/fir_test.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(AUTOCC) -c -MMD   $(IFLAG) $(DFLAG)  $< -o $@ ; \
+	$(Verb)  $(AUTOCC) -c -MMD    $(IFLAG) $(DFLAG)  $< -o $@ ; \
 
 -include $(ObjDir)/fir_test.d
 
