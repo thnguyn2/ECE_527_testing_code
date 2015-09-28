@@ -1,0 +1,62 @@
+Comparing against output data 
+*******************************************
+PASS: The output matches the golden output!
+*******************************************
+Vivado Simulator 2015.1
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2015.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_fir_top -prj fir.prj --lib ieee_proposed=./ieee_proposed -s fir 
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/verilog/fir_mul_32s_32s_32_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_mul_32s_32s_32_3_Mul3S_0
+INFO: [VRFC 10-311] analyzing module fir_mul_32s_32s_32_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/verilog/fir_shift_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_shift_reg_ram
+INFO: [VRFC 10-311] analyzing module fir_shift_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/verilog/fir.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/verilog/fir.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_fir_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/verilog/AESL_automem_c.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_c
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fir_shift_reg_ram
+Compiling module xil_defaultlib.fir_shift_reg(DataWidth=32,Addre...
+Compiling module xil_defaultlib.fir_mul_32s_32s_32_3_Mul3S_0
+Compiling module xil_defaultlib.fir_mul_32s_32s_32_3(ID=1,NUM_ST...
+Compiling module xil_defaultlib.fir
+Compiling module xil_defaultlib.AESL_automem_c
+Compiling module xil_defaultlib.apatb_fir_top
+Built simulation snapshot fir
+
+****** Webtalk v2015.1 (64-bit)
+  **** SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+  **** IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source /home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/verilog/xsim.dir/fir/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/verilog/xsim.dir/fir/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Sep 27 19:05:54 2015. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2015.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Sep 27 19:05:54 2015...
+
+****** xsim v2015.1 (64-bit)
+  **** SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
+  **** IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/fir/xsim_script.tcl
+# xsim {fir} -maxdeltaid 10000 -tclbatch {fir.tcl}
+Vivado Simulator 2015.1
+Time resolution is 1 ps
+source fir.tcl
+## run all
+$finish called at time : 474935400 ps : File "/home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/verilog/fir.autotb.v" Line 329
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Sep 27 19:05:58 2015...
+Comparing against output data 
+*******************************************
+PASS: The output matches the golden output!
+*******************************************

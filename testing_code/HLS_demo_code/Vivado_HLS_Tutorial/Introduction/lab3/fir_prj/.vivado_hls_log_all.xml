@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTGEN-101] Register 'shift_reg_0' is power-on initialization." projectName="fir_prj" solutionName="solution3" date="2015-09-27T17:37:31.942-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'shift_reg_1' is power-on initialization." projectName="fir_prj" solutionName="solution3" date="2015-09-27T17:37:31.928-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'shift_reg_2' is power-on initialization." projectName="fir_prj" solutionName="solution3" date="2015-09-27T17:37:31.924-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'shift_reg_3' is power-on initialization." projectName="fir_prj" solutionName="solution3" date="2015-09-27T17:37:31.916-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'shift_reg_4' is power-on initialization." projectName="fir_prj" solutionName="solution3" date="2015-09-27T17:37:31.913-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'shift_reg_5' is power-on initialization." projectName="fir_prj" solutionName="solution3" date="2015-09-27T17:37:31.906-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'shift_reg_6' is power-on initialization." projectName="fir_prj" solutionName="solution3" date="2015-09-27T17:37:31.903-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'shift_reg_7' is power-on initialization." projectName="fir_prj" solutionName="solution3" date="2015-09-27T17:37:31.897-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'shift_reg_8' is power-on initialization." projectName="fir_prj" solutionName="solution3" date="2015-09-27T17:37:31.882-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'shift_reg_9' is power-on initialization." projectName="fir_prj" solutionName="solution3" date="2015-09-27T17:37:31.869-0700" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

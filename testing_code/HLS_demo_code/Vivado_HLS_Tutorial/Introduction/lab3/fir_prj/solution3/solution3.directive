@@ -1,0 +1,21 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="fir" label="" functionLabel="">
+            <pragma name="RESOURCE">
+                <option name="variable" value="c" positionalBoolean="4"/>
+                <option name="core" value="RAM_1P_BRAM"/>
+            </pragma>
+        </directive>
+        <directive functionName="fir" label="Shift_Accum_Loop" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="fir" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="shift_reg" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

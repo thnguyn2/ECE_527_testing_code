@@ -1,0 +1,6 @@
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.1/bin/unwrapped/lnx64.o/apcc'
+            for user 'root' on host 'ubuntu' (Linux_x86_64 version 3.13.0-63-generic) on Sun Sep 27 19:05:50 CDT 2015
+            in directory '/home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-1] APCC is done.

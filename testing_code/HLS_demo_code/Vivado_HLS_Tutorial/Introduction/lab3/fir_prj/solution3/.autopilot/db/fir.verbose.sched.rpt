@@ -1,0 +1,535 @@
+
+
+================================================================
+== Vivado HLS Report for 'fir'
+================================================================
+* Date:           Sun Sep 27 19:37:31 2015
+
+* Version:        2015.1 (Build 1215546 on Mon Apr 27 19:24:50 PM 2015)
+* Project:        fir_prj
+* Solution:       solution3
+* Product family: kintex7
+* Target device:  xc7k160tfbg484-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |  10.00|      8.43|        1.25|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   15|   15|   16|   16|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|Expression       |        -|      -|       -|       -|
+|FIFO             |        -|      -|       -|       -|
+|Instance         |        -|      -|       -|       -|
+|Memory           |        -|      -|       -|       -|
+|Multiplexer      |        -|      -|       -|       -|
+|Register         |        -|      -|       -|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |        0|      0|       0|       0|
++-----------------+---------+-------+--------+--------+
+|Available        |      650|    600|  202800|  101400|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |        0|      0|       0|       0|
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 16
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+* FSM state operations: 
+
+ <State 1>: 2.39ns
+ST_1: c_addr [1/1] 0.00ns
+:9  %c_addr = getelementptr [11 x i32]* %c, i64 0, i64 10
+
+ST_1: c_load [2/2] 2.39ns
+:10  %c_load = load i32* %c_addr, align 4
+
+
+ <State 2>: 2.39ns
+ST_2: c_load [1/2] 2.39ns
+:10  %c_load = load i32* %c_addr, align 4
+
+ST_2: c_addr_1 [1/1] 0.00ns
+:14  %c_addr_1 = getelementptr [11 x i32]* %c, i64 0, i64 9
+
+ST_2: c_load_1 [2/2] 2.39ns
+:15  %c_load_1 = load i32* %c_addr_1, align 4
+
+
+ <State 3>: 2.39ns
+ST_3: c_load_1 [1/2] 2.39ns
+:15  %c_load_1 = load i32* %c_addr_1, align 4
+
+ST_3: c_addr_2 [1/1] 0.00ns
+:19  %c_addr_2 = getelementptr [11 x i32]* %c, i64 0, i64 8
+
+ST_3: c_load_2 [2/2] 2.39ns
+:20  %c_load_2 = load i32* %c_addr_2, align 4
+
+
+ <State 4>: 8.43ns
+ST_4: shift_reg_9_load [1/1] 0.00ns
+:8  %shift_reg_9_load = load i32* @shift_reg_9, align 4
+
+ST_4: tmp_6 [3/3] 8.43ns
+:11  %tmp_6 = mul nsw i32 %c_load, %shift_reg_9_load
+
+ST_4: shift_reg_8_load [1/1] 0.00ns
+:12  %shift_reg_8_load = load i32* @shift_reg_8, align 16
+
+ST_4: stg_28 [1/1] 0.00ns
+:13  store i32 %shift_reg_8_load, i32* @shift_reg_9, align 4
+
+ST_4: tmp_6_1 [3/3] 8.43ns
+:16  %tmp_6_1 = mul nsw i32 %c_load_1, %shift_reg_8_load
+
+ST_4: c_load_2 [1/2] 2.39ns
+:20  %c_load_2 = load i32* %c_addr_2, align 4
+
+ST_4: c_addr_3 [1/1] 0.00ns
+:24  %c_addr_3 = getelementptr [11 x i32]* %c, i64 0, i64 7
+
+ST_4: c_load_3 [2/2] 2.39ns
+:25  %c_load_3 = load i32* %c_addr_3, align 4
+
+
+ <State 5>: 8.43ns
+ST_5: tmp_6 [2/3] 8.43ns
+:11  %tmp_6 = mul nsw i32 %c_load, %shift_reg_9_load
+
+ST_5: tmp_6_1 [2/3] 8.43ns
+:16  %tmp_6_1 = mul nsw i32 %c_load_1, %shift_reg_8_load
+
+ST_5: c_load_3 [1/2] 2.39ns
+:25  %c_load_3 = load i32* %c_addr_3, align 4
+
+ST_5: c_addr_4 [1/1] 0.00ns
+:29  %c_addr_4 = getelementptr [11 x i32]* %c, i64 0, i64 6
+
+ST_5: c_load_4 [2/2] 2.39ns
+:30  %c_load_4 = load i32* %c_addr_4, align 4
+
+
+ <State 6>: 8.43ns
+ST_6: tmp_6 [1/3] 8.43ns
+:11  %tmp_6 = mul nsw i32 %c_load, %shift_reg_9_load
+
+ST_6: tmp_6_1 [1/3] 8.43ns
+:16  %tmp_6_1 = mul nsw i32 %c_load_1, %shift_reg_8_load
+
+ST_6: c_load_4 [1/2] 2.39ns
+:30  %c_load_4 = load i32* %c_addr_4, align 4
+
+ST_6: c_addr_5 [1/1] 0.00ns
+:34  %c_addr_5 = getelementptr [11 x i32]* %c, i64 0, i64 5
+
+ST_6: c_load_5 [2/2] 2.39ns
+:35  %c_load_5 = load i32* %c_addr_5, align 4
+
+
+ <State 7>: 8.43ns
+ST_7: shift_reg_7_load [1/1] 0.00ns
+:17  %shift_reg_7_load = load i32* @shift_reg_7, align 4
+
+ST_7: stg_44 [1/1] 0.00ns
+:18  store i32 %shift_reg_7_load, i32* @shift_reg_8, align 16
+
+ST_7: tmp_6_2 [3/3] 8.43ns
+:21  %tmp_6_2 = mul nsw i32 %c_load_2, %shift_reg_7_load
+
+ST_7: shift_reg_6_load [1/1] 0.00ns
+:22  %shift_reg_6_load = load i32* @shift_reg_6, align 8
+
+ST_7: stg_47 [1/1] 0.00ns
+:23  store i32 %shift_reg_6_load, i32* @shift_reg_7, align 4
+
+ST_7: tmp_6_3 [3/3] 8.43ns
+:26  %tmp_6_3 = mul nsw i32 %c_load_3, %shift_reg_6_load
+
+ST_7: shift_reg_5_load [1/1] 0.00ns
+:27  %shift_reg_5_load = load i32* @shift_reg_5, align 4
+
+ST_7: stg_50 [1/1] 0.00ns
+:28  store i32 %shift_reg_5_load, i32* @shift_reg_6, align 8
+
+ST_7: tmp_6_4 [3/3] 8.43ns
+:31  %tmp_6_4 = mul nsw i32 %c_load_4, %shift_reg_5_load
+
+ST_7: c_load_5 [1/2] 2.39ns
+:35  %c_load_5 = load i32* %c_addr_5, align 4
+
+ST_7: c_addr_6 [1/1] 0.00ns
+:39  %c_addr_6 = getelementptr [11 x i32]* %c, i64 0, i64 4
+
+ST_7: c_load_6 [2/2] 2.39ns
+:40  %c_load_6 = load i32* %c_addr_6, align 4
+
+ST_7: tmp1 [1/1] 1.60ns
+:61  %tmp1 = add i32 %tmp_6_1, %tmp_6
+
+
+ <State 8>: 8.43ns
+ST_8: tmp_6_2 [2/3] 8.43ns
+:21  %tmp_6_2 = mul nsw i32 %c_load_2, %shift_reg_7_load
+
+ST_8: tmp_6_3 [2/3] 8.43ns
+:26  %tmp_6_3 = mul nsw i32 %c_load_3, %shift_reg_6_load
+
+ST_8: tmp_6_4 [2/3] 8.43ns
+:31  %tmp_6_4 = mul nsw i32 %c_load_4, %shift_reg_5_load
+
+ST_8: c_load_6 [1/2] 2.39ns
+:40  %c_load_6 = load i32* %c_addr_6, align 4
+
+ST_8: c_addr_7 [1/1] 0.00ns
+:44  %c_addr_7 = getelementptr [11 x i32]* %c, i64 0, i64 3
+
+ST_8: c_load_7 [2/2] 2.39ns
+:45  %c_load_7 = load i32* %c_addr_7, align 4
+
+
+ <State 9>: 8.43ns
+ST_9: tmp_6_2 [1/3] 8.43ns
+:21  %tmp_6_2 = mul nsw i32 %c_load_2, %shift_reg_7_load
+
+ST_9: tmp_6_3 [1/3] 8.43ns
+:26  %tmp_6_3 = mul nsw i32 %c_load_3, %shift_reg_6_load
+
+ST_9: tmp_6_4 [1/3] 8.43ns
+:31  %tmp_6_4 = mul nsw i32 %c_load_4, %shift_reg_5_load
+
+ST_9: c_load_7 [1/2] 2.39ns
+:45  %c_load_7 = load i32* %c_addr_7, align 4
+
+ST_9: c_addr_8 [1/1] 0.00ns
+:49  %c_addr_8 = getelementptr [11 x i32]* %c, i64 0, i64 2
+
+ST_9: c_load_8 [2/2] 2.39ns
+:50  %c_load_8 = load i32* %c_addr_8, align 4
+
+
+ <State 10>: 8.43ns
+ST_10: shift_reg_4_load [1/1] 0.00ns
+:32  %shift_reg_4_load = load i32* @shift_reg_4, align 16
+
+ST_10: stg_69 [1/1] 0.00ns
+:33  store i32 %shift_reg_4_load, i32* @shift_reg_5, align 4
+
+ST_10: tmp_6_5 [3/3] 8.43ns
+:36  %tmp_6_5 = mul nsw i32 %c_load_5, %shift_reg_4_load
+
+ST_10: shift_reg_3_load [1/1] 0.00ns
+:37  %shift_reg_3_load = load i32* @shift_reg_3, align 4
+
+ST_10: stg_72 [1/1] 0.00ns
+:38  store i32 %shift_reg_3_load, i32* @shift_reg_4, align 16
+
+ST_10: tmp_6_6 [3/3] 8.43ns
+:41  %tmp_6_6 = mul nsw i32 %c_load_6, %shift_reg_3_load
+
+ST_10: shift_reg_2_load [1/1] 0.00ns
+:42  %shift_reg_2_load = load i32* @shift_reg_2, align 8
+
+ST_10: stg_75 [1/1] 0.00ns
+:43  store i32 %shift_reg_2_load, i32* @shift_reg_3, align 4
+
+ST_10: tmp_6_7 [3/3] 8.43ns
+:46  %tmp_6_7 = mul nsw i32 %c_load_7, %shift_reg_2_load
+
+ST_10: c_load_8 [1/2] 2.39ns
+:50  %c_load_8 = load i32* %c_addr_8, align 4
+
+ST_10: c_addr_9 [1/1] 0.00ns
+:54  %c_addr_9 = getelementptr [11 x i32]* %c, i64 0, i64 1
+
+ST_10: c_load_9 [2/2] 2.39ns
+:55  %c_load_9 = load i32* %c_addr_9, align 4
+
+ST_10: tmp3 [1/1] 1.37ns
+:62  %tmp3 = add i32 %tmp_6_3, %tmp_6_4
+
+ST_10: tmp2 [1/1] 1.37ns
+:63  %tmp2 = add i32 %tmp3, %tmp_6_2
+
+
+ <State 11>: 8.43ns
+ST_11: tmp_6_5 [2/3] 8.43ns
+:36  %tmp_6_5 = mul nsw i32 %c_load_5, %shift_reg_4_load
+
+ST_11: tmp_6_6 [2/3] 8.43ns
+:41  %tmp_6_6 = mul nsw i32 %c_load_6, %shift_reg_3_load
+
+ST_11: tmp_6_7 [2/3] 8.43ns
+:46  %tmp_6_7 = mul nsw i32 %c_load_7, %shift_reg_2_load
+
+ST_11: c_load_9 [1/2] 2.39ns
+:55  %c_load_9 = load i32* %c_addr_9, align 4
+
+ST_11: c_addr_10 [1/1] 0.00ns
+:58  %c_addr_10 = getelementptr [11 x i32]* %c, i64 0, i64 0
+
+ST_11: c_load_10 [2/2] 2.39ns
+:59  %c_load_10 = load i32* %c_addr_10, align 4
+
+
+ <State 12>: 8.43ns
+ST_12: tmp_6_5 [1/3] 8.43ns
+:36  %tmp_6_5 = mul nsw i32 %c_load_5, %shift_reg_4_load
+
+ST_12: tmp_6_6 [1/3] 8.43ns
+:41  %tmp_6_6 = mul nsw i32 %c_load_6, %shift_reg_3_load
+
+ST_12: tmp_6_7 [1/3] 8.43ns
+:46  %tmp_6_7 = mul nsw i32 %c_load_7, %shift_reg_2_load
+
+ST_12: c_load_10 [1/2] 2.39ns
+:59  %c_load_10 = load i32* %c_addr_10, align 4
+
+
+ <State 13>: 8.43ns
+ST_13: x_read [1/1] 0.00ns
+:4  %x_read = call i32 @_ssdm_op_Read.ap_vld.i32(i32 %x) nounwind
+
+ST_13: shift_reg_1_load [1/1] 0.00ns
+:47  %shift_reg_1_load = load i32* @shift_reg_1, align 4
+
+ST_13: stg_94 [1/1] 0.00ns
+:48  store i32 %shift_reg_1_load, i32* @shift_reg_2, align 8
+
+ST_13: tmp_6_8 [3/3] 8.43ns
+:51  %tmp_6_8 = mul nsw i32 %c_load_8, %shift_reg_1_load
+
+ST_13: shift_reg_0_load [1/1] 0.00ns
+:52  %shift_reg_0_load = load i32* @shift_reg_0, align 16
+
+ST_13: stg_97 [1/1] 0.00ns
+:53  store i32 %shift_reg_0_load, i32* @shift_reg_1, align 4
+
+ST_13: tmp_6_9 [3/3] 8.43ns
+:56  %tmp_6_9 = mul nsw i32 %c_load_9, %shift_reg_0_load
+
+ST_13: stg_99 [1/1] 0.00ns
+:57  store i32 %x_read, i32* @shift_reg_0, align 16
+
+ST_13: tmp_6_s [3/3] 8.43ns
+:60  %tmp_6_s = mul nsw i32 %c_load_10, %x_read
+
+ST_13: tmp6 [1/1] 1.60ns
+:65  %tmp6 = add i32 %tmp_6_6, %tmp_6_7
+
+
+ <State 14>: 8.43ns
+ST_14: tmp_6_8 [2/3] 8.43ns
+:51  %tmp_6_8 = mul nsw i32 %c_load_8, %shift_reg_1_load
+
+ST_14: tmp_6_9 [2/3] 8.43ns
+:56  %tmp_6_9 = mul nsw i32 %c_load_9, %shift_reg_0_load
+
+ST_14: tmp_6_s [2/3] 8.43ns
+:60  %tmp_6_s = mul nsw i32 %c_load_10, %x_read
+
+
+ <State 15>: 8.43ns
+ST_15: tmp_6_8 [1/3] 8.43ns
+:51  %tmp_6_8 = mul nsw i32 %c_load_8, %shift_reg_1_load
+
+ST_15: tmp_6_9 [1/3] 8.43ns
+:56  %tmp_6_9 = mul nsw i32 %c_load_9, %shift_reg_0_load
+
+ST_15: tmp_6_s [1/3] 8.43ns
+:60  %tmp_6_s = mul nsw i32 %c_load_10, %x_read
+
+
+ <State 16>: 5.46ns
+ST_16: stg_108 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i32* %y) nounwind, !map !0
+
+ST_16: stg_109 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap([11 x i32]* %c) nounwind, !map !6
+
+ST_16: stg_110 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i32 %x) nounwind, !map !12
+
+ST_16: stg_111 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @str) nounwind
+
+ST_16: stg_112 [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecMemCore([11 x i32]* %c, [1 x i8]* @p_str, [12 x i8]* @p_str1, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_16: stg_113 [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecInterface(i32* %y, [7 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_16: stg_114 [1/1] 0.00ns
+:7  call void (...)* @_ssdm_op_SpecInterface(i32 %x, [7 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_16: tmp [1/1] 1.37ns
+:64  %tmp = add i32 %tmp2, %tmp1
+
+ST_16: tmp5 [1/1] 1.37ns
+:66  %tmp5 = add i32 %tmp6, %tmp_6_5
+
+ST_16: tmp8 [1/1] 1.37ns
+:67  %tmp8 = add i32 %tmp_6_9, %tmp_6_s
+
+ST_16: tmp7 [1/1] 1.37ns
+:68  %tmp7 = add i32 %tmp8, %tmp_6_8
+
+ST_16: tmp4 [1/1] 1.37ns
+:69  %tmp4 = add i32 %tmp7, %tmp5
+
+ST_16: acc_1_s [1/1] 1.37ns
+:70  %acc_1_s = add nsw i32 %tmp4, %tmp
+
+ST_16: stg_121 [1/1] 0.00ns
+:71  call void @_ssdm_op_Write.ap_vld.i32P(i32* %y, i32 %acc_1_s) nounwind
+
+ST_16: stg_122 [1/1] 0.00ns
+:72  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -50,6 +50,8 @@ void fir (
   coef_t c[N],
   data_t x
   ) {
+#pragma HLS INTERFACE ap_vld port=y
+#pragma HLS INTERFACE ap_vld port=x
 
 
 

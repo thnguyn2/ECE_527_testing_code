@@ -1,0 +1,312 @@
+
+
+================================================================
+== Vivado HLS Report for 'fir'
+================================================================
+* Date:           Sun Sep 27 19:18:29 2015
+
+* Version:        2015.1 (Build 1215546 on Mon Apr 27 19:24:50 PM 2015)
+* Project:        fir_prj
+* Solution:       solution2
+* Product family: kintex7
+* Target device:  xc7k160tfbg484-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |  10.00|      8.43|        1.25|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   78|   78|   79|   79|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                    |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Shift_Accum_Loop  |   77|   77|         7|          -|          -|    11|    no    |
+        +--------------------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|Expression       |        -|      -|       -|       -|
+|FIFO             |        -|      -|       -|       -|
+|Instance         |        -|      -|       -|       -|
+|Memory           |        -|      -|       -|       -|
+|Multiplexer      |        -|      -|       -|       -|
+|Register         |        -|      -|       -|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |        0|      0|       0|       0|
++-----------------+---------+-------+--------+--------+
+|Available        |      650|    600|  202800|  101400|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |        0|      0|       0|       0|
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 8
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!tmp)
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	2  / true
+* FSM state operations: 
+
+ <State 1>: 0.89ns
+ST_1: stg_9 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i32* %y) nounwind, !map !0
+
+ST_1: stg_10 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap([11 x i32]* %c) nounwind, !map !6
+
+ST_1: stg_11 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i32 %x) nounwind, !map !12
+
+ST_1: stg_12 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @str) nounwind
+
+ST_1: x_read [1/1] 0.00ns
+:4  %x_read = call i32 @_ssdm_op_Read.ap_vld.i32(i32 %x) nounwind
+
+ST_1: stg_14 [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecMemCore([11 x i32]* %c, [1 x i8]* @p_str, [12 x i8]* @p_str1, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_1: stg_15 [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecInterface(i32* %y, [7 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_1: stg_16 [1/1] 0.00ns
+:7  call void (...)* @_ssdm_op_SpecInterface(i32 %x, [7 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_1: stg_17 [1/1] 0.89ns
+:8  br label %1
+
+
+ <State 2>: 2.82ns
+ST_2: acc [1/1] 0.00ns
+:0  %acc = phi i32 [ 0, %0 ], [ %acc_1, %5 ]
+
+ST_2: i [1/1] 0.00ns
+:1  %i = phi i5 [ 10, %0 ], [ %i_1, %5 ]
+
+ST_2: i_cast [1/1] 0.00ns
+:2  %i_cast = sext i5 %i to i32
+
+ST_2: tmp [1/1] 0.00ns
+:3  %tmp = call i1 @_ssdm_op_BitSelect.i1.i5.i32(i5 %i, i32 4)
+
+ST_2: empty [1/1] 0.00ns
+:4  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 11, i64 11, i64 11) nounwind
+
+ST_2: stg_23 [1/1] 0.00ns
+:5  br i1 %tmp, label %6, label %2
+
+ST_2: stg_24 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @p_str3) nounwind
+
+ST_2: tmp_1 [1/1] 1.17ns
+:1  %tmp_1 = icmp eq i5 %i, 0
+
+ST_2: stg_26 [1/1] 0.00ns
+:2  br i1 %tmp_1, label %3, label %4
+
+ST_2: tmp_7 [1/1] 0.00ns
+:0  %tmp_7 = trunc i5 %i to i4
+
+ST_2: tmp_2 [1/1] 0.43ns
+:1  %tmp_2 = add i4 -1, %tmp_7
+
+ST_2: tmp_3 [1/1] 0.00ns
+:2  %tmp_3 = zext i4 %tmp_2 to i64
+
+ST_2: shift_reg_addr [1/1] 0.00ns
+:3  %shift_reg_addr = getelementptr inbounds [11 x i32]* @shift_reg, i64 0, i64 %tmp_3
+
+ST_2: data [2/2] 2.39ns
+:4  %data = load i32* %shift_reg_addr, align 4
+
+ST_2: stg_32 [1/1] 2.39ns
+:0  store i32 %x_read, i32* getelementptr inbounds ([11 x i32]* @shift_reg, i64 0, i64 0), align 16
+
+ST_2: stg_33 [1/1] 0.89ns
+:1  br label %5
+
+ST_2: stg_34 [1/1] 0.00ns
+:0  call void @_ssdm_op_Write.ap_vld.i32P(i32* %y, i32 %acc) nounwind
+
+ST_2: stg_35 [1/1] 0.00ns
+:1  ret void
+
+
+ <State 3>: 4.78ns
+ST_3: data [1/2] 2.39ns
+:4  %data = load i32* %shift_reg_addr, align 4
+
+ST_3: tmp_4 [1/1] 0.00ns
+:5  %tmp_4 = zext i32 %i_cast to i64
+
+ST_3: shift_reg_addr_1 [1/1] 0.00ns
+:6  %shift_reg_addr_1 = getelementptr inbounds [11 x i32]* @shift_reg, i64 0, i64 %tmp_4
+
+ST_3: stg_39 [1/1] 2.39ns
+:7  store i32 %data, i32* %shift_reg_addr_1, align 4
+
+ST_3: stg_40 [1/1] 0.89ns
+:8  br label %5
+
+ST_3: tmp_5 [1/1] 0.00ns
+:1  %tmp_5 = zext i32 %i_cast to i64
+
+ST_3: c_addr [1/1] 0.00ns
+:2  %c_addr = getelementptr [11 x i32]* %c, i64 0, i64 %tmp_5
+
+ST_3: c_load [2/2] 2.39ns
+:3  %c_load = load i32* %c_addr, align 4
+
+ST_3: i_1 [1/1] 1.24ns
+:6  %i_1 = add i5 %i, -1
+
+
+ <State 4>: 2.39ns
+ST_4: data1 [1/1] 0.00ns
+:0  %data1 = phi i32 [ %x_read, %3 ], [ %data, %4 ]
+
+ST_4: c_load [1/2] 2.39ns
+:3  %c_load = load i32* %c_addr, align 4
+
+
+ <State 5>: 8.43ns
+ST_5: tmp_6 [3/3] 8.43ns
+:4  %tmp_6 = mul nsw i32 %c_load, %data1
+
+
+ <State 6>: 8.43ns
+ST_6: tmp_6 [2/3] 8.43ns
+:4  %tmp_6 = mul nsw i32 %c_load, %data1
+
+
+ <State 7>: 8.43ns
+ST_7: tmp_6 [1/3] 8.43ns
+:4  %tmp_6 = mul nsw i32 %c_load, %data1
+
+
+ <State 8>: 1.60ns
+ST_8: acc_1 [1/1] 1.60ns
+:5  %acc_1 = add nsw i32 %tmp_6, %acc
+
+ST_8: stg_51 [1/1] 0.00ns
+:7  br label %1
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
