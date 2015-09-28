@@ -1,0 +1,23 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="adders_io" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_vld" value="" positionalBoolean="mode"/>
+                <option name="port" value="in1" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="adders_io" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_ack" value="" positionalBoolean="mode"/>
+                <option name="port" value="in2" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="adders_io" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_hs" value="" positionalBoolean="mode"/>
+                <option name="port" value="in_out1" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

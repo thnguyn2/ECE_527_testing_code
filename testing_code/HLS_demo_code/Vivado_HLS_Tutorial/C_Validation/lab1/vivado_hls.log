@@ -1,0 +1,13 @@
+@I [LIC-101] Checked out feature [VIVADO_HLS]
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.1/bin/unwrapped/lnx64.o/vivado_hls'
+            for user 'root' on host 'ubuntu' (Linux_x86_64 version 3.13.0-63-generic) on Sun Sep 27 21:50:58 CDT 2015
+            in directory '/home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/C_Validation/lab1'
+@I [HLS-10] Opening project '/home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/C_Validation/lab1/hamming_window_prj'.
+@I [HLS-10] Opening solution '/home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/C_Validation/lab1/hamming_window_prj/solution1'.
+@I [SYN-201] Setting up clock 'default' with a period of 5ns.
+@I [HLS-10] Setting target device to 'xc7k160tfbg484-1'
+   Compiling ../../../../hamming_window_test.c in debug mode
+   Compiling ../../../../hamming_window.c in debug mode
+   Generating csim.exe
+@I [SIM-1] CSim file generation done with 0 errors.
+@I [LIC-101] Checked in feature [VIVADO_HLS]

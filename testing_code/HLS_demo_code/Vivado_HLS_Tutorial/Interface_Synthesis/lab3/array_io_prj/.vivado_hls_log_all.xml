@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTGEN-101] Register 'acc_7' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2015-09-27T20:59:12.476-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_6' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2015-09-27T20:59:12.453-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_5' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2015-09-27T20:59:12.450-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_4' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2015-09-27T20:59:12.447-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_3' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2015-09-27T20:59:12.436-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_2' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2015-09-27T20:59:12.425-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_1' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2015-09-27T20:59:12.400-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_0' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2015-09-27T20:59:12.377-0700" type="Warning"/>
+        <logs message="@W [XFORM-105] Ignore complete array partition directive on 'd_i' (array_io.c:57) in dimension 1: conflict with memory core assignment directive.&#xA;." projectName="array_io_prj" solutionName="solution3" date="2015-09-27T20:59:10.915-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_7' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2015-09-27T20:39:58.991-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_6' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2015-09-27T20:39:58.968-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_5' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2015-09-27T20:39:58.953-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_4' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2015-09-27T20:39:58.950-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_3' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2015-09-27T20:39:58.945-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_2' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2015-09-27T20:39:58.912-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_1' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2015-09-27T20:39:58.904-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_0' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2015-09-27T20:39:58.885-0700" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

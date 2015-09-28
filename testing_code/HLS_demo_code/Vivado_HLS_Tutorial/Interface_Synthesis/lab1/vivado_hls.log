@@ -1,0 +1,22 @@
+@I [LIC-101] Checked out feature [VIVADO_HLS]
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.1/bin/unwrapped/lnx64.o/vivado_hls'
+            for user 'root' on host 'ubuntu' (Linux_x86_64 version 3.13.0-63-generic) on Sun Sep 27 22:15:42 CDT 2015
+            in directory '/home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Interface_Synthesis/lab1'
+@I [HLS-10] Opening project '/home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Interface_Synthesis/lab1/adders_prj'.
+@I [HLS-10] Opening solution '/home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Interface_Synthesis/lab1/adders_prj/solution2'.
+@I [SYN-201] Setting up clock 'default' with a period of 1ns.
+@I [HLS-10] Setting target device to 'xc7k160tfbg484-1'
+@E [SIM-345] Cosim only supports the following 'ap_ctrl_none' designs: (1) combinational designs; (2) pipelined design with task inteveral of 1; (3) designs with array streaming or hls_stream or AXI4 stream ports.
+@E [SIM-4] *** C/RTL co-simulation finished: FAIL ***
+command 'ap_source' returned error code
+    while executing
+"source /home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Interface_Synthesis/lab1/adders_prj/solution2/c..."
+    invoked from within
+"hls::main /home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Interface_Synthesis/lab1/adders_prj/solution..."
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"
+@I [LIC-101] Checked in feature [VIVADO_HLS]

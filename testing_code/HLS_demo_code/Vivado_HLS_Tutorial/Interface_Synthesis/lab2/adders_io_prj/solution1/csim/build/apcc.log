@@ -1,0 +1,5 @@
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.1/bin/unwrapped/lnx64.o/apcc'
+            for user 'root' on host 'ubuntu' (Linux_x86_64 version 3.13.0-63-generic) on Sun Sep 27 22:16:44 CDT 2015
+            in directory '/home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Interface_Synthesis/lab2/adders_io_prj/solution1/csim/build'
+@I [APCC-3] Tmp directory is /tmp/apcc_db_root/60971443410204228811
+@I [APCC-1] APCC is done.
