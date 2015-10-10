@@ -1,0 +1,384 @@
+
+
+================================================================
+== Vivado HLS Report for 'matrixmul'
+================================================================
+* Date:           Mon Sep 28 07:34:59 2015
+
+* Version:        2015.1 (Build 1215546 on Mon Apr 27 19:24:50 PM 2015)
+* Project:        matrixmul_prj
+* Solution:       solution2
+* Product family: kintex7
+* Target device:  xc7k160tfbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |  13.33|     10.57|        1.67|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   82|   82|   83|   83|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------+-----+-----+----------+-----------+-----------+------+----------+
+        |            |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Row_Col   |   81|   81|         9|          -|          -|     9|    no    |
+        | + Product  |    6|    6|         2|          2|          1|     3|    yes   |
+        +------------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|Expression       |        -|      -|       -|       -|
+|FIFO             |        -|      -|       -|       -|
+|Instance         |        -|      -|       -|       -|
+|Memory           |        -|      -|       -|       -|
+|Multiplexer      |        -|      -|       -|       -|
+|Register         |        -|      -|       -|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |        0|      0|       0|       0|
++-----------------+---------+-------+--------+--------+
+|Available        |      650|    600|  202800|  101400|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |        0|      0|       0|       0|
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 2, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 5
+* Pipeline: 1
+  Pipeline-0: II = 2, D = 2, States = { 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond_flatten)
+3 --> 
+	5  / (exitcond)
+	4  / (!exitcond)
+4 --> 
+	3  / true
+5 --> 
+	2  / true
+* FSM state operations: 
+
+ <State 1>: 1.08ns
+ST_1: stg_6 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap([9 x i8]* %a) nounwind, !map !0
+
+ST_1: stg_7 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap([9 x i8]* %b) nounwind, !map !6
+
+ST_1: stg_8 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap([9 x i16]* %res) nounwind, !map !10
+
+ST_1: stg_9 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecTopModule([10 x i8]* @str) nounwind
+
+ST_1: stg_10 [1/1] 1.08ns
+:4  br label %1
+
+
+ <State 2>: 5.90ns
+ST_2: indvar_flatten [1/1] 0.00ns
+:0  %indvar_flatten = phi i4 [ 0, %0 ], [ %indvar_flatten_next, %3 ]
+
+ST_2: i [1/1] 0.00ns
+:1  %i = phi i2 [ 0, %0 ], [ %i_mid2, %3 ]
+
+ST_2: j [1/1] 0.00ns
+:2  %j = phi i2 [ 0, %0 ], [ %j_1, %3 ]
+
+ST_2: exitcond_flatten [1/1] 1.24ns
+:3  %exitcond_flatten = icmp eq i4 %indvar_flatten, -7
+
+ST_2: indvar_flatten_next [1/1] 0.48ns
+:4  %indvar_flatten_next = add i4 %indvar_flatten, 1
+
+ST_2: stg_16 [1/1] 0.00ns
+:5  br i1 %exitcond_flatten, label %4, label %.reset
+
+ST_2: stg_17 [1/1] 0.00ns
+.reset:0  call void (...)* @_ssdm_op_SpecLoopName([8 x i8]* @str1)
+
+ST_2: empty_4 [1/1] 0.00ns
+.reset:1  %empty_4 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 9, i64 9, i64 9) nounwind
+
+ST_2: exitcond1 [1/1] 0.85ns
+.reset:2  %exitcond1 = icmp eq i2 %j, -1
+
+ST_2: j_mid2 [1/1] 0.84ns
+.reset:3  %j_mid2 = select i1 %exitcond1, i2 0, i2 %j
+
+ST_2: i_s [1/1] 0.48ns
+.reset:4  %i_s = add i2 %i, 1
+
+ST_2: i_mid2 [1/1] 0.84ns
+.reset:5  %i_mid2 = select i1 %exitcond1, i2 %i_s, i2 %i
+
+ST_2: stg_23 [1/1] 0.00ns
+.reset:6  call void (...)* @_ssdm_op_SpecLoopName([4 x i8]* @p_str1) nounwind
+
+ST_2: tmp_3 [1/1] 0.00ns
+.reset:7  %tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([4 x i8]* @p_str1) nounwind
+
+ST_2: tmp_trn5_cast [1/1] 0.00ns
+.reset:8  %tmp_trn5_cast = zext i2 %i_mid2 to i5
+
+ST_2: tmp_2_trn6_cast [1/1] 0.00ns
+.reset:9  %tmp_2_trn6_cast = zext i2 %j_mid2 to i6
+
+ST_2: tmp [1/1] 0.00ns
+.reset:10  %tmp = call i4 @_ssdm_op_BitConcatenate.i4.i2.i2(i2 %i_mid2, i2 0)
+
+ST_2: p_shl_cast [1/1] 0.00ns
+.reset:11  %p_shl_cast = zext i4 %tmp to i5
+
+ST_2: p_addr7 [1/1] 0.48ns
+.reset:12  %p_addr7 = sub i5 %p_shl_cast, %tmp_trn5_cast
+
+ST_2: p_addr7_cast [1/1] 0.00ns
+.reset:13  %p_addr7_cast = sext i5 %p_addr7 to i6
+
+ST_2: p_addr8 [1/1] 1.34ns
+.reset:14  %p_addr8 = add i6 %p_addr7_cast, %tmp_2_trn6_cast
+
+ST_2: p_addr8_cast [1/1] 0.00ns
+.reset:15  %p_addr8_cast = sext i6 %p_addr8 to i32
+
+ST_2: tmp_1 [1/1] 0.00ns
+.reset:16  %tmp_1 = zext i32 %p_addr8_cast to i64
+
+ST_2: res_addr [1/1] 0.00ns
+.reset:17  %res_addr = getelementptr [9 x i16]* %res, i64 0, i64 %tmp_1
+
+ST_2: stg_35 [1/1] 2.39ns
+.reset:18  store i16 0, i16* %res_addr, align 2
+
+ST_2: stg_36 [1/1] 1.08ns
+.reset:19  br label %2
+
+ST_2: stg_37 [1/1] 0.00ns
+:0  ret void
+
+
+ <State 3>: 4.21ns
+ST_3: k [1/1] 0.00ns
+:0  %k = phi i2 [ 0, %.reset ], [ %k_1, %ifBlock ]
+
+ST_3: exitcond [1/1] 0.85ns
+:1  %exitcond = icmp eq i2 %k, -1
+
+ST_3: k_1 [1/1] 0.48ns
+:2  %k_1 = add i2 %k, 1
+
+ST_3: stg_41 [1/1] 0.00ns
+:3  br i1 %exitcond, label %3, label %ifBlock
+
+ST_3: tmp_4_trn_cast1 [1/1] 0.00ns
+ifBlock:4  %tmp_4_trn_cast1 = zext i2 %k to i6
+
+ST_3: tmp_4_trn_cast [1/1] 0.00ns
+ifBlock:5  %tmp_4_trn_cast = zext i2 %k to i5
+
+ST_3: p_addr1 [1/1] 1.34ns
+ifBlock:6  %p_addr1 = add i6 %p_addr7_cast, %tmp_4_trn_cast1
+
+ST_3: p_addr1_cast [1/1] 0.00ns
+ifBlock:7  %p_addr1_cast = sext i6 %p_addr1 to i32
+
+ST_3: tmp_2 [1/1] 0.00ns
+ifBlock:8  %tmp_2 = zext i32 %p_addr1_cast to i64
+
+ST_3: a_addr [1/1] 0.00ns
+ifBlock:9  %a_addr = getelementptr [9 x i8]* %a, i64 0, i64 %tmp_2
+
+ST_3: a_load [2/2] 2.39ns
+ifBlock:10  %a_load = load i8* %a_addr, align 1
+
+ST_3: tmp_4 [1/1] 0.00ns
+ifBlock:12  %tmp_4 = call i4 @_ssdm_op_BitConcatenate.i4.i2.i2(i2 %k, i2 0)
+
+ST_3: p_shl9_cast [1/1] 0.00ns
+ifBlock:13  %p_shl9_cast = zext i4 %tmp_4 to i5
+
+ST_3: p_addr3 [1/1] 0.48ns
+ifBlock:14  %p_addr3 = sub i5 %p_shl9_cast, %tmp_4_trn_cast
+
+ST_3: p_addr3_cast [1/1] 0.00ns
+ifBlock:15  %p_addr3_cast = sext i5 %p_addr3 to i6
+
+ST_3: p_addr4 [1/1] 1.34ns
+ifBlock:16  %p_addr4 = add i6 %p_addr3_cast, %tmp_2_trn6_cast
+
+ST_3: p_addr4_cast [1/1] 0.00ns
+ifBlock:17  %p_addr4_cast = sext i6 %p_addr4 to i32
+
+ST_3: tmp_s [1/1] 0.00ns
+ifBlock:18  %tmp_s = zext i32 %p_addr4_cast to i64
+
+ST_3: b_addr [1/1] 0.00ns
+ifBlock:19  %b_addr = getelementptr [9 x i8]* %b, i64 0, i64 %tmp_s
+
+ST_3: b_load [2/2] 2.39ns
+ifBlock:20  %b_load = load i8* %b_addr, align 1
+
+ST_3: res_load [2/2] 2.39ns
+ifBlock:23  %res_load = load i16* %res_addr, align 2
+
+
+ <State 4>: 10.57ns
+ST_4: empty [1/1] 0.00ns
+ifBlock:0  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3) nounwind
+
+ST_4: stg_60 [1/1] 0.00ns
+ifBlock:1  call void (...)* @_ssdm_op_SpecLoopName([8 x i8]* @p_str2) nounwind
+
+ST_4: tmp_9 [1/1] 0.00ns
+ifBlock:2  %tmp_9 = call i32 (...)* @_ssdm_op_SpecRegionBegin([8 x i8]* @p_str2) nounwind
+
+ST_4: stg_62 [1/1] 0.00ns
+ifBlock:3  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str3) nounwind
+
+ST_4: a_load [1/2] 2.39ns
+ifBlock:10  %a_load = load i8* %a_addr, align 1
+
+ST_4: tmp_5 [1/1] 0.00ns
+ifBlock:11  %tmp_5 = sext i8 %a_load to i16
+
+ST_4: b_load [1/2] 2.39ns
+ifBlock:20  %b_load = load i8* %b_addr, align 1
+
+ST_4: tmp_6 [1/1] 0.00ns
+ifBlock:21  %tmp_6 = sext i8 %b_load to i16
+
+ST_4: tmp_7 [1/1] 2.84ns
+ifBlock:22  %tmp_7 = mul i16 %tmp_6, %tmp_5
+
+ST_4: res_load [1/2] 2.39ns
+ifBlock:23  %res_load = load i16* %res_addr, align 2
+
+ST_4: tmp_8 [1/1] 2.95ns
+ifBlock:24  %tmp_8 = add i16 %tmp_7, %res_load
+
+ST_4: stg_70 [1/1] 2.39ns
+ifBlock:25  store i16 %tmp_8, i16* %res_addr, align 2
+
+ST_4: empty_2 [1/1] 0.00ns
+ifBlock:26  %empty_2 = call i32 (...)* @_ssdm_op_SpecRegionEnd([8 x i8]* @p_str2, i32 %tmp_9) nounwind
+
+ST_4: stg_72 [1/1] 0.00ns
+ifBlock:27  br label %2
+
+
+ <State 5>: 0.48ns
+ST_5: empty_3 [1/1] 0.00ns
+:0  %empty_3 = call i32 (...)* @_ssdm_op_SpecRegionEnd([4 x i8]* @p_str1, i32 %tmp_3) nounwind
+
+ST_5: j_1 [1/1] 0.48ns
+:1  %j_1 = add i2 %j_mid2, 1
+
+ST_5: stg_75 [1/1] 0.00ns
+:2  br label %1
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

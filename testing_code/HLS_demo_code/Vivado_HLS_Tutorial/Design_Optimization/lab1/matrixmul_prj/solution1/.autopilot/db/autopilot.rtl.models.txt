@@ -1,0 +1,2 @@
+matrixmul_mac_muladd_8s_8s_16ns_16_1
+matrixmul

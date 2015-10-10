@@ -1,0 +1,11 @@
+================================================================
+  Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC
+  Version 2015.1
+  Build 1215546 on Mon Apr 27 19:24:50 PM 2015
+  Copyright (C) 2015 Xilinx Inc. All rights reserved.
+================================================================
+@I [HLS-10] Running '/opt/Xilinx/Vivado_HLS/2015.1/bin/unwrapped/lnx64.o/vivado_hls'
+            for user 'root' on host 'ubuntu' (Linux_x86_64 version 3.13.0-63-generic) on Mon Sep 28 13:07:44 CDT 2015
+            in directory '/home/parallels/source_code/ECE_527_testing_code/testing_code/HLS_demo_code/Vivado_HLS_Tutorial/Design_Optimization/lab2'
+@I [HLS-10] Bringing up Vivado HLS GUI ... 
+@W [HLS-40] The physical memory of this computer is too small to run AutoESL
