@@ -1,0 +1,79 @@
+{
+   guistr: "# # String gsaved with Nlview 6.4.12  2014-12-16 bk=1.3272 VDI=35 GEI=35 GUI=JA:1.8
+#  -string -flagsOSRD
+preplace port vga_hsync -pg 1 -y 1400 -defaultsOSRD
+preplace port vga_de -pg 1 -y 1460 -defaultsOSRD
+preplace port DDR -pg 1 -y 620 -defaultsOSRD
+preplace port xillybus_S_AXI -pg 1 -y 20 -defaultsOSRD
+preplace port clk_in -pg 1 -y 1400 -defaultsOSRD
+preplace port GPIO_0 -pg 1 -y 600 -defaultsOSRD
+preplace port user_clk -pg 1 -y 1210 -defaultsOSRD
+preplace port user_rden -pg 1 -y 1250 -defaultsOSRD
+preplace port vga_clk -pg 1 -y 1340 -defaultsOSRD
+preplace port xillybus_bus_clk -pg 1 -y 400 -defaultsOSRD
+preplace port xillybus_host_interrupt -pg 1 -y 460 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 640 -defaultsOSRD
+preplace port user_wren -pg 1 -y 1230 -defaultsOSRD
+preplace port xillybus_bus_rst_n -pg 1 -y 420 -defaultsOSRD
+preplace port user_irq -pg 1 -y 1260 -defaultsOSRD
+preplace port xillybus_M_AXI -pg 1 -y 50 -defaultsOSRD
+preplace port vga_vsync -pg 1 -y 1440 -defaultsOSRD
+preplace port USBIND_0 -pg 1 -y 660 -defaultsOSRD
+preplace portBus vga_green -pg 1 -y 1380 -defaultsOSRD
+preplace portBus vga_red -pg 1 -y 1420 -defaultsOSRD
+preplace portBus user_wstrb -pg 1 -y 1270 -defaultsOSRD
+preplace portBus user_wr_data -pg 1 -y 1290 -defaultsOSRD
+preplace portBus vga_blue -pg 1 -y 1360 -defaultsOSRD
+preplace portBus user_addr -pg 1 -y 1310 -defaultsOSRD
+preplace portBus user_rd_data -pg 1 -y 1280 -defaultsOSRD
+preplace inst xillybus_lite_0 -pg 1 -lvl 4 -y 1250 -defaultsOSRD
+preplace inst rst_processing_system7_0_100M -pg 1 -lvl 1 -y 920 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 3 -y 1040 -defaultsOSRD
+preplace inst xillyvga_0 -pg 1 -lvl 3 -y 1390 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 640 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 4 -y 650 -defaultsOSRD
+preplace inst xillybus_ip_0 -pg 1 -lvl 3 -y 210 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 4 1 N
+preplace netloc xillyvga_0_vga_red 1 3 2 N 1420 NJ
+preplace netloc xillyvga_0_vga_green 1 3 2 N 1380 NJ
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 1 900
+preplace netloc xillybus_lite_0_user_wstrb 1 4 1 N
+preplace netloc xillyvga_0_vga_hsync 1 3 2 N 1400 NJ
+preplace netloc xillyvga_0_vga_blue 1 3 2 1360 1370 NJ
+preplace netloc xillyvga_0_vga_vsync 1 3 2 N 1440 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 4 590 460 NJ 460 NJ 460 1920
+preplace netloc xillybus_lite_0_user_clk 1 4 1 N
+preplace netloc xillybus_lite_0_user_addr 1 4 1 N
+preplace netloc xillyvga_0_vga_de 1 3 2 N 1460 NJ
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 2 900 830 NJ
+preplace netloc clk_in_1 1 0 3 NJ 1400 NJ 1400 N
+preplace netloc xillyvga_0_vga_clk 1 3 2 1390 1360 NJ
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 3 590 1300 930 1250 NJ
+preplace netloc processing_system7_0_FCLK_RESET1_N 1 0 5 220 820 NJ 820 NJ 820 NJ 820 1910
+preplace netloc processing_system7_0_USBIND_0 1 4 1 N
+preplace netloc user_rd_data_1 1 0 4 NJ 1280 NJ 1280 NJ 1270 1350
+preplace netloc xillybus_ip_0_Interrupt 1 2 2 940 840 1350
+preplace netloc xlconcat_0_dout 1 3 1 1380
+preplace netloc xillybus_ip_0_xillybus_bus_rst_n 1 3 2 1370 420 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 4 1 N
+preplace netloc xillybus_ip_0_xillybus_S_AXI 1 3 2 1350 20 NJ
+preplace netloc user_irq_1 1 0 4 NJ 1260 NJ 1260 NJ 1260 1360
+preplace netloc xillybus_M_AXI_1 1 0 3 NJ 50 NJ 50 920
+preplace netloc xillyvga_0_m_axi 1 3 1 1370
+preplace netloc processing_system7_0_GPIO_0 1 4 1 N
+preplace netloc xillybus_ip_0_m_axi 1 3 1 1390
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 1 570
+preplace netloc xillybus_lite_0_user_wren 1 4 1 N
+preplace netloc xillybus_lite_0_user_wr_data 1 4 1 N
+preplace netloc xillybus_lite_0_user_rden 1 4 1 N
+preplace netloc xillybus_lite_0_host_interrupt 1 2 3 950 1240 NJ 1140 1910
+preplace netloc processing_system7_0_FCLK_CLK1 1 0 5 230 830 580 1290 920 690 1410 770 1920
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 1 910
+preplace netloc xillybus_ip_0_xillybus_bus_clk 1 3 2 1410 400 NJ
+preplace netloc xillybus_host_interrupt_1 1 0 3 NJ 460 NJ 270 N
+levelinfo -pg 1 200 400 750 1190 1690 1940
+",
+}
+{
+   da_axi4_cnt: "12",
+}
