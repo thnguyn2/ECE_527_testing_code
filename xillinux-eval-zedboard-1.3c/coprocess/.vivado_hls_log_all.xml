@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTGEN-101] Global array 'p_str5' will not be exposed as RTL port." projectName="coprocess" solutionName="example" date="2015-10-14T15:26:13.479-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'p_str4' will not be exposed as RTL port." projectName="coprocess" solutionName="example" date="2015-10-14T15:26:13.430-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'debug_out' will be exposed as RTL port." projectName="coprocess" solutionName="example" date="2015-10-14T15:26:13.407-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global scalar 'debug_ready' will be exposed as RTL port." projectName="coprocess" solutionName="example" date="2015-10-14T15:26:13.396-0700" type="Warning"/>
+        <logs message="@W [RTGEN-101] Global array 'p_str3' will not be exposed as RTL port." projectName="coprocess" solutionName="example" date="2015-10-14T15:26:13.373-0700" type="Warning"/>
+        <logs message="@W [SYN-107] Renaming port name 'xillybus_wrapper/out' to 'xillybus_wrapper/out_r' to avoid the conflict with HDL keywords or other object names." projectName="coprocess" solutionName="example" date="2015-10-14T15:26:12.086-0700" type="Warning"/>
+        <logs message="@W [SYN-107] Renaming port name 'xillybus_wrapper/in' to 'xillybus_wrapper/in_r' to avoid the conflict with HDL keywords or other object names." projectName="coprocess" solutionName="example" date="2015-10-14T15:26:12.068-0700" type="Warning"/>
+        <logs message="@W [SYN-103] Legalizing function name 'xillybus_wrapper_my_to_float&lt;31, 1>' to 'xillybus_wrapper_my_to_float_31_1_s'." projectName="coprocess" solutionName="example" date="2015-10-14T15:26:12.047-0700" type="Warning"/>
+        <logs message="@W [SYN-103] Legalizing function name 'xillybus_wrapper_big_mult_v3small&lt;71, 24, 17>' to 'xillybus_wrapper_big_mult_v3small_71_24_17_s'." projectName="coprocess" solutionName="example" date="2015-10-14T15:26:12.029-0700" type="Warning"/>
+        <logs message="@W [XFORM-562] Loop 'Loop-2' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:149) in function 'my_to_float&lt;31, 1>' has unknown bound because it has multiple exiting blocks." projectName="coprocess" solutionName="example" date="2015-10-14T15:26:12.022-0700" type="Warning"/>
+        <logs message="@W [XFORM-631] Renaming function 'hls::hotbm::my_to_float&lt;31, 1>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:113) into my_to_float&lt;31, 1>." projectName="coprocess" solutionName="example" date="2015-10-14T15:26:11.485-0700" type="Warning"/>
+        <logs message="@W [XFORM-631] Renaming function 'hls::big_mult_v3small&lt;71, 24, 17>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_big_mult.h:258:26) into big_mult_v3small&lt;71, 24, 17>." projectName="coprocess" solutionName="example" date="2015-10-14T15:26:11.131-0700" type="Warning"/>
+        <logs message="@W [SYNCHK-23] /wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:130: variable-indexed range selection may cause suboptimal QoR." projectName="coprocess" solutionName="example" date="2015-10-14T15:26:07.454-0700" type="Warning"/>
+        <logs message="@W [LIC-102] License feature [VIVADO_HLS] is expiring in 12 days." projectName="coprocess" solutionName="example" date="2015-10-14T15:25:49.484-0700" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

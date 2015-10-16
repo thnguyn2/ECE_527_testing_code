@@ -21,19 +21,16 @@ set_property webtalk.parent_dir /home/parallels/source_code/ECE_527_testing_code
 set_property parent.project_path /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/vivado/xillydemo.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
 set_property ip_repo_paths /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vivado-ip [current_project]
+add_files -quiet /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/vivado/xillydemo.runs/fifo_8x2048_synth_1/fifo_8x2048.dcp
+set_property used_in_implementation false [get_files /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/vivado/xillydemo.runs/fifo_8x2048_synth_1/fifo_8x2048.dcp]
 read_ip /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vga_fifo/vga_fifo.xci
 set_property used_in_implementation false [get_files -all /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vga_fifo/vga_fifo/vga_fifo_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vga_fifo/vga_fifo/vga_fifo.xdc]
 set_property used_in_implementation false [get_files -all /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vga_fifo/vga_fifo_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vga_fifo/vga_fifo.dcp]
 set_property is_locked true [get_files /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vga_fifo/vga_fifo.xci]
-
-read_ip /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/fifo_8x2048/fifo_8x2048.xci
-set_property used_in_implementation false [get_files -all /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/fifo_8x2048/fifo_8x2048/fifo_8x2048.xdc]
-set_property used_in_implementation false [get_files -all /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/fifo_8x2048/fifo_8x2048_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/fifo_8x2048/fifo_8x2048.dcp]
-set_property is_locked true [get_files /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/fifo_8x2048/fifo_8x2048.xci]
 
 read_ip /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/fifo_32x512/fifo_32x512.xci
 set_property used_in_implementation false [get_files -all /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/fifo_32x512/fifo_32x512/fifo_32x512.xdc]
@@ -56,6 +53,24 @@ read_verilog -library xil_defaultlib {
   /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/src/xillybus.v
   /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/src/xillybus_core.v
   /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/system.v
+  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_mux_8to1_sel3_1_1.v
+  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_p_str5.v
+  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_mux_16to1_sel4_1_1.v
+  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_my_to_float_31_1_s.v
+  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_mul_41s_24ns_41_4.v
+  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_hls_sin_cos_K2_V.v
+  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_p_str3.v
+  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper.v
+  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_hls_sin_cos_K1_V.v
+  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_hls_ref_4oPi_table_100_V.v
+  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_mul_32s_31ns_62_6.v
+  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_hls_sin_cos_K0_V.v
+  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_big_mult_v3small_71_24_17_s_pp_V.v
+  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_xilly_decprint_powers10.v
+  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_p_str4.v
+  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_big_mult_v3small_71_24_17_s.v
+  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_xilly_decprint.v
+  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_xilly_decprint_out.v
 }
 set_property edif_extra_search_paths /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/cores [current_fileset]
 read_xdc /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/xillydemo.xdc

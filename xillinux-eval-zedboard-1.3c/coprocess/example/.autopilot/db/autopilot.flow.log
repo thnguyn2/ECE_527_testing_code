@@ -1,0 +1,1005 @@
+@I [HLS-0] Workspace /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example opened at Wed Oct 14 17:25:49 CDT 2015
+@I [HLS-100] Command "config_clock -quiet -name default -period 10 -default=false "
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 6.7e-05Total elapsed time: 0.220 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 3.9e-05Total elapsed time: 0.221 sec.
+@I [HLS-100] Command "import_lib /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/zynq/zynq "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx.lib "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/xilinx_interface.lib "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/plb46.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00028Total elapsed time: 0.223 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/fsl.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000172Total elapsed time: 0.224 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/axi4.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000216Total elapsed time: 0.225 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/maxi.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000204Total elapsed time: 0.225 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/saxilite.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000175Total elapsed time: 0.226 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001395Total elapsed time: 0.226 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/dsp48.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000154Total elapsed time: 0.226 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/xfir.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000132Total elapsed time: 0.227 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/dds_compiler.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000135Total elapsed time: 0.228 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/xfft.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00012Total elapsed time: 0.228 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003611Total elapsed time: 0.230 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx_old.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000532Total elapsed time: 0.231 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx_vivado.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000357Total elapsed time: 0.232 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/target_info.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000168Total elapsed time: 0.237 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/xilinx_interface.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/maxi.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000128Total elapsed time: 0.238 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/saxilite.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000117Total elapsed time: 0.239 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000401Total elapsed time: 0.239 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/dsp48.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000464Total elapsed time: 0.240 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001938Total elapsed time: 0.240 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/zynq/dsp48e1.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000123Total elapsed time: 0.241 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 5e-06Total elapsed time: 0.241 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1.4e-05Total elapsed time: 0.241 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed medium "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 3e-06Total elapsed time: 0.241 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.010812Total elapsed time: 0.242 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000964Total elapsed time: 0.246 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.0004Total elapsed time: 0.247 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001713Total elapsed time: 0.250 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003667Total elapsed time: 0.256 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005122Total elapsed time: 0.264 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008998Total elapsed time: 0.264 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006974Total elapsed time: 0.274 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005991Total elapsed time: 0.284 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.068758Total elapsed time: 0.357 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/tps/tcl/tcllib1.11.1/struct/list.tcl "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00064Total elapsed time: 0.372 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001321Total elapsed time: 0.372 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/tps/tcl/tcllib1.11.1/math/bignum.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000707Total elapsed time: 0.380 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.024096Total elapsed time: 0.384 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/dds_compiler.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004298Total elapsed time: 0.390 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000245Total elapsed time: 0.390 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.123219Total elapsed time: 0.390 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000252Total elapsed time: 0.392 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.125554Total elapsed time: 0.393 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.125737Total elapsed time: 0.393 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 8e-06Total elapsed time: 0.393 sec.
+@I [HLS-100] Command "import_lib /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/zynq/zynq_fpv6 "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx_fpv7.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002351Total elapsed time: 0.396 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx_fpv.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/target_info.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000131Total elapsed time: 0.402 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/xilinx_interface.hlp "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/maxi.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 7.9e-05Total elapsed time: 0.403 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/saxilite.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.2e-05Total elapsed time: 0.403 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000274Total elapsed time: 0.403 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/dsp48.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00032Total elapsed time: 0.403 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001892Total elapsed time: 0.403 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002357Total elapsed time: 0.404 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.011963Total elapsed time: 0.406 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001141Total elapsed time: 0.409 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001295Total elapsed time: 0.409 sec.
+@I [HLS-100] Command "set_part xc7z020clg400-1 "
+@I [HLS-100] Command "add_library xilinx/zynq/zynq:xc7z020:clg400:-1 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 4e-06Total elapsed time: 0.413 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 6e-06Total elapsed time: 0.413 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 3e-06Total elapsed time: 0.413 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1e-05Total elapsed time: 0.414 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 2e-06Total elapsed time: 0.414 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.001767Total elapsed time: 0.414 sec.
+@I [HLS-100] Command "add_library xilinx/zynq/zynq_fpv6 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 4e-06Total elapsed time: 0.415 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 4e-06Total elapsed time: 0.415 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.001024Total elapsed time: 0.415 sec.
+@I [HLS-10] Setting target device to 'xc7z020clg400-1'
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.004899Total elapsed time: 0.415 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 3e-06Total elapsed time: 0.415 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1.2e-05Total elapsed time: 0.416 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 3e-06Total elapsed time: 0.416 sec.
+@I [HLS-100] Command "config_autosim -O=0 -coverage=false -ignore_init=0 -setup=0 -trace_level=none "
+@I [HLS-100] Command 'config_autosim' returned 0; elapsed 0.000469Total elapsed time: 0.416 sec.
+@I [HLS-100] Command "config_interface -all=ap_fifo -expose_global=1 "
+@I [HLS-100] Command 'config_interface' returned 0; elapsed 0.000367Total elapsed time: 0.417 sec.
+@I [HLS-100] Command 'open_solution' returned 0; elapsed 0.160644Total elapsed time: 0.417 sec.
+@I [HLS-100] Command "set_part xc7z020clg400-1 "
+@I [HLS-100] Command "add_library xilinx/zynq/zynq:xc7z020:clg400:-1 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 3e-06Total elapsed time: 0.418 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 5e-06Total elapsed time: 0.418 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 3e-06Total elapsed time: 0.419 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 9e-06Total elapsed time: 0.419 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 2e-06Total elapsed time: 0.419 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.001357Total elapsed time: 0.419 sec.
+@I [HLS-100] Command "add_library xilinx/zynq/zynq_fpv6 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 3e-06Total elapsed time: 0.419 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 3e-06Total elapsed time: 0.420 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.000818Total elapsed time: 0.420 sec.
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.002991Total elapsed time: 0.420 sec.
+@I [HLS-100] Command "create_clock -period 10 -name default "
+@I [HLS-100] Command "config_clock -quiet -name default -period 10 -default=false "
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 6.5e-05Total elapsed time: 0.421 sec.
+@I [HLS-100] Command 'create_clock' returned 0; elapsed 0.000711Total elapsed time: 0.421 sec.
+@I [HLS-100] Command "config_interface -all ap_fifo -expose_global "
+@I [HLS-100] Command 'config_interface' returned 0; elapsed 0.000393Total elapsed time: 0.422 sec.
+@I [HLS-100] Command "source ./coprocess/example/directives.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.9e-05Total elapsed time: 0.422 sec.
+@I [HLS-100] Command "csynth_design "
+@I [HLS-100] Command "elaborate -effort=medium -skip_syncheck=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 "
+@I [HLS-10] Analyzing design file 'coprocess/example/src/xilly_debug.c' ... 
+@0 [HLS-0] Analyzing design file 'coprocess/example/src/xilly_debug.c' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h  "coprocess/example/src/xilly_debug.c"  -o "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xilly_debug.pp.00.o"
+
+@I [HLS-100] Command "is_encrypted /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xilly_debug.pp.00.o "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 7.8e-05Total elapsed time: 0.559 sec.
+@I [HLS-0] Syntax Checker time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/gcc" -hls -fno-exceptions  -D__llvm__  -CC -E "coprocess/example/src/xilly_debug.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h  -o "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xilly_debug.pp.0.c"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-100] Command "list_core -type functional_unit "
+@I [HLS-100] Command 'list_core' returned 0; elapsed 0.000124Total elapsed time: 0.599 sec.
+@I [HLS-0] Marker-Pragma convertor: /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xilly_debug.pp.0.c /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xilly_debug.pp.0.c.ap-line.c /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xilly_debug.pp.0.c.ap-line.c.CXX 1
+@I [HLS-0] 
+Source processor: exec /opt/Xilinx/Vivado_HLS/2015.1/tps/lnx64/jre/bin/java -Xmx512m -classpath   "/opt/Xilinx/Vivado_HLS/2015.1/lib/classes/autopilot.sourceprocessor.jar:/opt/Xilinx/Vivado_HLS/2015.1/lib/classes/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar:/opt/Xilinx/Vivado_HLS/2015.1/lib/classes/org.eclipse.core.runtime_3.7.0.v20110110.jar:/opt/Xilinx/Vivado_HLS/2015.1/lib/classes/org.eclipse.equinox.common_3.6.0.v20110523.jar:/opt/Xilinx/Vivado_HLS/2015.1/lib/classes/com.ibm.icu_4.4.2.v20110208.jar:/opt/Xilinx/Vivado_HLS/2015.1/lib/classes/jargs.jar:/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/eclipse/plugins/org.eclipse.emf.common_2.10.0.v20140514-1158.jar:/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/eclipse/plugins/org.eclipse.emf.ecore_2.10.0.v20140514-1158.jar:/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.10.0.v20140514-1158.jar:/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar:/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xilly_debug.pp.0.c.ap-line.c"  -m "xillybus_wrapper" -o "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xilly_debug.pp.0.c.ap-cdt.c" -c --pp --directive /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/example.directive --source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/src/xilly_debug.c --error /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db --funcunit "AddSub AddSub_DSP AddSubnS DAddSub_fulldsp DAddSub_nodsp DDiv DExp_fulldsp DExp_meddsp DExp_nodsp DLog_fulldsp DLog_meddsp DLog_nodsp DMul_fulldsp DMul_maxdsp DMul_meddsp DMul_nodsp DRSqrt DRecip DSqrt DivnS FAddSub_fulldsp FAddSub_nodsp FDiv FExp_fulldsp FExp_meddsp FExp_nodsp FLog_fulldsp FLog_meddsp FLog_nodsp FMul_fulldsp FMul_maxdsp FMul_meddsp FMul_nodsp FRSqrt_fulldsp FRSqrt_nodsp FRecip_fulldsp FRecip_nodsp FSqrt Mul Mul2S Mul3S Mul4S Mul5S Mul6S MulnS MuxnS" --ca --gf --df --pd --p2d /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db --sd --scff /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/.systemc_flag --ad
+
+@I [HLS-0] Marker-Pragma convertor: /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xilly_debug.pp.0.c.ap-cdt.c /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xilly_debug.pragma.0.c /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xilly_debug.pragma.0.c.ap-line.CXX 0
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.7e-05Total elapsed time: 1.368 sec.
+@I [HLS-0] CDT processor time: 0 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/gcc" -hls -fno-exceptions  -D__llvm__  -CC -E "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xilly_debug.pragma.1.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h  -o "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xilly_debug.pragma.2.c"
+
+@I [HLS-0] exec clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xilly_debug.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xilly_debug.g.bc"
+@I [HLS-10] Analyzing design file 'coprocess/example/src/main.c' ... 
+@0 [HLS-0] Analyzing design file 'coprocess/example/src/main.c' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h  "coprocess/example/src/main.c"  -o "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/main.pp.00.o"
+
+@I [HLS-100] Command "is_encrypted /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/main.pp.00.o "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 5.8e-05Total elapsed time: 1.520 sec.
+@I [HLS-0] Syntax Checker time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/gcc" -hls -fno-exceptions  -D__llvm__  -CC -E "coprocess/example/src/main.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h  -o "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/main.pp.0.c"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-100] Command "list_core -type functional_unit "
+@I [HLS-100] Command 'list_core' returned 0; elapsed 0.000145Total elapsed time: 1.561 sec.
+@I [HLS-0] Marker-Pragma convertor: /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/main.pp.0.c /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/main.pp.0.c.ap-line.c /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/main.pp.0.c.ap-line.c.CXX 1
+@I [HLS-0] 
+Source processor: exec /opt/Xilinx/Vivado_HLS/2015.1/tps/lnx64/jre/bin/java -Xmx512m -classpath   "/opt/Xilinx/Vivado_HLS/2015.1/lib/classes/autopilot.sourceprocessor.jar:/opt/Xilinx/Vivado_HLS/2015.1/lib/classes/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar:/opt/Xilinx/Vivado_HLS/2015.1/lib/classes/org.eclipse.core.runtime_3.7.0.v20110110.jar:/opt/Xilinx/Vivado_HLS/2015.1/lib/classes/org.eclipse.equinox.common_3.6.0.v20110523.jar:/opt/Xilinx/Vivado_HLS/2015.1/lib/classes/com.ibm.icu_4.4.2.v20110208.jar:/opt/Xilinx/Vivado_HLS/2015.1/lib/classes/jargs.jar:/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/eclipse/plugins/org.eclipse.emf.common_2.10.0.v20140514-1158.jar:/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/eclipse/plugins/org.eclipse.emf.ecore_2.10.0.v20140514-1158.jar:/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.10.0.v20140514-1158.jar:/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar:/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/main.pp.0.c.ap-line.c"  -m "xillybus_wrapper" -o "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/main.pp.0.c.ap-cdt.c" -c --pp --directive /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/example.directive --source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/src/main.c --error /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db --funcunit "AddSub AddSub_DSP AddSubnS DAddSub_fulldsp DAddSub_nodsp DDiv DExp_fulldsp DExp_meddsp DExp_nodsp DLog_fulldsp DLog_meddsp DLog_nodsp DMul_fulldsp DMul_maxdsp DMul_meddsp DMul_nodsp DRSqrt DRecip DSqrt DivnS FAddSub_fulldsp FAddSub_nodsp FDiv FExp_fulldsp FExp_meddsp FExp_nodsp FLog_fulldsp FLog_meddsp FLog_nodsp FMul_fulldsp FMul_maxdsp FMul_meddsp FMul_nodsp FRSqrt_fulldsp FRSqrt_nodsp FRecip_fulldsp FRecip_nodsp FSqrt Mul Mul2S Mul3S Mul4S Mul5S Mul6S MulnS MuxnS" --ca --gf --df --pd --p2d /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db --sd --scff /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/.systemc_flag --ad
+
+@I [HLS-0] Marker-Pragma convertor: /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/main.pp.0.c.ap-cdt.c /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/main.pragma.0.c /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/main.pragma.0.c.ap-line.CXX 0
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.2e-05Total elapsed time: 2.393 sec.
+@I [HLS-0] CDT processor time: 0 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/gcc" -hls -fno-exceptions  -D__llvm__  -CC -E "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/main.pragma.1.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h  -o "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/main.pragma.2.c"
+
+@I [HLS-0] exec clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado_HLS/2015.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/main.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2015.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/main.g.bc"
+@I [HLS-10] Validating synthesis directives ...
+@0 [HLS-0] Validating synthesis directives ...
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 4.3e-05Total elapsed time: 2.506 sec.
+@I [HLS-0] Linking all ...
+@I [HLS-0] exec llvm-ld  "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xilly_debug.bc" "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/main.bc"  -disable-opt  -L/opt/Xilinx/Vivado_HLS/2015.1/lnx64/lib -lm_basic -o "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.o.pre"
+@I [HLS-0] Link time: 2 seconds per iteration
+@I [HLS-0] Linking all ...
+@I [HLS-0] exec llvm-ld  "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xilly_debug.g.bc" "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/main.g.bc"  -disable-opt  -L/opt/Xilinx/Vivado_HLS/2015.1/lnx64/lib -lm_basic -o "/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.g.pre"
+@I [HLS-0] Link time: 2 seconds per iteration
+@I [HLS-100] Command "opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 "
+@I [HLS-100] Command "cleanup_all_models "
+@I [HLS-100] Command 'cleanup_all_models' returned 0; elapsed 1.2e-05Total elapsed time: 8.216 sec.
+@I [HLS-10] Starting code transformations ...
+@0 [HLS-0] Starting code transformations ...
+@I [HLS-0] std xform: transform -hls -share-std-xform -always-inline -promote-dbg-pointer  -interface-preproc  -scalarrepl -mem2reg -keep-read-access -instcombine -dce  -promote-dbg-pointer  -bitop-raise  -indvars -loop-simplify -xunroll  -constprop -instcombine -simplifycfg -indvars  -simplifycfg -dce -globaldce  -basicaa  -simplifycfg -mem2reg -globalopt  -global-constprop -deadargelim -instcombine -simplifycfg  -prune-eh -simplifycfg  -scalarrepl -instcombine -reassociate -licm  -simplifycfg -loop-simplify -indvars -instcombine  -simplifycfg -mem2reg -loop-simplify -indvars -instcombine  -gvn -gvn -instcombine -adce  -break-crit-edges  -simplifycfg -loop-delete  -global-array-opt -dce -dse -adce  -find-syn-modules -top xillybus_wrapper  -deadargelim  -mem2reg -instcombine -dce  -presyn-prepare -auto-rom-infer  -interface-preproc  -syn-check -check-rec-only  -find-region -simplifycfg -func-extr -function-inline  -globaldce -mem2reg -instcombine -dce   -gvn -globaldce -adce -adse  -constprop -instcombine -bit-constprop  -instcombine -dce -simplifycfg -bitop-raise  -simplifycfg -dce -loop-delete -reassociate  -globalopt -global-privatize -mem2reg -dce  -global-constprop -pointer-simplify -constprop -dce  -func-inst -deadargelim  -promote-dbg-pointer  -norm-name   /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.g.0.bc -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.g.1.bc -f  -phase std-opt
+@I [XFORM-603] Inlining function 'ap_fixed_base<49, 0, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<' into 'hls::hotbm::range_redux_payne_hanek_hotbm_pi<20, float, 31, 31>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:396).
+@I [XFORM-603] Inlining function 'ap_fixed_base<49, 0, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<' into 'hls::hotbm::range_redux_payne_hanek_hotbm<20, float, 31, 31>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:279).
+@I [XFORM-603] Inlining function 'ap_fixed_base<31, 0, false, (ap_q_mode)0, (ap_o_mode)3, 0>::quantization_adjust' into 'ap_fixed_base<31, 0, false, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base<49, 0, false, (ap_q_mode)5, (ap_o_mode)3, 0>' ().
+@I [XFORM-603] Inlining function 'ap_fixed_base<31, 0, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<' into 'hls::hotbm::range_redux_payne_hanek_hotbm_pi<20, float, 31, 31>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:399).
+@I [XFORM-603] Inlining function 'ap_fixed_base<31, 0, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<' into 'hls::hotbm::range_redux_payne_hanek_hotbm<20, float, 31, 31>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:282).
+@I [XFORM-603] Inlining function 'ap_fixed_base<31, 0, false, (ap_q_mode)0, (ap_o_mode)0, 0>::overflow_adjust' into 'ap_fixed_base<31, 0, false, (ap_q_mode)0, (ap_o_mode)0, 0>::ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>.1' ().
+@I [XFORM-603] Inlining function 'ap_fixed_base<31, 1, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<' into 'hls::hotbm::my_to_float<31, 1>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:151).
+@I [HLS-0] Std xform time: 3 seconds per iteration
+@I [HLS-100] Command "is_encrypted /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.g.1.bc "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 8e-05Total elapsed time: 15.745 sec.
+@I [HLS-10] Checking synthesizability ...
+@0 [HLS-0] Checking synthesizability ...
+@I [HLS-0] syn check 1/2: transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce  -mem2reg -instcombine -function-uniquify  -directive-preproc -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce  -array-normalize -instcombine -dce  -array-seg-normalize -instcombine -dce  -array-flatten -instcombine -dce  -array-burst -dce  -deadargelim -promote-global-argument  -function-inline -globaldce -dce  -doublePtrSimplify -doublePtrElim -dce  -doublePtrSimplify -promote-dbg-pointer  -dce -scalarrepl -dse -adse -instcombine  -ptrLegalization  -simplifycfg -dce -instcombine  -pointer-simplify -ptrArgReplace -dce -instcombine   -disaggr -scalarrepl -norm-name -dce  -mem2reg -instcombine -ptrLegalization   -simplifycfg -deadargelim  -instcombine -dce -inst-simplify -function-uniquify  -directive-preproc -function-uniquify -directive-preproc -mem2reg -dse -dce  -globaldce    /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.g.1.bc -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.g.2.prechk.bc -f
+@I [XFORM-602] Inlining function 'xilly_puts.3' into 'xilly_decprint' (coprocess/example/src/xilly_debug.c:53) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<float>::expv' into 'hls::hotbm::range_redux_payne_hanek_hotbm<20, float, 31, 31>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:219) automatically.
+@I [XFORM-602] Inlining function 'hls::table_lookup_4oPi<23, 20>' into 'hls::hotbm::range_redux_payne_hanek_hotbm<20, float, 31, 31>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:244) automatically.
+@I [XFORM-602] Inlining function 'hls::big_mult<71, 24>' into 'hls::hotbm::range_redux_payne_hanek_hotbm<20, float, 31, 31>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:246) automatically.
+@I [XFORM-602] Inlining function 'hls::hotbm::clz<18, 49, 0>' into 'hls::hotbm::range_redux_payne_hanek_hotbm<20, float, 31, 31>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:272) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_float' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:345) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<float>::to_float' into 'fp_struct<float>::to_ieee' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:366) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<float>::set_mantissa' into 'hls::hotbm::my_to_float<31, 1>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:164) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<float>::to_ieee' into 'hls::hotbm::my_to_float<31, 1>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:168) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<float>::to_ieee' into 'hls::copysignf' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls_math.h:262) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:504) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:518) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<double>::to_ieee' into 'hls::nan' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls_math.h:78) automatically.
+@I [XFORM-602] Inlining function 'hls::copysignf' into 'hls::hotbm::sinf_or_cosf' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:634) automatically.
+@I [XFORM-602] Inlining function 'hls::__isinf' into 'hls::hotbm::sinf_or_cosf' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:635) automatically.
+@I [XFORM-602] Inlining function 'hls::__isnan' into 'hls::hotbm::sinf_or_cosf' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:635) automatically.
+@I [XFORM-602] Inlining function 'hls::nan' into 'hls::hotbm::sinf_or_cosf' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:636) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<float>::to_ieee' into 'hls::hotbm::sinf_or_cosf' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:638) automatically.
+@I [XFORM-602] Inlining function 'hls::hotbm::sinf' into 'hls::sinf' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls_math.h:428) automatically.
+@I [XFORM-602] Inlining function 'hls::sinf' into 'sinf' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/lib_hlsm.cpp:48) automatically.
+@I [XFORM-602] Inlining function 'sinf' into 'mycalc' (coprocess/example/src/main.c:8) automatically.
+@I [XFORM-602] Inlining function 'xilly_puts.2' into 'xillybus_wrapper' (coprocess/example/src/main.c:20) automatically.
+@I [XFORM-602] Inlining function 'xilly_puts.1' into 'xillybus_wrapper' (coprocess/example/src/main.c:28) automatically.
+@I [XFORM-602] Inlining function 'xilly_puts' into 'xillybus_wrapper' (coprocess/example/src/main.c:30) automatically.
+@I [XFORM-602] Inlining function 'mycalc' into 'xillybus_wrapper' (coprocess/example/src/main.c:33) automatically.
+@I [HLS-0] Syn check 1/2 time: 1 seconds per iteration
+@I [HLS-0] syn check 2/2: transform -syn-check   /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.g.2.prechk.bc -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.g.2.bc -f  -phase syn-check
+@W [SYNCHK-23] /wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:130: variable-indexed range selection may cause suboptimal QoR.
+@I [SYNCHK-10] 0 error(s), 1 warning(s).
+@I [HLS-0] Syn check 2/2 time: 0 seconds per iteration
+@I [HLS-0] Compiler optimizing ...
+@I [HLS-0] Share syncheck's 1.bc for syn flow: copy /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.g.1.bc to /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.o.1.bc
+@I [HLS-0] presyn 1: transform -hls -tmp /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db -type-info -function-uniquify  -directive-preproc -function-uniquify -directive-preproc -mem2reg -dse -dce  -disaggr -scalarrepl -norm-name -deadargelim  -mem2reg -instcombine -dce -auto-rom-infer -dce -function-uniquify  -directive-preproc -function-uniquify -directive-preproc -mem2reg -dse -dce  -func-buffer -dce -array-normalize  -func-legal -instcombine -gvn -constprop -dce   -ptrArgReplace -mem2reg -instcombine -dce  -array-seg-normalize -deadargelim  -instcombine -dce  -pointer-simplify -dce  -port-alignment -dce  -interface-preproc  -data-pack -instcombine -dce   -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -loop-simplify -indvars -instcombine  -gvn -loop-simplify -mem2reg -dce -simplifycfg  -find-region -instcombine  -auto-loop-pipeline  -inst-simplify  -interface-preproc  -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll  -constprop -instcombine -simplifycfg -indvars  -simplifycfg -dce -globaldce  -attach-range  -gvn -disable-agg-range -inst-simplify  -constprop -simplifycfg -dce  -pointer-simplify -dce  -globalopt -constprop -dce  -array-promote -constprop -instcombine -dce  -ptrArgReplace -mem2reg  -instcombine -simplifycfg -dce  -auto-par -instcombine -dce  -array-transform-check  -array-reshape -instcombine -simplifycfg -dce  -ptrArgReplace -deadargelim -mem2reg  -instcombine -simplifycfg -dce   -array-partition -instcombine -simplifycfg -dce  -ptrArgReplace -global-constprop -deadargelim -mem2reg  -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg  -instcombine -simplifycfg -dce   -globalopt -constprop -dce  -array-promote -constprop -instcombine -dce  -ptrArgReplace -mem2reg  -instcombine -simplifycfg -dce   -mem-intrinsic-preproc -dce  -global-privatize  -mem2reg -globaldce  -promote-global-argument  -ptrArgReplace -mem2reg -instcombine -dce  -globalopt -mergereturn -simplify-global-access -mem2reg -dce  -pointer-simplify -dce  -functionattrs  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -inst-simplify -dce -norm-name  -function-inline -globaldce  -func-inst -constprop -instcombine -simplifycfg -dce  -func-legal -dce   -directive-preproc -function-uniquify -directive-preproc -mem2reg -dse -dce  -loop-bound  -arraycheck -bitwidthmin -on-by-dataflow  -loop-delete -instcombine -simplifycfg -dce -loop-simplify -simplifycfg -loop-stream -instcombine -simplifycfg -dce -globaldce  -fs-prep-check-ap-stream -fs-prep-legalize-global -fs-prep-legalize-stream-variable  -function-stream -dce -globaldce  -array-streaming -instcombine -simplifycfg -dce    -group-axi-access    -simplifycfg -dce -loop-delete  -norm-name  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.o.1.bc -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.o.1.tmp.bc -f
+@I [XFORM-502] Unrolling small iteration loop 'Loop-1' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:128) in function 'hls::hotbm::my_to_float<31, 1>' automatically.
+@I [XFORM-501] Unrolling loop 'Loop-1' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:128) in function 'hls::hotbm::my_to_float<31, 1>' completely.
+@I [XFORM-102] Automatically partitioning small array 'out_bits.V' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:127) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'c' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:140) completely based on array size.
+@I [XFORM-101] Partitioning array 'swap_table'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'neg_sin_table'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'neg_cos_table'  in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'out_bits.V' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:127) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'c' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:140) in dimension 1 completely.
+@I [XFORM-602] Inlining function 'xilly_puts.3' into 'xilly_decprint' (coprocess/example/src/xilly_debug.c:53) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<float>::expv' into 'hls::hotbm::range_redux_payne_hanek_hotbm<20, float, 31, 31>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:219) automatically.
+@I [XFORM-602] Inlining function 'hls::table_lookup_4oPi<23, 20>' into 'hls::hotbm::range_redux_payne_hanek_hotbm<20, float, 31, 31>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:244) automatically.
+@I [XFORM-602] Inlining function 'hls::big_mult<71, 24>' into 'hls::hotbm::range_redux_payne_hanek_hotbm<20, float, 31, 31>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:246) automatically.
+@I [XFORM-602] Inlining function 'hls::hotbm::clz<18, 49, 0>' into 'hls::hotbm::range_redux_payne_hanek_hotbm<20, float, 31, 31>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:272) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_float' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:345) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<float>::to_float' into 'fp_struct<float>::to_ieee' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:366) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<float>::set_mantissa' into 'hls::hotbm::my_to_float<31, 1>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:164) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<float>::to_ieee' into 'hls::hotbm::my_to_float<31, 1>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:168) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<float>::to_ieee' into 'hls::copysignf' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls_math.h:262) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:504) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:518) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<double>::to_ieee' into 'hls::nan' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls_math.h:78) automatically.
+@I [XFORM-602] Inlining function 'hls::copysignf' into 'hls::hotbm::sinf_or_cosf' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:634) automatically.
+@I [XFORM-602] Inlining function 'hls::__isinf' into 'hls::hotbm::sinf_or_cosf' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:635) automatically.
+@I [XFORM-602] Inlining function 'hls::__isnan' into 'hls::hotbm::sinf_or_cosf' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:635) automatically.
+@I [XFORM-602] Inlining function 'hls::nan' into 'hls::hotbm::sinf_or_cosf' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:636) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<float>::to_ieee' into 'hls::hotbm::sinf_or_cosf' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:638) automatically.
+@I [XFORM-602] Inlining function 'hls::hotbm::sinf' into 'hls::sinf' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls_math.h:428) automatically.
+@I [XFORM-602] Inlining function 'hls::sinf' into 'sinf' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/lib_hlsm.cpp:48) automatically.
+@I [XFORM-602] Inlining function 'sinf' into 'mycalc' (coprocess/example/src/main.c:8) automatically.
+@I [XFORM-602] Inlining function 'xilly_puts.2' into 'xillybus_wrapper' (coprocess/example/src/main.c:20) automatically.
+@I [XFORM-602] Inlining function 'xilly_puts.1' into 'xillybus_wrapper' (coprocess/example/src/main.c:28) automatically.
+@I [XFORM-602] Inlining function 'xilly_puts' into 'xillybus_wrapper' (coprocess/example/src/main.c:30) automatically.
+@I [XFORM-602] Inlining function 'mycalc' into 'xillybus_wrapper' (coprocess/example/src/main.c:33) automatically.
+@I [HLS-0] Presyn 1 time: 1 seconds per iteration
+@I [HLS-0] presyn 2: transform -hls -keep-callgraph -scalarrepl -mem2reg  -port-alignment -attach-range -dce  -pipe-mux-gen  -indvars -loop-bound  -inst-simplify -instcombine -dce  -merge-array-access -mem2reg -dce  -clean-region -mergereturn -if-conv  -instcombine -dce -constprop  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -scalarrepl -mem2reg  -global-constprop -deadargelim -deadargelim  -instcombine -dce -simplifycfg    -ptrArgReplace -mem2reg -function-inline  -globaldce -mem2reg -instcombine -dce -expr-balance  -instcombine -dce  -bitwidthmin  -directive-preproc  -inst-rectify -instcombine -dce  -functionattrs  -constprop -instcombine -bit-constprop  -simplify-global-access  -globalopt -globaldce  -inst-simplify -instcombine -elimdeaddata -dce  -loop-delete -simplifycfg   -norm-name /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.o.1.tmp.bc -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.o.2.bc -f  -phase presyn
+@I [XFORM-401] Performing if-conversion on hyperblock from (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:210:7) to (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:292:1) in function 'hls::hotbm::range_redux_payne_hanek_hotbm<20, float, 31, 31>'... converting 8 basic blocks.
+@I [XFORM-401] Performing if-conversion on hyperblock to (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:152:9) in function 'hls::hotbm::my_to_float<31, 1>'... converting 4 basic blocks.
+@I [XFORM-401] Performing if-conversion on hyperblock from (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:159:30) to (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:169:1) in function 'hls::hotbm::my_to_float<31, 1>'... converting 3 basic blocks.
+@I [XFORM-401] Performing if-conversion on hyperblock from (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_big_mult.h:261:51) to (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_big_mult.h:260:24) in function 'hls::big_mult_v3small<71, 24, 17>'... converting 3 basic blocks.
+@I [XFORM-401] Performing if-conversion on hyperblock from (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:531:20) to (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:640:1) in function 'hls::hotbm::sinf_or_cosf'... converting 10 basic blocks.
+@I [XFORM-602] Inlining function 'hls::hotbm::range_redux_payne_hanek_hotbm<20, float, 31, 31>' into 'hls::hotbm::sinf_or_cosf' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:568) automatically.
+@I [XFORM-602] Inlining function 'hls::hotbm::sinf_or_cosf' into 'xillybus_wrapper' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:764->/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls_math.h:428->/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/lib_hlsm.cpp:48->coprocess/example/src/main.c:8->coprocess/example/src/main.c:33) automatically.
+@I [HLS-0] Presyn 2 time: 0 seconds per iteration
+@I [HLS-100] Command "is_encrypted /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.o.2.bc "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 9.4e-05Total elapsed time: 20.742 sec.
+@I [HLS-0] build ssdm: transform -hls -function-uniquify -auto-function-inline -globaldce  -ptrArgReplace -mem2reg -instcombine -dce  -loop-simplify -indvars -licm -loop-dep  -loop-bound -licm -loop-simplify -flattenloopnest  -array-flatten -gvn -instcombine -dce  -array-map -dce -func-legal  -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify   -array-burst -promote-global-argument -dce  -axi4-lower -array-seg-normalize  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm  -inst-simplify -dce  -globaldce -array-streaming -instcombine  -dce   -deadargelim -doublePtrSimplify  -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer  -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg  -instcombine  -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine  -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound  -loop-simplify -loop-preproc  -constprop -global-constprop -gvn -mem2reg -instcombine -dce  -loop-merge -dce  -bitwidthmin  -scalar-propagation  -interface-preproc -interface-gen  -deadargelim -directive-preproc -inst-simplify -dce  -gvn -mem2reg -instcombine -dce -adse  -loop-bound  -instcombine -cfgopt -simplifycfg -loop-simplify  -clean-region -io-protocol  -find-region -mem2reg  -loop-simplify -phi-opt -bitop-raise  -inst-simplify -inst-rectify -instcombine -adce -deadargelim  -cfgopt -simplifycfg -strip-dead-prototypes  -interface-lower -bitop-lower -intrinsic-lower  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa  -inst-simplify -simplifycfg   -mergereturn -inst-simplify -inst-rectify  -dce -bitop-lower  -loop-rewind -pointer-simplify -dce -cfgopt  -norm-name -legalize -read-loop-dep -dce -bitwidth   -cdfg-build  /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.o.2.bc -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.o.3.bc -f  -phase build-ssdm
+@W [XFORM-631] Renaming function 'hls::big_mult_v3small<71, 24, 17>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_big_mult.h:258:26) into big_mult_v3small<71, 24, 17>.
+@W [XFORM-631] Renaming function 'hls::hotbm::my_to_float<31, 1>' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:113) into my_to_float<31, 1>.
+@W [XFORM-562] Loop 'Loop-2' (/wrk/buildscratch/2015.1/continuous/20150427185245/src/products/hls/hls_lib/src/hls/hls_hotbm.h:149) in function 'my_to_float<31, 1>' has unknown bound because it has multiple exiting blocks.
+@I [HLS-0] Build ssdm time: 1 seconds per iteration
+@I [HLS-100] Command "is_encrypted /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.o.3.bc "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 6.4e-05Total elapsed time: 22.355 sec.
+@I [HLS-0] Finish building internal data model.
+@I [HLS-100] Command 'opt_and_import_c' returned 0; elapsed 8.66105Total elapsed time: 22.719 sec.
+@I [HLS-111] Elapsed time: 9.10816 seconds; current memory usage: 479 MB.
+@I [HLS-100] Command 'elaborate' returned 0; elapsed 8.79881Total elapsed time: 22.730 sec.
+@I [HLS-100] Command "autosyn "
+@I [HLS-10] Starting hardware synthesis ...
+@0 [HLS-0] Starting hardware synthesis ...
+@I [HLS-0] Synthesizing C/C++ design ...
+@I [HLS-10] Synthesizing 'xillybus_wrapper' ...
+@0 [HLS-0] Synthesizing 'xillybus_wrapper' ...
+@I [HLS-100] Command "ap_set_top_model xillybus_wrapper "
+@W [SYN-103] Legalizing function name 'xillybus_wrapper_big_mult_v3small<71, 24, 17>' to 'xillybus_wrapper_big_mult_v3small_71_24_17_s'.
+@W [SYN-103] Legalizing function name 'xillybus_wrapper_my_to_float<31, 1>' to 'xillybus_wrapper_my_to_float_31_1_s'.
+@I [HLS-100] Command 'ap_set_top_model' returned 0; elapsed 0.000312Total elapsed time: 22.731 sec.
+@I [HLS-100] Command "get_model_list xillybus_wrapper -filter all-wo-channel -topdown "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 5.4e-05Total elapsed time: 22.731 sec.
+@I [HLS-100] Command "preproc_iomode -model xillybus_wrapper "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0.000929Total elapsed time: 22.741 sec.
+@I [HLS-100] Command "preproc_iomode -model xillybus_wrapper_my_to_float<31, 1> "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 2.7e-05Total elapsed time: 22.741 sec.
+@I [HLS-100] Command "preproc_iomode -model xillybus_wrapper_big_mult_v3small<71, 24, 17> "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 1.1e-05Total elapsed time: 22.741 sec.
+@I [HLS-100] Command "preproc_iomode -model xillybus_wrapper_xilly_decprint "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 3.4e-05Total elapsed time: 22.741 sec.
+@I [HLS-100] Command "get_model_list xillybus_wrapper -filter all-wo-channel "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 3.7e-05Total elapsed time: 22.742 sec.
+@I [HLS-0] Model list for configure: xillybus_wrapper_xilly_decprint {xillybus_wrapper_big_mult_v3small<71, 24, 17>} {xillybus_wrapper_my_to_float<31, 1>} xillybus_wrapper
+@I [HLS-0] Configuring Module : xillybus_wrapper_xilly_decprint ...
+@I [HLS-100] Command "set_default_model xillybus_wrapper_xilly_decprint "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 1.5e-05Total elapsed time: 22.742 sec.
+@I [HLS-100] Command "apply_spec_resource_limit xillybus_wrapper_xilly_decprint "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 1.9e-05Total elapsed time: 22.742 sec.
+@I [HLS-0] Configuring Module : xillybus_wrapper_big_mult_v3small<71, 24, 17> ...
+@I [HLS-100] Command "set_default_model xillybus_wrapper_big_mult_v3small<71, 24, 17> "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 7e-06Total elapsed time: 22.742 sec.
+@I [HLS-100] Command "apply_spec_resource_limit xillybus_wrapper_big_mult_v3small<71, 24, 17> "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 2.8e-05Total elapsed time: 22.742 sec.
+@I [HLS-0] Configuring Module : xillybus_wrapper_my_to_float<31, 1> ...
+@I [HLS-100] Command "set_default_model xillybus_wrapper_my_to_float<31, 1> "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 6e-06Total elapsed time: 22.742 sec.
+@I [HLS-100] Command "apply_spec_resource_limit xillybus_wrapper_my_to_float<31, 1> "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 1.4e-05Total elapsed time: 22.742 sec.
+@I [HLS-0] Configuring Module : xillybus_wrapper ...
+@I [HLS-100] Command "set_default_model xillybus_wrapper "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 2.5e-05Total elapsed time: 22.742 sec.
+@I [HLS-100] Command "apply_spec_resource_limit xillybus_wrapper "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 4.1e-05Total elapsed time: 22.742 sec.
+@I [HLS-0] Model list for preprocess: xillybus_wrapper_xilly_decprint {xillybus_wrapper_big_mult_v3small<71, 24, 17>} {xillybus_wrapper_my_to_float<31, 1>} xillybus_wrapper
+@I [HLS-0] Preprocessing Module: xillybus_wrapper_xilly_decprint ...
+@I [HLS-100] Command "set_default_model xillybus_wrapper_xilly_decprint "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 6e-06Total elapsed time: 22.742 sec.
+@I [HLS-100] Command "cdfg_preprocess -model xillybus_wrapper_xilly_decprint "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0.000559Total elapsed time: 22.744 sec.
+@I [HLS-100] Command "rtl_gen_preprocess xillybus_wrapper_xilly_decprint "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.000613Total elapsed time: 22.744 sec.
+@I [HLS-0] Preprocessing Module: xillybus_wrapper_big_mult_v3small<71, 24, 17> ...
+@I [HLS-100] Command "set_default_model xillybus_wrapper_big_mult_v3small<71, 24, 17> "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 1e-05Total elapsed time: 22.744 sec.
+@I [HLS-100] Command "cdfg_preprocess -model xillybus_wrapper_big_mult_v3small<71, 24, 17> "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0.000615Total elapsed time: 22.745 sec.
+@I [HLS-100] Command "rtl_gen_preprocess xillybus_wrapper_big_mult_v3small<71, 24, 17> "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.000377Total elapsed time: 22.746 sec.
+@I [HLS-0] Preprocessing Module: xillybus_wrapper_my_to_float<31, 1> ...
+@I [HLS-100] Command "set_default_model xillybus_wrapper_my_to_float<31, 1> "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 7e-06Total elapsed time: 22.746 sec.
+@I [HLS-100] Command "cdfg_preprocess -model xillybus_wrapper_my_to_float<31, 1> "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0.000255Total elapsed time: 22.746 sec.
+@I [HLS-100] Command "rtl_gen_preprocess xillybus_wrapper_my_to_float<31, 1> "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.000388Total elapsed time: 22.747 sec.
+@I [HLS-0] Preprocessing Module: xillybus_wrapper ...
+@I [HLS-100] Command "set_default_model xillybus_wrapper "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 2.7e-05Total elapsed time: 22.747 sec.
+@I [HLS-100] Command "cdfg_preprocess -model xillybus_wrapper "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0.001261Total elapsed time: 22.748 sec.
+@I [HLS-100] Command "rtl_gen_preprocess xillybus_wrapper "
+@W [SYN-107] Renaming port name 'xillybus_wrapper/in' to 'xillybus_wrapper/in_r' to avoid the conflict with HDL keywords or other object names.
+@W [SYN-107] Renaming port name 'xillybus_wrapper/out' to 'xillybus_wrapper/out_r' to avoid the conflict with HDL keywords or other object names.
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.000661Total elapsed time: 22.749 sec.
+@I [HLS-0] Model list for synthesis: xillybus_wrapper_xilly_decprint {xillybus_wrapper_big_mult_v3small<71, 24, 17>} {xillybus_wrapper_my_to_float<31, 1>} xillybus_wrapper
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'xillybus_wrapper_xilly_decprint' 
+@0 [HLS-0] -- Scheduling module 'xillybus_wrapper_xilly_decprint' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model xillybus_wrapper_xilly_decprint "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 1.1e-05Total elapsed time: 22.749 sec.
+@I [HLS-100] Command "schedule -model xillybus_wrapper_xilly_decprint "
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.023718Total elapsed time: 22.799 sec.
+@I [HLS-111] Elapsed time: 0.041732 seconds; current memory usage: 479 MB.
+@I [HLS-100] Command "report -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_xilly_decprint.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.01001Total elapsed time: 22.840 sec.
+@I [HLS-100] Command "db_write -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_xilly_decprint.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.007706Total elapsed time: 22.848 sec.
+@I [HLS-0] Finish scheduling xillybus_wrapper_xilly_decprint.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'xillybus_wrapper_xilly_decprint' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'xillybus_wrapper_xilly_decprint' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model xillybus_wrapper_xilly_decprint "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 1.2e-05Total elapsed time: 22.848 sec.
+@I [HLS-100] Command "bind -model xillybus_wrapper_xilly_decprint "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=xillybus_wrapper_xilly_decprint
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.007484Total elapsed time: 22.866 sec.
+@I [HLS-111] Elapsed time: 0.035526 seconds; current memory usage: 480 MB.
+@I [HLS-100] Command "report -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_xilly_decprint.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.015779Total elapsed time: 22.892 sec.
+@I [HLS-100] Command "db_write -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_xilly_decprint.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.010739Total elapsed time: 22.903 sec.
+@I [HLS-0] Finish binding xillybus_wrapper_xilly_decprint.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'xillybus_wrapper_big_mult_v3small_71_24_17_s' 
+@0 [HLS-0] -- Scheduling module 'xillybus_wrapper_big_mult_v3small_71_24_17_s' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model xillybus_wrapper_big_mult_v3small<71, 24, 17> "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 1e-05Total elapsed time: 22.903 sec.
+@I [HLS-100] Command "schedule -model xillybus_wrapper_big_mult_v3small<71, 24, 17> "
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.056867Total elapsed time: 22.960 sec.
+@I [HLS-111] Elapsed time: 0.093268 seconds; current memory usage: 480 MB.
+@I [HLS-100] Command "report -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_big_mult_v3small_71_24_17_s.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.012848Total elapsed time: 22.983 sec.
+@I [HLS-100] Command "db_write -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_big_mult_v3small_71_24_17_s.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.014594Total elapsed time: 22.997 sec.
+@I [HLS-0] Finish scheduling xillybus_wrapper_big_mult_v3small<71, 24, 17>.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'xillybus_wrapper_big_mult_v3small_71_24_17_s' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'xillybus_wrapper_big_mult_v3small_71_24_17_s' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model xillybus_wrapper_big_mult_v3small<71, 24, 17> "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 1e-05Total elapsed time: 22.998 sec.
+@I [HLS-100] Command "bind -model xillybus_wrapper_big_mult_v3small<71, 24, 17> "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=xillybus_wrapper_big_mult_v3small<71, 24, 17>
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.019765Total elapsed time: 23.18 sec.
+@I [HLS-111] Elapsed time: 0.057084 seconds; current memory usage: 481 MB.
+@I [HLS-100] Command "report -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_big_mult_v3small_71_24_17_s.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.063007Total elapsed time: 23.96 sec.
+@I [HLS-100] Command "db_write -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_big_mult_v3small_71_24_17_s.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.016816Total elapsed time: 23.113 sec.
+@I [HLS-0] Finish binding xillybus_wrapper_big_mult_v3small<71, 24, 17>.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'xillybus_wrapper_my_to_float_31_1_s' 
+@0 [HLS-0] -- Scheduling module 'xillybus_wrapper_my_to_float_31_1_s' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model xillybus_wrapper_my_to_float<31, 1> "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 1e-05Total elapsed time: 23.114 sec.
+@I [HLS-100] Command "schedule -model xillybus_wrapper_my_to_float<31, 1> "
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.020757Total elapsed time: 23.136 sec.
+@I [HLS-111] Elapsed time: 0.109726 seconds; current memory usage: 481 MB.
+@I [HLS-100] Command "report -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_my_to_float_31_1_s.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.007627Total elapsed time: 23.153 sec.
+@I [HLS-100] Command "db_write -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_my_to_float_31_1_s.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.00712Total elapsed time: 23.160 sec.
+@I [HLS-0] Finish scheduling xillybus_wrapper_my_to_float<31, 1>.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'xillybus_wrapper_my_to_float_31_1_s' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'xillybus_wrapper_my_to_float_31_1_s' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model xillybus_wrapper_my_to_float<31, 1> "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 1e-05Total elapsed time: 23.160 sec.
+@I [HLS-100] Command "bind -model xillybus_wrapper_my_to_float<31, 1> "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=xillybus_wrapper_my_to_float<31, 1>
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.005054Total elapsed time: 23.165 sec.
+@I [HLS-111] Elapsed time: 0.02896 seconds; current memory usage: 481 MB.
+@I [HLS-100] Command "report -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_my_to_float_31_1_s.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.020029Total elapsed time: 23.194 sec.
+@I [HLS-100] Command "db_write -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_my_to_float_31_1_s.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.009363Total elapsed time: 23.204 sec.
+@I [HLS-0] Finish binding xillybus_wrapper_my_to_float<31, 1>.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'xillybus_wrapper' 
+@0 [HLS-0] -- Scheduling module 'xillybus_wrapper' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model xillybus_wrapper "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 4.3e-05Total elapsed time: 23.204 sec.
+@I [HLS-100] Command "schedule -model xillybus_wrapper "
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.152086Total elapsed time: 23.356 sec.
+@I [HLS-111] Elapsed time: 0.188692 seconds; current memory usage: 482 MB.
+@I [HLS-100] Command "report -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.022622Total elapsed time: 23.386 sec.
+@I [HLS-100] Command "db_write -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.028862Total elapsed time: 23.415 sec.
+@I [HLS-0] Finish scheduling xillybus_wrapper.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'xillybus_wrapper' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'xillybus_wrapper' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model xillybus_wrapper "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 4.6e-05Total elapsed time: 23.416 sec.
+@I [HLS-100] Command "bind -model xillybus_wrapper "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=xillybus_wrapper
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.097707Total elapsed time: 23.514 sec.
+@I [HLS-111] Elapsed time: 0.157373 seconds; current memory usage: 483 MB.
+@I [HLS-100] Command "report -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.125232Total elapsed time: 23.647 sec.
+@I [HLS-100] Command "db_write -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.03023Total elapsed time: 23.678 sec.
+@I [HLS-0] Finish binding xillybus_wrapper.
+@I [HLS-100] Command "get_model_list xillybus_wrapper -filter all-wo-channel "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0.0001Total elapsed time: 23.678 sec.
+@I [HLS-0] Preprocessing for RTLGen ...
+@I [HLS-100] Command "rtl_gen_preprocess xillybus_wrapper_xilly_decprint "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.000493Total elapsed time: 23.678 sec.
+@I [HLS-100] Command "rtl_gen_preprocess xillybus_wrapper_big_mult_v3small<71, 24, 17> "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.000342Total elapsed time: 23.679 sec.
+@I [HLS-100] Command "rtl_gen_preprocess xillybus_wrapper_my_to_float<31, 1> "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.000353Total elapsed time: 23.679 sec.
+@I [HLS-100] Command "rtl_gen_preprocess xillybus_wrapper "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.000394Total elapsed time: 23.680 sec.
+@I [HLS-0] Model list for RTL generation: xillybus_wrapper_xilly_decprint {xillybus_wrapper_big_mult_v3small<71, 24, 17>} {xillybus_wrapper_my_to_float<31, 1>} xillybus_wrapper
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'xillybus_wrapper_xilly_decprint' 
+@0 [HLS-0] -- Generating RTL for module 'xillybus_wrapper_xilly_decprint' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model xillybus_wrapper_xilly_decprint -vendor xilinx -mg_file /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_xilly_decprint.compgen.tcl "
+@I [RTGEN-100] Finished creating RTL model for 'xillybus_wrapper_xilly_decprint'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.01489Total elapsed time: 23.700 sec.
+@I [HLS-111] Elapsed time: 0.179349 seconds; current memory usage: 483 MB.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000207Total elapsed time: 23.707 sec.
+@I [HLS-100] Command "gen_rtl xillybus_wrapper_xilly_decprint -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/systemc/xillybus_wrapper_xilly_decprint -synmodules xillybus_wrapper_xilly_decprint {xillybus_wrapper_big_mult_v3small<71, 24, 17>} {xillybus_wrapper_my_to_float<31, 1>} xillybus_wrapper "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.001088Total elapsed time: 23.708 sec.
+@I [HLS-100] Command "gen_rtl xillybus_wrapper_xilly_decprint -style xilinx -f -lang vhdl -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/vhdl/xillybus_wrapper_xilly_decprint "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.000992Total elapsed time: 23.710 sec.
+@I [HLS-100] Command "gen_rtl xillybus_wrapper_xilly_decprint -style xilinx -f -lang vlog -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_xilly_decprint "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.000995Total elapsed time: 23.711 sec.
+@I [HLS-100] Command "gen_tb_info xillybus_wrapper_xilly_decprint -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_xilly_decprint -p /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0.000187Total elapsed time: 23.711 sec.
+@I [HLS-100] Command "report -model xillybus_wrapper_xilly_decprint -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/report/xillybus_wrapper_xilly_decprint_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.006156Total elapsed time: 23.717 sec.
+@I [HLS-100] Command "report -model xillybus_wrapper_xilly_decprint -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/report/xillybus_wrapper_xilly_decprint_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.005251Total elapsed time: 23.723 sec.
+@I [HLS-100] Command "report -model xillybus_wrapper_xilly_decprint -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_xilly_decprint.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.02358Total elapsed time: 23.746 sec.
+@I [HLS-100] Command "db_write -model xillybus_wrapper_xilly_decprint -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_xilly_decprint.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.015234Total elapsed time: 23.762 sec.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'xillybus_wrapper_big_mult_v3small_71_24_17_s' 
+@0 [HLS-0] -- Generating RTL for module 'xillybus_wrapper_big_mult_v3small_71_24_17_s' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model xillybus_wrapper_big_mult_v3small<71, 24, 17> -vendor xilinx -mg_file /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_big_mult_v3small_71_24_17_s.compgen.tcl "
+@I [RTGEN-100] Generating core module 'xillybus_wrapper_mul_41s_24ns_41_4': 1 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'xillybus_wrapper_big_mult_v3small_71_24_17_s'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.022784Total elapsed time: 23.797 sec.
+@I [HLS-111] Elapsed time: 0.096417 seconds; current memory usage: 485 MB.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000222Total elapsed time: 23.804 sec.
+@I [HLS-100] Command "gen_rtl xillybus_wrapper_big_mult_v3small<71, 24, 17> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/systemc/xillybus_wrapper_big_mult_v3small_71_24_17_s -synmodules xillybus_wrapper_xilly_decprint {xillybus_wrapper_big_mult_v3small<71, 24, 17>} {xillybus_wrapper_my_to_float<31, 1>} xillybus_wrapper "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.001386Total elapsed time: 23.805 sec.
+@I [HLS-100] Command "gen_rtl xillybus_wrapper_big_mult_v3small<71, 24, 17> -style xilinx -f -lang vhdl -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/vhdl/xillybus_wrapper_big_mult_v3small_71_24_17_s "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.001117Total elapsed time: 23.807 sec.
+@I [HLS-100] Command "gen_rtl xillybus_wrapper_big_mult_v3small<71, 24, 17> -style xilinx -f -lang vlog -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_big_mult_v3small_71_24_17_s "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.001488Total elapsed time: 23.808 sec.
+@I [HLS-100] Command "gen_tb_info xillybus_wrapper_big_mult_v3small<71, 24, 17> -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_big_mult_v3small_71_24_17_s -p /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0.000112Total elapsed time: 23.808 sec.
+@I [HLS-100] Command "report -model xillybus_wrapper_big_mult_v3small<71, 24, 17> -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/report/xillybus_wrapper_big_mult_v3small_71_24_17_s_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.018952Total elapsed time: 23.827 sec.
+@I [HLS-100] Command "report -model xillybus_wrapper_big_mult_v3small<71, 24, 17> -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/report/xillybus_wrapper_big_mult_v3small_71_24_17_s_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.014132Total elapsed time: 23.842 sec.
+@I [HLS-100] Command "report -model xillybus_wrapper_big_mult_v3small<71, 24, 17> -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_big_mult_v3small_71_24_17_s.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.079527Total elapsed time: 23.925 sec.
+@I [HLS-100] Command "db_write -model xillybus_wrapper_big_mult_v3small<71, 24, 17> -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_big_mult_v3small_71_24_17_s.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.030013Total elapsed time: 23.955 sec.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'xillybus_wrapper_my_to_float_31_1_s' 
+@0 [HLS-0] -- Generating RTL for module 'xillybus_wrapper_my_to_float_31_1_s' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model xillybus_wrapper_my_to_float<31, 1> -vendor xilinx -mg_file /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_my_to_float_31_1_s.compgen.tcl "
+@I [RTGEN-100] Finished creating RTL model for 'xillybus_wrapper_my_to_float_31_1_s'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.011757Total elapsed time: 23.995 sec.
+@I [HLS-111] Elapsed time: 0.192154 seconds; current memory usage: 487 MB.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000238Total elapsed time: 24.7 sec.
+@I [HLS-100] Command "gen_rtl xillybus_wrapper_my_to_float<31, 1> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/systemc/xillybus_wrapper_my_to_float_31_1_s -synmodules xillybus_wrapper_xilly_decprint {xillybus_wrapper_big_mult_v3small<71, 24, 17>} {xillybus_wrapper_my_to_float<31, 1>} xillybus_wrapper "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.001129Total elapsed time: 24.9 sec.
+@I [HLS-100] Command "gen_rtl xillybus_wrapper_my_to_float<31, 1> -style xilinx -f -lang vhdl -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/vhdl/xillybus_wrapper_my_to_float_31_1_s "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.000859Total elapsed time: 24.10 sec.
+@I [HLS-100] Command "gen_rtl xillybus_wrapper_my_to_float<31, 1> -style xilinx -f -lang vlog -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_my_to_float_31_1_s "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.001122Total elapsed time: 24.11 sec.
+@I [HLS-100] Command "gen_tb_info xillybus_wrapper_my_to_float<31, 1> -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_my_to_float_31_1_s -p /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0.000171Total elapsed time: 24.11 sec.
+@I [HLS-100] Command "report -model xillybus_wrapper_my_to_float<31, 1> -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/report/xillybus_wrapper_my_to_float_31_1_s_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.007362Total elapsed time: 24.19 sec.
+@I [HLS-100] Command "report -model xillybus_wrapper_my_to_float<31, 1> -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/report/xillybus_wrapper_my_to_float_31_1_s_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.004079Total elapsed time: 24.23 sec.
+@I [HLS-100] Command "report -model xillybus_wrapper_my_to_float<31, 1> -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_my_to_float_31_1_s.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.022458Total elapsed time: 24.45 sec.
+@I [HLS-100] Command "db_write -model xillybus_wrapper_my_to_float<31, 1> -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_my_to_float_31_1_s.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.013035Total elapsed time: 24.59 sec.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'xillybus_wrapper' 
+@0 [HLS-0] -- Generating RTL for module 'xillybus_wrapper' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model xillybus_wrapper -vendor xilinx -mg_file /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper.compgen.tcl "
+@I [RTGEN-500] Setting interface mode on port 'xillybus_wrapper/in_r' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'xillybus_wrapper/out_r' to 'ap_fifo'.
+@I [RTGEN-500] Setting interface mode on port 'xillybus_wrapper/debug_ready' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'xillybus_wrapper/debug_out' to 'ap_vld'.
+@I [RTGEN-500] Setting interface mode on function 'xillybus_wrapper' to 'ap_ctrl_none'.
+@W [RTGEN-101] Global array 'p_str3' will not be exposed as RTL port.
+@W [RTGEN-101] Global scalar 'debug_ready' will be exposed as RTL port.
+@W [RTGEN-101] Global scalar 'debug_out' will be exposed as RTL port.
+@W [RTGEN-101] Global array 'p_str4' will not be exposed as RTL port.
+@W [RTGEN-101] Global array 'p_str5' will not be exposed as RTL port.
+@I [RTGEN-100] Generating core module 'xillybus_wrapper_mul_32s_31ns_62_6': 1 instance(s).
+@I [RTGEN-100] Generating core module 'xillybus_wrapper_mux_16to1_sel4_1_1': 2 instance(s).
+@I [RTGEN-100] Generating core module 'xillybus_wrapper_mux_8to1_sel3_1_1': 1 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'xillybus_wrapper'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.060384Total elapsed time: 24.136 sec.
+@I [HLS-111] Elapsed time: 0.131784 seconds; current memory usage: 489 MB.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000286Total elapsed time: 24.141 sec.
+@I [HLS-100] Command "gen_rtl xillybus_wrapper -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/systemc/xillybus_wrapper -synmodules xillybus_wrapper_xilly_decprint {xillybus_wrapper_big_mult_v3small<71, 24, 17>} {xillybus_wrapper_my_to_float<31, 1>} xillybus_wrapper "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.003276Total elapsed time: 24.144 sec.
+@I [HLS-100] Command "gen_rtl xillybus_wrapper -istop -style xilinx -f -lang vhdl -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/vhdl/xillybus_wrapper "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.022912Total elapsed time: 24.168 sec.
+@I [HLS-100] Command "gen_rtl xillybus_wrapper -istop -style xilinx -f -lang vlog -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.023389Total elapsed time: 24.199 sec.
+@I [HLS-100] Command "export_constraint_db -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper.constraint.tcl -f -tool general "
+@I [HLS-100] Command 'export_constraint_db' returned 0; elapsed 8.3e-05Total elapsed time: 24.199 sec.
+@I [HLS-100] Command "report -model xillybus_wrapper -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper.design.xml -verbose -f -dv "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.094375Total elapsed time: 24.345 sec.
+@I [HLS-100] Command "gen_tb_info xillybus_wrapper -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper -p /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0.000762Total elapsed time: 24.346 sec.
+@I [HLS-100] Command "report -model xillybus_wrapper -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/report/xillybus_wrapper_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.023846Total elapsed time: 24.370 sec.
+@I [HLS-100] Command "report -model xillybus_wrapper -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/report/xillybus_wrapper_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.020749Total elapsed time: 24.391 sec.
+@I [HLS-100] Command "report -model xillybus_wrapper -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.150896Total elapsed time: 24.542 sec.
+@I [HLS-100] Command "db_write -model xillybus_wrapper -o /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.051523Total elapsed time: 24.594 sec.
+@I [HLS-100] Command "sc_get_clocks xillybus_wrapper "
+@I [HLS-100] Command 'sc_get_clocks' returned 0; elapsed 1e-05Total elapsed time: 24.639 sec.
+@I [HLS-100] Command "sc_get_portdomain xillybus_wrapper "
+@I [HLS-100] Command 'sc_get_portdomain' returned 0; elapsed 3e-06Total elapsed time: 24.639 sec.
+@I [HLS-0] Model list for RTL component generation: xillybus_wrapper_xilly_decprint {xillybus_wrapper_big_mult_v3small<71, 24, 17>} {xillybus_wrapper_my_to_float<31, 1>} xillybus_wrapper
+@I [HLS-0] Handling components in module [xillybus_wrapper_xilly_decprint] ... 
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_xilly_decprint.compgen.tcl "
+@I [HLS-0] Found component xillybus_wrapper_xilly_decprint_powers10.
+@I [HLS-0] Append model xillybus_wrapper_xilly_decprint_powers10
+@I [HLS-0] Found component xillybus_wrapper_xilly_decprint_out.
+@I [HLS-0] Append model xillybus_wrapper_xilly_decprint_out
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000327Total elapsed time: 24.641 sec.
+@I [HLS-0] Handling components in module [xillybus_wrapper_big_mult_v3small_71_24_17_s] ... 
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_big_mult_v3small_71_24_17_s.compgen.tcl "
+@I [HLS-0] Found component xillybus_wrapper_mul_41s_24ns_41_4.
+@I [HLS-0] Append model xillybus_wrapper_mul_41s_24ns_41_4
+@I [HLS-0] Found component xillybus_wrapper_big_mult_v3small_71_24_17_s_pp_V.
+@I [HLS-0] Append model xillybus_wrapper_big_mult_v3small_71_24_17_s_pp_V
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000246Total elapsed time: 24.641 sec.
+@I [HLS-0] Handling components in module [xillybus_wrapper_my_to_float_31_1_s] ... 
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_my_to_float_31_1_s.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 8.7e-05Total elapsed time: 24.641 sec.
+@I [HLS-0] Handling components in module [xillybus_wrapper] ... 
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper.compgen.tcl "
+@I [HLS-0] Found component xillybus_wrapper_mux_8to1_sel3_1_1.
+@I [HLS-0] Append model xillybus_wrapper_mux_8to1_sel3_1_1
+@I [HLS-0] Found component xillybus_wrapper_mux_16to1_sel4_1_1.
+@I [HLS-0] Append model xillybus_wrapper_mux_16to1_sel4_1_1
+@I [HLS-0] Found component xillybus_wrapper_mux_16to1_sel4_1_1.
+@I [HLS-0] Append model xillybus_wrapper_mux_16to1_sel4_1_1
+@I [HLS-0] Found component xillybus_wrapper_mul_32s_31ns_62_6.
+@I [HLS-0] Append model xillybus_wrapper_mul_32s_31ns_62_6
+@I [HLS-0] Found component xillybus_wrapper_p_str3.
+@I [HLS-0] Append model xillybus_wrapper_p_str3
+@I [HLS-0] Found component xillybus_wrapper_p_str4.
+@I [HLS-0] Append model xillybus_wrapper_p_str4
+@I [HLS-0] Found component xillybus_wrapper_p_str5.
+@I [HLS-0] Append model xillybus_wrapper_p_str5
+@I [HLS-0] Found component xillybus_wrapper_hls_ref_4oPi_table_100_V.
+@I [HLS-0] Append model xillybus_wrapper_hls_ref_4oPi_table_100_V
+@I [HLS-0] Found component xillybus_wrapper_hls_sin_cos_K0_V.
+@I [HLS-0] Append model xillybus_wrapper_hls_sin_cos_K0_V
+@I [HLS-0] Found component xillybus_wrapper_hls_sin_cos_K1_V.
+@I [HLS-0] Append model xillybus_wrapper_hls_sin_cos_K1_V
+@I [HLS-0] Found component xillybus_wrapper_hls_sin_cos_K2_V.
+@I [HLS-0] Append model xillybus_wrapper_hls_sin_cos_K2_V
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001062Total elapsed time: 24.642 sec.
+@I [HLS-0] Append model xillybus_wrapper_xilly_decprint
+@I [HLS-0] Append model xillybus_wrapper_big_mult_v3small_71_24_17_s
+@I [HLS-0] Append model xillybus_wrapper_my_to_float_31_1_s
+@I [HLS-0] Append model xillybus_wrapper
+@I [HLS-0] Generating RTL model list ...
+@I [HLS-0] All models in this session: xillybus_wrapper_xilly_decprint_powers10 xillybus_wrapper_xilly_decprint_out xillybus_wrapper_mul_41s_24ns_41_4 xillybus_wrapper_big_mult_v3small_71_24_17_s_pp_V xillybus_wrapper_mux_8to1_sel3_1_1 xillybus_wrapper_mux_16to1_sel4_1_1 xillybus_wrapper_mux_16to1_sel4_1_1 xillybus_wrapper_mul_32s_31ns_62_6 xillybus_wrapper_p_str3 xillybus_wrapper_p_str4 xillybus_wrapper_p_str5 xillybus_wrapper_hls_ref_4oPi_table_100_V xillybus_wrapper_hls_sin_cos_K0_V xillybus_wrapper_hls_sin_cos_K1_V xillybus_wrapper_hls_sin_cos_K2_V xillybus_wrapper_xilly_decprint xillybus_wrapper_big_mult_v3small_71_24_17_s xillybus_wrapper_my_to_float_31_1_s xillybus_wrapper
+@I [HLS-0] To file: write model xillybus_wrapper_xilly_decprint_powers10
+@I [HLS-0] To file: write model xillybus_wrapper_xilly_decprint_out
+@I [HLS-0] To file: write model xillybus_wrapper_mul_41s_24ns_41_4
+@I [HLS-0] To file: write model xillybus_wrapper_big_mult_v3small_71_24_17_s_pp_V
+@I [HLS-0] To file: write model xillybus_wrapper_mux_8to1_sel3_1_1
+@I [HLS-0] To file: write model xillybus_wrapper_mux_16to1_sel4_1_1
+@I [HLS-0] To file: write model xillybus_wrapper_mux_16to1_sel4_1_1
+@I [HLS-0] To file: write model xillybus_wrapper_mul_32s_31ns_62_6
+@I [HLS-0] To file: write model xillybus_wrapper_p_str3
+@I [HLS-0] To file: write model xillybus_wrapper_p_str4
+@I [HLS-0] To file: write model xillybus_wrapper_p_str5
+@I [HLS-0] To file: write model xillybus_wrapper_hls_ref_4oPi_table_100_V
+@I [HLS-0] To file: write model xillybus_wrapper_hls_sin_cos_K0_V
+@I [HLS-0] To file: write model xillybus_wrapper_hls_sin_cos_K1_V
+@I [HLS-0] To file: write model xillybus_wrapper_hls_sin_cos_K2_V
+@I [HLS-0] To file: write model xillybus_wrapper_xilly_decprint
+@I [HLS-0] To file: write model xillybus_wrapper_big_mult_v3small_71_24_17_s
+@I [HLS-0] To file: write model xillybus_wrapper_my_to_float_31_1_s
+@I [HLS-0] To file: write model xillybus_wrapper
+@I [HLS-0] Finished generating RTL model list.
+
+
+@I [HLS-0] RTL Generation done.
+@I [HLS-0] CAS Generation done.
+@I [HLS-0] CBC Generation done.
+@I [HLS-100] Command "export_ssdm /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/a.export.ll "
+@I [HLS-100] Command 'export_ssdm' returned 0; elapsed 0.00122Total elapsed time: 24.644 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00014Total elapsed time: 24.647 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000649Total elapsed time: 24.651 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001303Total elapsed time: 24.651 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00046Total elapsed time: 24.652 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000798Total elapsed time: 24.654 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000129Total elapsed time: 24.655 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000121Total elapsed time: 24.655 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000941Total elapsed time: 24.656 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000398Total elapsed time: 24.656 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00149Total elapsed time: 24.658 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002102Total elapsed time: 24.660 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004442Total elapsed time: 24.666 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006676Total elapsed time: 24.666 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006486Total elapsed time: 24.672 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005235Total elapsed time: 24.677 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.066523Total elapsed time: 24.748 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.023186Total elapsed time: 24.771 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/dds_compiler.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002332Total elapsed time: 24.774 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000112Total elapsed time: 24.774 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.113942Total elapsed time: 24.774 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.6e-05Total elapsed time: 24.775 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.115356Total elapsed time: 24.775 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.115458Total elapsed time: 24.775 sec.
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2015.1/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001023Total elapsed time: 24.776 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001116Total elapsed time: 24.776 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000138Total elapsed time: 24.777 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000101Total elapsed time: 24.777 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.6e-05Total elapsed time: 24.778 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_xilly_decprint.compgen.tcl "
+@I [RTMG-279] Implementing memory 'xillybus_wrapper_xilly_decprint_powers10_rom' using distributed ROMs.
+@I [RTMG-278] Implementing memory 'xillybus_wrapper_xilly_decprint_out_ram' using distributed RAMs.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015698Total elapsed time: 24.795 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_big_mult_v3small_71_24_17_s.compgen.tcl "
+@I [RTMG-282] Generating pipelined core: 'xillybus_wrapper_mul_41s_24ns_41_4_Mul4S_0'
+@I [RTMG-278] Implementing memory 'xillybus_wrapper_big_mult_v3small_71_24_17_s_pp_V_ram' using distributed RAMs.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016572Total elapsed time: 24.822 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper_my_to_float_31_1_s.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000104Total elapsed time: 24.822 sec.
+@I [HLS-100] Command "source /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/.autopilot/db/xillybus_wrapper.compgen.tcl "
+@I [RTMG-282] Generating pipelined core: 'xillybus_wrapper_mul_32s_31ns_62_6_MulnS_0'
+@I [RTMG-279] Implementing memory 'xillybus_wrapper_p_str3_rom' using distributed ROMs.
+@I [RTMG-279] Implementing memory 'xillybus_wrapper_p_str4_rom' using distributed ROMs.
+@I [RTMG-279] Implementing memory 'xillybus_wrapper_p_str5_rom' using distributed ROMs.
+@I [RTMG-279] Implementing memory 'xillybus_wrapper_hls_ref_4oPi_table_100_V_rom' using distributed ROMs.
+@I [RTMG-279] Implementing memory 'xillybus_wrapper_hls_sin_cos_K0_V_rom' using distributed ROMs.
+@I [RTMG-279] Implementing memory 'xillybus_wrapper_hls_sin_cos_K1_V_rom' using distributed ROMs.
+@I [RTMG-279] Implementing memory 'xillybus_wrapper_hls_sin_cos_K2_V_rom' using distributed ROMs.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.090751Total elapsed time: 24.931 sec.
+@I [HLS-10] Finished generating all RTL models.
+@0 [HLS-0] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'xillybus_wrapper'.
+@I [WVHDL-304] Generating RTL VHDL for 'xillybus_wrapper'.
+@I [WVLOG-307] Generating RTL Verilog for 'xillybus_wrapper'.
+@I [HLS-100] Command 'autosyn' returned 0; elapsed 2.01514Total elapsed time: 24.944 sec.
+@I [HLS-100] Command 'csynth_design' returned 0; elapsed 10.8141Total elapsed time: 24.944 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 10.9823Total elapsed time: 24.944 sec.
+@I [HLS-100] Command "cleanup_all "
+@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0.021591Total elapsed time: 24.966 sec.

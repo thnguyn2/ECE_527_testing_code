@@ -2,248 +2,120 @@
 # Vivado v2015.1 (64-bit)
 # SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
 # IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
-# Start of session at: Sat Oct 10 20:03:11 2015
-# Process ID: 5061
+# Start of session at: Wed Oct 14 17:04:46 2015
+# Process ID: 14125
 # Log file: /home/parallels/source_code/ECE_527_testing_code/vivado.log
 # Journal file: /home/parallels/source_code/ECE_527_testing_code/vivado.jou
 #-----------------------------------------------------------
 start_gui
-source {/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/xillydemo-vivado.tcl}
-# set origin_dir [file dirname [info script]]
-# if {[string first { } $origin_dir] >= 0} {
-# send_msg_id xillydemo-1 error "The path to the the project directory contains white space(s): \"$origin_dir\". This is known to cause problems with Vivado. Please move the project to a path without white spaces, and try again."
-# }
-# set proj_name xillydemo
-# set proj_dir "[file normalize $origin_dir/vivado]"
-# set thepart "xc7z020clg484-1"
-# set essentials_dir "[file normalize "$origin_dir/../vivado-essentials"]"
-# create_project $proj_name "$proj_dir/"
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.1/data/ip'.
-# set obj [get_projects $proj_name]
-# set_property "default_lib" "xil_defaultlib" $obj
-# set_property "part" $thepart $obj
-# set_property "simulator_language" "Mixed" $obj
-# set_property "source_mgmt_mode" "DisplayOnly" $obj
-# set_property target_language Verilog $obj
-# set_property "ip_repo_paths" "$essentials_dir/vivado-ip" $obj
-# update_ip_catalog
+open_project /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/vivado/xillydemo.xpr
+Scanning sources...
+Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vivado-ip'.
-# if {[string equal [get_filesets sources_1] ""]} {
-#   create_fileset -srcset sources_1
-# }
-# set obj [get_filesets sources_1]
-# set_property "edif_extra_search_paths" "[file normalize "$origin_dir/../cores"]" $obj
-# set_property "top" "xillydemo" $obj
-# set obj [get_filesets sources_1]
-# set files [list \
-#  $origin_dir/src/xillydemo.v \
-#  $origin_dir/src/smbus.v \
-#  $origin_dir/src/i2s_audio.v \
-#  $origin_dir/src/xillybus.v \
-#  $origin_dir/src/xillybus_core.v \
-#  $essentials_dir/system.v \
-#  $essentials_dir/vga_fifo/vga_fifo.xci \
-#  $essentials_dir/fifo_8x2048/fifo_8x2048.xci \
-#  $essentials_dir/fifo_32x512/fifo_32x512.xci \
-#  $essentials_dir/vivado_system/vivado_system.bd \
-# ]
-# add_files -norecurse -fileset $obj $files
-# upgrade_ip [get_ips]
-WARNING: [Coretcl 2-1044] No upgrade is available for 'fifo_32x512'
-WARNING: [Coretcl 2-1044] No upgrade is available for 'fifo_8x2048'
-WARNING: [Coretcl 2-1044] No upgrade is available for 'vga_fifo'
-WARNING: [Coretcl 2-1044] No upgrade is available for 'vivado_system_processing_system7_0_0'
-WARNING: [Coretcl 2-1044] No upgrade is available for 'vivado_system_processing_system7_0_axi_periph_0'
-WARNING: [Coretcl 2-1044] No upgrade is available for 'vivado_system_rst_processing_system7_0_100M_0'
-WARNING: [Coretcl 2-1044] No upgrade is available for 'vivado_system_xillybus_ip_0_0'
-WARNING: [Coretcl 2-1044] No upgrade is available for 'vivado_system_xillybus_lite_0_0'
-WARNING: [Coretcl 2-1044] No upgrade is available for 'vivado_system_xillyvga_0_0'
-WARNING: [Coretcl 2-1044] No upgrade is available for 'vivado_system_xlconcat_0_0'
-WARNING: [Coretcl 2-1042] No IP was identified for upgrade.
-# open_bd_design $essentials_dir/vivado_system/vivado_system.bd
-Adding component instance block -- xillybus:xillybus:xillybus_lite:1.0 - xillybus_lite_0
-Adding component instance block -- xillybus:xillybus:xillybus_ip:1.0 - xillybus_ip_0
-Adding component instance block -- xillybus:xillybus:xillyvga:1.0 - xillyvga_0
-Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
-Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_100M
-Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
-Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
-Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Successfully read diagram <vivado_system> from BD file </home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vivado_system/vivado_system.bd>
-# startgroup
-# apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins xillybus_ip_0/S_AXI]
-# apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins xillyvga_0/S_AXI]
-# apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins xillybus_lite_0/S_AXI]
-# set_property range 4K [get_bd_addr_segs {processing_system7_0/Data/SEG_xillybus_ip_0_reg0}]
-# set_property range 4K [get_bd_addr_segs {processing_system7_0/Data/SEG_xillyvga_0_reg0}]
-# set_property range 4K [get_bd_addr_segs {processing_system7_0/Data/SEG_xillybus_lite_0_reg0}]
-# set_property offset 0x50000000 [get_bd_addr_segs {processing_system7_0/Data/SEG_xillybus_ip_0_reg0}]
-# set_property offset 0x50001000 [get_bd_addr_segs {processing_system7_0/Data/SEG_xillyvga_0_reg0}]
-# set_property offset 0x50002000 [get_bd_addr_segs {processing_system7_0/Data/SEG_xillybus_lite_0_reg0}]
-# endgroup
-# save_bd_design
-Wrote  : </home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vivado_system/vivado_system.bd> 
-# close_bd_design vivado_system
-# if {[string equal [get_filesets constrs_1] ""]} {
-#   create_fileset -constrset constrs_1
-# }
-# set obj [get_filesets constrs_1]
-# add_files -fileset $obj -norecurse $essentials_dir/xillydemo.xdc
-# set obj [get_filesets constrs_1]
-# if {[string equal [get_filesets sim_1] ""]} {
-#   create_fileset -simset sim_1
-# }
-# set obj [get_filesets sim_1]
-# set obj [get_filesets sim_1]
-# set_property "top" "unknown" $obj
-# set_property "xsim.simulate.runtime" "1000 ns" $obj
-# set_property "xsim.simulate.uut" "UUT" $obj
-# if {[string equal [get_runs synth_1] ""]} {
-#   create_run -name synth_1 -part $thepart -flow {Vivado Synthesis 2013} -strategy "Vivado Synthesis Defaults" -constrset constrs_1
-# }
-# set obj [get_runs synth_1]
-# set_property "part" $thepart $obj
-# if {[string equal [get_runs impl_1] ""]} {
-#   create_run -name impl_1 -part $thepart -flow {Vivado Implementation 2013} -strategy "Vivado Implementation Defaults" -constrset constrs_1 -parent_run synth_1
-# }
-# set obj [get_runs impl_1]
-# set_property "part" $thepart $obj
-# set_property STEPS.ROUTE_DESIGN.TCL.POST "$essentials_dir/showstopper.tcl" $obj
-# set_msg_config -new_severity "INFO" -id {BD 41-968} -string {{xillybus_S_AXI} } 
-# set_msg_config -new_severity "INFO" -id {BD 41-967} -string {{xillybus_ip_0/xillybus_M_AXI} } 
-# set_msg_config -new_severity "INFO" -id {BD 41-967} -string {{xillybus_ip_0/xillybus_S_AXI} } 
-# set_msg_config -new_severity "INFO" -id {BD 41-678} -string {{xillybus_S_AXI/Reg} } 
-# set_msg_config -new_severity "INFO" -id {BD 41-1356} -string {{xillybus_S_AXI/Reg} }
-# set_msg_config -new_severity "INFO" -id {BD 41-759} -string {{xlconcat_0/In} }
-# set_msg_config -new_severity "INFO" -id {BD 41-759} -string {{xlconcat_0/In} }
-# set_msg_config -new_severity "INFO" -id {Netlist 29-160} -string {{vivado_system_processing_system7} }
-# puts "INFO: Project created: $proj_name"
-INFO: Project created: xillydemo
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'vivado_system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+vivado_system_rst_processing_system7_0_100M_0
+vivado_system_processing_system7_0_0
+
+WARNING: [IP_Flow 19-3664] IP 'fifo_8x2048' generated file not found '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/fifo_8x2048/fifo_8x2048.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_8x2048' generated file not found '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/fifo_8x2048/fifo_8x2048_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_8x2048' generated file not found '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/fifo_8x2048/fifo_8x2048_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_8x2048' generated file not found '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/fifo_8x2048/fifo_8x2048_funcsim.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_8x2048' generated file not found '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/fifo_8x2048/fifo_8x2048_funcsim.vhdl'. Please regenerate to continue.
+reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream
-INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/fifo_8x2048/fifo_8x2048.xci' is already up-to-date
-Adding component instance block -- xillybus:xillybus:xillybus_lite:1.0 - xillybus_lite_0
-Adding component instance block -- xillybus:xillybus:xillybus_ip:1.0 - xillybus_ip_0
-Adding component instance block -- xillybus:xillybus:xillyvga:1.0 - xillyvga_0
-Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
-Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_100M
-Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
-Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
-Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Successfully read diagram <vivado_system> from BD file </home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vivado_system/vivado_system.bd>
-INFO: [BD 41-968] AXI interface port /xillybus_S_AXI is not associated to any clock port. It may not work correctly. Please update ASSOCIATED_BUSIF parameter of a clock port to include this interface port.
-INFO: [BD 41-967] AXI interface pin /xillybus_ip_0/xillybus_M_AXI is not associated to any clock pin. It may not work correctly.
-INFO: [BD 41-967] AXI interface pin /xillybus_ip_0/xillybus_S_AXI is not associated to any clock pin. It may not work correctly.
-INFO: [BD 41-1356] Address block </xillybus_S_AXI/Reg> is not mapped into </xillybus_ip_0/xillybus_S_AXI>. Please use Address Editor to either map or exclude it.
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /xillybus_ip_0/m_axi(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /processing_system7_0/S_AXI_ACP(5) and /xillybus_ip_0/m_axi(0)
-INFO: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. 
-Please check your design and connect them if needed: 
-/xlconcat_0/In0
-/xlconcat_0/In1
-/xlconcat_0/In2
-/xlconcat_0/In3
-/xlconcat_0/In4
-/xlconcat_0/In5
-/xlconcat_0/In6
-/xlconcat_0/In7
-/xlconcat_0/In8
-/xlconcat_0/In9
-/xlconcat_0/In10
-/xlconcat_0/In11
-/xlconcat_0/In12
-/xlconcat_0/In13
+ERROR: [Common 17-70] Application Exception: Failed to launch run 'impl_1' due to failures in the following run(s):
+fifo_8x2048_synth_1
+These failed run(s) need to be reset prior to launching 'impl_1' again.
 
-Verilog Output written to : /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vivado_system/hdl/vivado_system.v
-Verilog Output written to : /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vivado_system/hdl/vivado_system_wrapper.v
-Wrote  : </home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vivado_system/vivado_system.bd> 
-INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'vivado_system_xillybus_lite_0_0'. Target already exists and is up to date.
-INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'vivado_system_xillybus_lite_0_0'. Target already exists and is up to date.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block xillybus_lite_0 .
-INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'vivado_system_xillybus_ip_0_0'. Target already exists and is up to date.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block xillybus_ip_0 .
-INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'vivado_system_xillyvga_0_0'. Target already exists and is up to date.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block xillyvga_0 .
-INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'vivado_system_processing_system7_0_0'. Target already exists and is up to date.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
-INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'vivado_system_rst_processing_system7_0_100M_0'. Target already exists and is up to date.
-INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'vivado_system_rst_processing_system7_0_100M_0'. Target already exists and is up to date.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_100M .
-INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'vivado_system_xlconcat_0_0'. Target already exists and is up to date.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
-INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'vivado_system_xbar_0'. Target already exists and is up to date.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'vivado_system_auto_pc_0'...
-INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
-INFO: [BD 41-1379] This design does not contain any processor.
-Exporting to file /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vivado_system/hw_handoff/vivado_system.hwh
-Generated Block Design Tcl file /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vivado_system/hw_handoff/vivado_system_bd.tcl
-Generated Hardware Definition File /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vivado_system/hdl/vivado_system.hwdef
-Adding component instance block -- xillybus:xillybus:xillybus_lite:1.0 - xillybus_lite_0
-Adding component instance block -- xillybus:xillybus:xillybus_ip:1.0 - xillybus_ip_0
-Adding component instance block -- xillybus:xillybus:xillyvga:1.0 - xillyvga_0
-Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
-Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_100M
-Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
-Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
-Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Successfully read diagram <vivado_system> from BD file </home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vivado_system/vivado_system.bd>
-INFO: [BD 41-1662] The design 'vivado_system.bd' is already validated. Therefore parameter propagation will not be re-run.
-INFO: [BD 41-1356] Address block </xillybus_S_AXI/Reg> is not mapped into </xillybus_ip_0/xillybus_S_AXI>. Please use Address Editor to either map or exclude it.
-INFO: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. 
-Please check your design and connect them if needed: 
-/xlconcat_0/In0
-/xlconcat_0/In1
-/xlconcat_0/In2
-/xlconcat_0/In3
-/xlconcat_0/In4
-/xlconcat_0/In5
-/xlconcat_0/In6
-/xlconcat_0/In7
-/xlconcat_0/In8
-/xlconcat_0/In9
-/xlconcat_0/In10
-/xlconcat_0/In11
-/xlconcat_0/In12
-/xlconcat_0/In13
+launch_runs impl_1 -to_step write_bitstream
+ERROR: [Common 17-70] Application Exception: Failed to launch run 'impl_1' due to failures in the following run(s):
+fifo_8x2048_synth_1
+These failed run(s) need to be reset prior to launching 'impl_1' again.
 
-Verilog Output written to : /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vivado_system/hdl/vivado_system.v
-Verilog Output written to : /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vivado_system/hdl/vivado_system_wrapper.v
-Wrote  : </home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vivado_system/vivado_system.bd> 
-INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'vivado_system_xillybus_lite_0_0'. Target already exists and is up to date.
-INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'vivado_system_xillybus_lite_0_0'. Target already exists and is up to date.
-INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'vivado_system_xillybus_lite_0_0'. Target already exists and is up to date.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block xillybus_lite_0 .
-INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'vivado_system_xillybus_ip_0_0'. Target already exists and is up to date.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block xillybus_ip_0 .
-INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'vivado_system_xillyvga_0_0'. Target already exists and is up to date.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block xillyvga_0 .
-INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'vivado_system_processing_system7_0_0'. Target already exists and is up to date.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
-INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'vivado_system_rst_processing_system7_0_100M_0'. Target already exists and is up to date.
-INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'vivado_system_rst_processing_system7_0_100M_0'. Target already exists and is up to date.
-INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'vivado_system_rst_processing_system7_0_100M_0'. Target already exists and is up to date.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_100M .
-INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'vivado_system_xlconcat_0_0'. Target already exists and is up to date.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
-INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'vivado_system_xbar_0'. Target already exists and is up to date.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
-INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'vivado_system_auto_pc_0'. Target already exists and is up to date.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
-INFO: [BD 41-1379] This design does not contain any processor.
-Exporting to file /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vivado_system/hw_handoff/vivado_system.hwh
-Generated Block Design Tcl file /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vivado_system/hw_handoff/vivado_system_bd.tcl
-Generated Hardware Definition File /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/vivado_system/hdl/vivado_system.hwdef
-[Sat Oct 10 20:03:46 2015] Launched synth_1...
-Run output will be captured here: /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/vivado/xillydemo.runs/synth_1/runme.log
-[Sat Oct 10 20:03:46 2015] Launched impl_1...
+reset_run fifo_8x2048_synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Oct 14 17:06:16 2015] Launched fifo_8x2048_synth_1, synth_1...
+Run output will be captured here:
+fifo_8x2048_synth_1: /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/vivado/xillydemo.runs/fifo_8x2048_synth_1/runme.log
+synth_1: /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/vivado/xillydemo.runs/synth_1/runme.log
+[Wed Oct 14 17:06:16 2015] Launched impl_1...
 Run output will be captured here: /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/vivado/xillydemo.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 5953.977 ; gain = 152.594 ; free physical = 5662 ; free virtual = 7752
-ERROR: [Vivado 12-106] *** Exception: java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/parallels/source_code/ECE_527_testing_code/vivado_pid5061.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/parallels/source_code/ECE_527_testing_code/vivado_pid5061.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/parallels/source_code/ECE_527_testing_code/vivado_pid5061.debug)
-ERROR: [Vivado 12-106] *** Exception: java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/parallels/source_code/ECE_527_testing_code/vivado_pid5061.debug)
-exit
-INFO: [Common 17-206] Exiting Vivado at Sat Oct 10 20:29:15 2015...
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Oct 14 17:14:19 2015] Launched synth_1...
+Run output will be captured here: /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/vivado/xillydemo.runs/synth_1/runme.log
+[Wed Oct 14 17:14:19 2015] Launched impl_1...
+Run output will be captured here: /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/vivado/xillydemo.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Oct 14 17:16:12 2015] Launched synth_1...
+Run output will be captured here: /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/vivado/xillydemo.runs/synth_1/runme.log
+[Wed Oct 14 17:16:12 2015] Launched impl_1...
+Run output will be captured here: /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/vivado/xillydemo.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Oct 14 17:17:10 2015] Launched synth_1...
+Run output will be captured here: /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/vivado/xillydemo.runs/synth_1/runme.log
+[Wed Oct 14 17:17:10 2015] Launched impl_1...
+Run output will be captured here: /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/vivado/xillydemo.runs/impl_1/runme.log
+add_files /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog
+add_files -norecurse {/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_big_mult_v3small_71_24_17_s_pp_V.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_mux_16to1_sel4_1_1.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_hls_sin_cos_K1_V.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_mux_8to1_sel3_1_1.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_xilly_decprint.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_hls_sin_cos_K0_V.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_p_str5.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_p_str3.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_xilly_decprint_out.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_p_str4.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_xilly_decprint_powers10.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_mul_32s_31ns_62_6.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_hls_sin_cos_K2_V.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_my_to_float_31_1_s.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_hls_ref_4oPi_table_100_V.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_mul_41s_24ns_41_4.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_big_mult_v3small_71_24_17_s.v}
+WARNING: [filemgmt 56-12] File '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_big_mult_v3small_71_24_17_s_pp_V.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_mux_16to1_sel4_1_1.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_hls_sin_cos_K1_V.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_mux_8to1_sel3_1_1.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_xilly_decprint.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_hls_sin_cos_K0_V.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_p_str5.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_p_str3.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_xilly_decprint_out.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_p_str4.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_xilly_decprint_powers10.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_mul_32s_31ns_62_6.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_hls_sin_cos_K2_V.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_my_to_float_31_1_s.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_hls_ref_4oPi_table_100_V.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_mul_41s_24ns_41_4.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_big_mult_v3small_71_24_17_s.v' cannot be added to the project because it already exists in the project, skipping this file
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Oct 14 17:30:21 2015] Launched synth_1...
+Run output will be captured here: /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/vivado/xillydemo.runs/synth_1/runme.log
+[Wed Oct 14 17:30:21 2015] Launched impl_1...
+Run output will be captured here: /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/vivado/xillydemo.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 505 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/parallels/source_code/ECE_527_testing_code/.Xil/Vivado-14125-ubuntu/dcp/xillydemo_early.xdc]
+Finished Parsing XDC File [/home/parallels/source_code/ECE_527_testing_code/.Xil/Vivado-14125-ubuntu/dcp/xillydemo_early.xdc]
+Parsing XDC File [/home/parallels/source_code/ECE_527_testing_code/.Xil/Vivado-14125-ubuntu/dcp/xillydemo.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/xillydemo.xdc:5]
+INFO: [Timing 38-2] Deriving generated clocks [/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/xillydemo.xdc:5]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 6546.223 ; gain = 444.500 ; free physical = 3053 ; free virtual = 5980
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/vivado-essentials/xillydemo.xdc:12]
+Finished Parsing XDC File [/home/parallels/source_code/ECE_527_testing_code/.Xil/Vivado-14125-ubuntu/dcp/xillydemo.xdc]
+Parsing XDC File [/home/parallels/source_code/ECE_527_testing_code/.Xil/Vivado-14125-ubuntu/dcp/xillydemo_late.xdc]
+Finished Parsing XDC File [/home/parallels/source_code/ECE_527_testing_code/.Xil/Vivado-14125-ubuntu/dcp/xillydemo_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.53 ; elapsed = 00:00:00.52 . Memory (MB): peak = 6557.223 ; gain = 10.000 ; free physical = 3041 ; free virtual = 5968
+Restored from archive | CPU: 0.530000 secs | Memory: 9.915359 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.53 ; elapsed = 00:00:00.52 . Memory (MB): peak = 6557.223 ; gain = 10.000 ; free physical = 3041 ; free virtual = 5968
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 167 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 57 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 6 instances
+  RAM32X1S => RAM32X1S (RAMS32): 40 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 36 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 16 instances
+
+open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 6665.430 ; gain = 785.379 ; free physical = 2937 ; free virtual = 5854

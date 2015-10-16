@@ -258,36 +258,91 @@ module xillydemo
    assign  user_r_mem_8_empty = 0;
    assign  user_r_mem_8_eof = 0;
    assign  user_w_mem_8_full = 0;
+    
+    //Modify the source code according to the FPGA coprocessing 7 parts tutorials
+    wire [31:0] in_r_dout;
+    wire        in_r_read;
+    wire        hls_fifo_rd_en;
+    reg         in_r_empty_n;
+    wire [31:0] in_r_din;
+    wire        out_r_full;
+    wire        out_r_write;
+    wire [7:0]  debug_out_din;
+    wire        debug_out_full;
+    wire        debug_out_write;
+    wire        hls_fifo_empty;
+    
+
+
 
    // 32-bit loopback
    fifo_32x512 fifo_32
      (
       .clk(bus_clk),
-      .srst(!user_w_write_32_open && !user_r_read_32_open),
+      .srst(!user_w_write_32_open),
       .din(user_w_write_32_data),
       .wr_en(user_w_write_32_wren),
-      .rd_en(user_r_read_32_rden),
-      .dout(user_r_read_32_data),
+      .rd_en(hls_fifo_),
+      .dout(in_r_dout),
       .full(user_w_write_32_full),
-      .empty(user_r_read_32_empty)
+      .empty(hls_fifo_empty)
       );
 
+   assign  hls_fifo_read_en = !hls_fifo_empty &&(in_r_read||!in_r_empty_n);
+   
+   always @(posedge bus_clk)
+        if (!user_w_write_32_open)
+          in_r_empty_n <= 0;
+        else if (hls_fifo_rd_en)
+          in_r_empty_n <= 1;
+        else if (in_r_read)
+          in_r_empty_n <= 0;
+
+   
+   fifo_32x512 fifo_from_function
+       (
+        .clk(bus_clk),
+        .srst(!user_r_read_32_open),
+        .din(out_r_din),
+        .wr_en(out_r_write),
+        .rd_en(user_r_read_32_rden),
+        .dout(user_r_read_32_data),
+        .full(out_r_full),
+        .empty(user_r_read_32_empty)
+        );
+  
    assign  user_r_read_32_eof = 0;
    
-   // 8-bit loopback
    fifo_8x2048 fifo_8
-     (
-      .clk(bus_clk),
-      .srst(!user_w_write_8_open && !user_r_read_8_open),
-      .din(user_w_write_8_data),
-      .wr_en(user_w_write_8_wren),
-      .rd_en(user_r_read_8_rden),
-      .dout(user_r_read_8_data),
-      .full(user_w_write_8_full),
-      .empty(user_r_read_8_empty)
-      );
-
-   assign  user_r_read_8_eof = 0;
+        (
+         .clk(bus_clk),
+         .srst(!user_r_read_8_open),
+         .din(debug_out_din),
+         .wr_en(debug_out_write),
+         .rd_en(user_r_read_8_rden),
+         .dout(user_r_read_8_data),
+         .full(debug_out_full),
+         .empty(user_r_read_8_empty)
+         );
+   
+      assign  user_r_read_8_eof = 0;
+      assign  user_w_write_8_full = 1; // Not used, hence always full
+   
+      xillybus_wrapper HLS_wrapper
+        (
+         .ap_clk(bus_clk),
+         .ap_rst(!user_w_write_32_open || !user_r_read_32_open),
+         .debug_ready(!debug_out_full || !user_r_read_8_open),
+         .debug_out(debug_out_din),
+         .debug_out_ap_vld(debug_out_write),
+   
+         .in_r_dout(in_r_dout),
+         .in_r_empty_n(in_r_empty_n),
+         .in_r_read(in_r_read),
+         .out_r_din(out_r_din),
+         .out_r_full_n(!out_r_full),
+         .out_r_write(out_r_write)
+         );
 
 
 

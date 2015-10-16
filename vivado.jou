@@ -2,12 +2,31 @@
 # Vivado v2015.1 (64-bit)
 # SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
 # IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
-# Start of session at: Sat Oct 10 20:03:11 2015
-# Process ID: 5061
+# Start of session at: Wed Oct 14 17:04:46 2015
+# Process ID: 14125
 # Log file: /home/parallels/source_code/ECE_527_testing_code/vivado.log
 # Journal file: /home/parallels/source_code/ECE_527_testing_code/vivado.jou
 #-----------------------------------------------------------
 start_gui
-source {/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/xillydemo-vivado.tcl}
+open_project /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/verilog/vivado/xillydemo.xpr
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+launch_runs impl_1 -to_step write_bitstream
+reset_run fifo_8x2048_synth_1
 launch_runs impl_1 -to_step write_bitstream
 wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+add_files /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog
+add_files -norecurse {/home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_big_mult_v3small_71_24_17_s_pp_V.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_mux_16to1_sel4_1_1.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_hls_sin_cos_K1_V.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_mux_8to1_sel3_1_1.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_xilly_decprint.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_hls_sin_cos_K0_V.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_p_str5.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_p_str3.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_xilly_decprint_out.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_p_str4.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_xilly_decprint_powers10.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_mul_32s_31ns_62_6.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_hls_sin_cos_K2_V.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_my_to_float_31_1_s.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_hls_ref_4oPi_table_100_V.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_mul_41s_24ns_41_4.v /home/parallels/source_code/ECE_527_testing_code/xillinux-eval-zedboard-1.3c/coprocess/example/syn/verilog/xillybus_wrapper_big_mult_v3small_71_24_17_s.v}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_run impl_1

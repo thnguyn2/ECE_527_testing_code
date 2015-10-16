@@ -1,0 +1,153 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'xillybus_wrapper_my_to_float_31_1_s'" level="0">
+<item name = "Date">Wed Oct 14 17:26:13 2015
+</item>
+<item name = "Version">2015.1 (Build 1215546 on Mon Apr 27 19:24:50 PM 2015)</item>
+<item name = "Project">coprocess</item>
+<item name = "Solution">example</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="default">10.00, 7.98, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">2, 2, 1, -, -, 2, no</column>
+<column name="- Loop 2">?, ?, 2, -, -, ?, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="Expression">-, -, 0, 531</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, -, -</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 225</column>
+<column name="Register">-, -, 391, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 1</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="i_1_fu_275_p2">+, 0, 0, 2, 2, 1</column>
+<column name="i_fu_227_p2">+, 0, 0, 2, 2, 1</column>
+<column name="shift_2_fu_339_p2">+, 0, 0, 32, 32, 32</column>
+<column name="phitmp_fu_384_p2">-, 0, 0, 8, 8, 8</column>
+<column name="tmp_10_fu_374_p2">-, 0, 0, 8, 7, 8</column>
+<column name="tmp_s_fu_301_p2">-, 0, 0, 32, 1, 32</column>
+<column name="c_1_1_fu_251_p3">Select, 0, 0, 32, 1, 32</column>
+<column name="c_1_2_fu_259_p3">Select, 0, 0, 32, 1, 32</column>
+<column name="in_shift_V_fu_345_p3">Select, 0, 0, 31, 1, 31</column>
+<column name="out_bits_V_load_phi_fu_237_p3">Select, 0, 0, 32, 1, 32</column>
+<column name="out_exp_V_fu_390_p3">Select, 0, 0, 8, 1, 1</column>
+<column name="sh_assign_1_fu_307_p3">Select, 0, 0, 32, 1, 32</column>
+<column name="sh_assign_fu_285_p3">Select, 0, 0, 32, 1, 32</column>
+<column name="tmp_6_fu_319_p2">ashr, 0, 0, 88, 32, 32</column>
+<column name="c_0_fu_243_p3">ctlz, 0, 0, 48, 32, 0</column>
+<column name="exitcond_fu_221_p2">icmp, 0, 0, 2, 2, 3</column>
+<column name="tmp_8_fu_351_p2">icmp, 0, 0, 11, 32, 5</column>
+<column name="tmp_9_fu_366_p2">icmp, 0, 0, 11, 31, 1</column>
+<column name="tmp_7_fu_325_p2">shl, 0, 0, 88, 32, 32</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">1, 5, 1, 5</column>
+<column name="ap_return">31, 2, 31, 62</column>
+<column name="i1_reg_102">2, 2, 2, 4</column>
+<column name="i2_reg_135">2, 2, 2, 4</column>
+<column name="in_shift_reg_113">31, 2, 31, 62</column>
+<column name="p_Val2_in_phi_fu_149_p4">31, 2, 31, 62</column>
+<column name="p_Val2_in_reg_146">31, 2, 31, 62</column>
+<column name="shift_1_phi_fu_159_p4">32, 2, 32, 64</column>
+<column name="shift_1_reg_156">32, 2, 32, 64</column>
+<column name="shift_reg_123">32, 2, 32, 64</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">4, 0, 4, 0</column>
+<column name="ap_return_preg">31, 0, 32, 1</column>
+<column name="c_0_s_reg_78">32, 0, 32, 0</column>
+<column name="c_1_s_reg_90">32, 0, 32, 0</column>
+<column name="i1_reg_102">2, 0, 2, 0</column>
+<column name="i2_reg_135">2, 0, 2, 0</column>
+<column name="i_1_reg_455">2, 0, 2, 0</column>
+<column name="in_shift_reg_113">31, 0, 31, 0</column>
+<column name="isNeg_reg_466">1, 0, 1, 0</column>
+<column name="out_bits_0_V_reg_423">32, 0, 32, 0</column>
+<column name="p_Result_s_reg_428">32, 0, 32, 0</column>
+<column name="p_Val2_in_reg_146">31, 0, 31, 0</column>
+<column name="sh_assign_reg_460">32, 0, 32, 0</column>
+<column name="shift_1_reg_156">32, 0, 32, 0</column>
+<column name="shift_reg_123">32, 0, 32, 0</column>
+<column name="tmp_58_reg_451">1, 0, 1, 0</column>
+<column name="tmp_62_reg_471">31, 0, 31, 0</column>
+<column name="tmp_63_reg_476">31, 0, 31, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, xillybus_wrapper_my_to_float&lt;31, 1&gt;, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, xillybus_wrapper_my_to_float&lt;31, 1&gt;, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, xillybus_wrapper_my_to_float&lt;31, 1&gt;, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, xillybus_wrapper_my_to_float&lt;31, 1&gt;, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, xillybus_wrapper_my_to_float&lt;31, 1&gt;, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, xillybus_wrapper_my_to_float&lt;31, 1&gt;, return value</column>
+<column name="ap_return">out, 32, ap_ctrl_hs, xillybus_wrapper_my_to_float&lt;31, 1&gt;, return value</column>
+<column name="in_V">in, 31, ap_none, in_V, scalar</column>
+<column name="prescale">in, 9, ap_none, prescale, scalar</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
-| Date             : Sat Oct 10 20:07:31 2015
+| Date             : Wed Oct 14 17:33:53 2015
 | Host             : ubuntu running 64-bit Ubuntu 14.04.3 LTS
 | Command          : report_power -file xillydemo_power_routed.rpt -pb xillydemo_power_summary_routed.pb
 | Design           : xillydemo
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.907 |
-| Dynamic (W)              | 1.748 |
-| Device Static (W)        | 0.160 |
+| Total On-Chip Power (W)  | 1.900 |
+| Dynamic (W)              | 1.741 |
+| Device Static (W)        | 0.159 |
 | Effective TJA (C/W)      | 11.5  |
-| Max Ambient (C)          | 63.0  |
-| Junction Temperature (C) | 47.0  |
+| Max Ambient (C)          | 63.1  |
+| Junction Temperature (C) | 46.9  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -50,21 +50,21 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.020 |        6 |       --- |             --- |
-| Slice Logic              |     0.008 |    10763 |       --- |             --- |
-|   LUT as Logic           |     0.007 |     4240 |     53200 |            7.97 |
-|   CARRY4                 |    <0.001 |      321 |     13300 |            2.41 |
-|   Register               |    <0.001 |     4686 |    106400 |            4.40 |
+| Slice Logic              |     0.008 |    10700 |       --- |             --- |
+|   LUT as Logic           |     0.007 |     4225 |     53200 |            7.94 |
+|   CARRY4                 |    <0.001 |      314 |     13300 |            2.36 |
+|   Register               |    <0.001 |     4639 |    106400 |            4.36 |
 |   LUT as Distributed RAM |    <0.001 |      270 |     17400 |            1.55 |
 |   F7/F8 Muxes            |    <0.001 |       45 |     53200 |            0.08 |
 |   LUT as Shift Register  |    <0.001 |       67 |     17400 |            0.39 |
-|   Others                 |     0.000 |      673 |       --- |             --- |
-| Signals                  |     0.013 |     7713 |       --- |             --- |
-| Block RAM                |     0.022 |       15 |       140 |           10.71 |
+|   Others                 |     0.000 |      672 |       --- |             --- |
+| Signals                  |     0.012 |     7665 |       --- |             --- |
+| Block RAM                |     0.015 |       15 |       140 |           10.71 |
 | PLL                      |     0.106 |        1 |         4 |           25.00 |
 | I/O                      |     0.046 |       85 |       200 |           42.50 |
 | PS7                      |     1.533 |        1 |       --- |             --- |
-| Static Power             |     0.160 |          |           |                 |
-| Total                    |     1.907 |          |           |                 |
+| Static Power             |     0.159 |          |           |                 |
+| Total                    |     1.900 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.089 |       0.072 |      0.017 |
+| Vccint    |       1.000 |     0.083 |       0.066 |      0.017 |
 | Vccaux    |       1.800 |     0.076 |       0.055 |      0.021 |
 | Vcco33    |       3.300 |     0.014 |       0.013 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -83,7 +83,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.004 |       0.002 |      0.002 |
+| Vccbram   |       1.000 |     0.003 |       0.001 |      0.002 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -137,7 +137,7 @@ Table of Contents
 +---------------------+---------------------------------------------------------------------------------------------+-----------------+
 | Clock               | Domain                                                                                      | Constraint (ns) |
 +---------------------+---------------------------------------------------------------------------------------------+-----------------+
-| clk_fpga_1          | xillybus_ins/system_i/vivado_system_i/processing_system7_0/inst/PS7_i_n_707                 |            10.0 |
+| clk_fpga_1          | xillybus_ins/system_i/vivado_system_i/processing_system7_0/inst/PS7_i_n_712                 |            10.0 |
 | gclk                | clk_100                                                                                     |            10.0 |
 | vga_clk_ins/clk_fb  | xillybus_ins/system_i/vivado_system_i/xillyvga_0/inst/xillyvga_core_ins/vga_clk_ins/clk_fb  |            40.0 |
 | vga_clk_ins/clkout0 | xillybus_ins/system_i/vivado_system_i/xillyvga_0/inst/xillyvga_core_ins/vga_clk_ins/clkout0 |            15.4 |
@@ -153,7 +153,10 @@ Table of Contents
 +---------------------------------------------------------------+-----------+
 | Name                                                          | Power (W) |
 +---------------------------------------------------------------+-----------+
-| xillydemo                                                     |     1.748 |
+| xillydemo                                                     |     1.741 |
+|   HLS_wrapper                                                 |    <0.001 |
+|     p_str3_U                                                  |    <0.001 |
+|       xillybus_wrapper_p_str3_rom_U                           |    <0.001 |
 |   PS_GPIO_IOBUF[0]_inst                                       |    <0.001 |
 |   PS_GPIO_IOBUF[10]_inst                                      |    <0.001 |
 |   PS_GPIO_IOBUF[11]_inst                                      |    <0.001 |
@@ -275,39 +278,20 @@ Table of Contents
 |   demoarray_reg_0_31_5_5                                      |    <0.001 |
 |   demoarray_reg_0_31_6_6                                      |    <0.001 |
 |   demoarray_reg_0_31_7_7                                      |    <0.001 |
-|   fifo_32                                                     |     0.011 |
-|     U0                                                        |     0.011 |
-|       inst_fifo_gen                                           |     0.011 |
-|         gconvfifo.rf                                          |     0.011 |
-|           grf.rf                                              |     0.011 |
-|             gntv_or_sync_fifo.gl0.rd                          |    <0.001 |
-|               grss.rsts                                       |    <0.001 |
-|                 c1                                            |     0.000 |
-|                 c2                                            |     0.000 |
-|               rpntr                                           |    <0.001 |
+|   fifo_32                                                     |    <0.001 |
+|     U0                                                        |    <0.001 |
+|       inst_fifo_gen                                           |    <0.001 |
+|         gconvfifo.rf                                          |    <0.001 |
+|           grf.rf                                              |    <0.001 |
 |             gntv_or_sync_fifo.gl0.wr                          |    <0.001 |
 |               gwss.wsts                                       |    <0.001 |
-|                 c0                                            |     0.000 |
 |                 c1                                            |     0.000 |
 |               wpntr                                           |    <0.001 |
-|             gntv_or_sync_fifo.mem                             |     0.010 |
-|               gbm.gbmg.gbmga.ngecc.bmg                        |     0.010 |
-|                 inst_blk_mem_gen                              |     0.010 |
-|                   gnativebmg.native_blk_mem_gen               |     0.010 |
-|                     valid.cstr                                |     0.010 |
-|                       ramloop[0].ram.r                        |     0.003 |
-|                         prim_noinit.ram                       |     0.003 |
-|                       ramloop[1].ram.r                        |     0.003 |
-|                         prim_noinit.ram                       |     0.003 |
-|                       ramloop[2].ram.r                        |     0.003 |
-|                         prim_noinit.ram                       |     0.003 |
-|                       ramloop[3].ram.r                        |     0.003 |
-|                         prim_noinit.ram                       |     0.003 |
-|   fifo_8                                                      |     0.001 |
-|     U0                                                        |     0.001 |
-|       inst_fifo_gen                                           |     0.001 |
-|         gconvfifo.rf                                          |     0.001 |
-|           grf.rf                                              |     0.001 |
+|   fifo_8                                                      |    <0.001 |
+|     U0                                                        |    <0.001 |
+|       inst_fifo_gen                                           |    <0.001 |
+|         gconvfifo.rf                                          |    <0.001 |
+|           grf.rf                                              |    <0.001 |
 |             gntv_or_sync_fifo.gl0.rd                          |    <0.001 |
 |               grss.rsts                                       |    <0.001 |
 |                 c1                                            |    <0.001 |
@@ -325,6 +309,31 @@ Table of Contents
 |                     valid.cstr                                |    <0.001 |
 |                       ramloop[0].ram.r                        |    <0.001 |
 |                         prim_noinit.ram                       |    <0.001 |
+|   fifo_from_function                                          |     0.004 |
+|     U0                                                        |     0.004 |
+|       inst_fifo_gen                                           |     0.004 |
+|         gconvfifo.rf                                          |     0.004 |
+|           grf.rf                                              |     0.004 |
+|             gntv_or_sync_fifo.gl0.rd                          |    <0.001 |
+|               grss.rsts                                       |    <0.001 |
+|                 c2                                            |    <0.001 |
+|               rpntr                                           |    <0.001 |
+|             gntv_or_sync_fifo.gl0.wr                          |     0.000 |
+|               gwss.wsts                                       |     0.000 |
+|               wpntr                                           |     0.000 |
+|             gntv_or_sync_fifo.mem                             |     0.004 |
+|               gbm.gbmg.gbmga.ngecc.bmg                        |     0.004 |
+|                 inst_blk_mem_gen                              |     0.004 |
+|                   gnativebmg.native_blk_mem_gen               |     0.004 |
+|                     valid.cstr                                |     0.004 |
+|                       ramloop[0].ram.r                        |     0.001 |
+|                         prim_noinit.ram                       |     0.001 |
+|                       ramloop[1].ram.r                        |     0.001 |
+|                         prim_noinit.ram                       |     0.001 |
+|                       ramloop[2].ram.r                        |     0.001 |
+|                         prim_noinit.ram                       |     0.001 |
+|                       ramloop[3].ram.r                        |     0.001 |
+|                         prim_noinit.ram                       |     0.001 |
 |   litearray0_reg_0_31_0_0                                     |    <0.001 |
 |   litearray0_reg_0_31_1_1                                     |    <0.001 |
 |   litearray0_reg_0_31_2_2                                     |    <0.001 |
@@ -381,9 +390,9 @@ Table of Contents
 |                       valid.cstr                              |    <0.001 |
 |                         ramloop[0].ram.r                      |    <0.001 |
 |                           prim_noinit.ram                     |    <0.001 |
-|   xillybus_ins                                                |     1.679 |
+|   xillybus_ins                                                |     1.678 |
 |     system_i                                                  |     1.653 |
-|       vivado_system_i                                         |     1.652 |
+|       vivado_system_i                                         |     1.653 |
 |         processing_system7_0                                  |     1.536 |
 |           inst                                                |     1.536 |
 |         processing_system7_0_axi_periph                       |     0.005 |
@@ -430,9 +439,9 @@ Table of Contents
 |           inst                                                |    <0.001 |
 |         xillybus_lite_0                                       |    <0.001 |
 |           inst                                                |    <0.001 |
-|         xillyvga_0                                            |     0.111 |
-|           inst                                                |     0.111 |
-|             xillyvga_core_ins                                 |     0.111 |
+|         xillyvga_0                                            |     0.112 |
+|           inst                                                |     0.112 |
+|             xillyvga_core_ins                                 |     0.112 |
 |               vga_fifo_wrapper_ins/vga_fifo                   |     0.001 |
 |                 U0                                            |     0.001 |
 |                   inst_fifo_gen                               |     0.001 |
@@ -463,7 +472,7 @@ Table of Contents
 |                                     prim_noinit.ram           |    <0.001 |
 |                         rstblk                                |    <0.001 |
 |         xlconcat_0                                            |     0.000 |
-|     xillybus_core_ins                                         |     0.026 |
+|     xillybus_core_ins                                         |     0.025 |
 |       axi4_send_dma_ins/xillybus_wr_fifo/ram0/Mram_fifo_ram1  |    <0.001 |
 |       axi4_send_dma_ins/xillybus_wr_fifo/ram0/Mram_fifo_ram2  |    <0.001 |
 |       axi4_send_dma_ins/xillybus_wr_fifo/ram0/Mram_fifo_ram3  |    <0.001 |
